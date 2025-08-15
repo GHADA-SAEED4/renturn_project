@@ -1,12 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Renturn</title>
-    <link rel="stylesheet" href="" type="icon">
+    <link rel="icon" href="./assets/R.png" type="icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+        }
+    </style> -->
+
 </head>
 <body>
-    
+    <header class="flex mt-[10px] mr-[20px]">
+        <div class="flex"> 
+            <img src="./assets/R.png">
+            <h1 class="inline text-[#2E5077] text-4xl font-extrabold mt-1">Renturn</h1>
+        </div>
+        <div class="flex items-center gap-2 mr-[100px] ">
+            <img id="eg" src="./assets/egypt_flag.png" class="w-[40px] h-[40px] rounded-full">
+            <img id="usa" src="./assets/usa_flag.png" class="w-[40px] h-[40px] rounded-full hidden">
+            
+            <select id="langSelect" class="p-1 rounded text-[#2E5077] font-bold">
+                <option value="ar">العربية</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+        <div class="relative w-[450px] mr-[50px] mt-[10px]">
+            <img src="./assets/search-svg.png" class="absolute right-1 w-[30px] h-[30px] mt-[4px]">
+            <input  type="search" 
+                    placeholder="بحث عن منتج ..." 
+                    class="w-full h-[35px] bg-[#F6F4F0] border rounded-full pr-8 placeholder:text-gray-400 p-[10px] border-gray-400 border-[2px]">
+        </div>
+        <div class="text-[#2E5077] flex mr-[80px] mt-[10px]">
+            <p class="text-2xl font-bold">الرئيسية</p>
+            <p class="text-2xl font-bold mr-[20px]">من نحن</p>
+            <img src="./assets/cart.png" class="w-[50px] h-[50px] mr-[80px]">
+            <img src="./assets/Account.png" class="w-[50px] h-[50px] mr-[40px]">
+        </div>
+    </header>
+<!----------------------------------------categories nav ---------------------------------------------->
+    <div class="bg-[#F6F4F0] w-full h-[80px] mt-[20px] flex">
+        <div class="mr-[50px] flex mt-[20px]">
+            <img src="./assets/Categorize.png" class="w-[50px] h-[40px]">
+            <p class="mt-[6px] text-[#2E5077] font-bold text-[20px]">الفئـــات</p>
+        </div>
+        <img src="./assets/right arrow.png" class="w-[30px] h-[30px] mt-[25px] mr-[20px]">
+        <div class="mr-[30px] flex bg-gray-200 p-[10px] rounded-2xl w-[200px] h-[50px] mt-[15px]">
+            <img src="./assets/Equipment.png" class="w-[50px] h-[40px]">
+            <p class="mt-[6px] text-[#2E5077] font-bold text-[15px]">ادوات ومعدات</p>
+        </div>
+        <div class="mr-[50px] flex bg-gray-200 p-[10px] rounded-2xl w-[200px] h-[50px] mt-[15px]">
+            <img src="./assets/Electronic.png" class="w-[50px] h-[40px]">
+            <p class="mt-[6px] text-[#2E5077] font-bold text-[15px]">الكترونيــــات</p>
+        </div>
+        <div class="mr-[50px] flex bg-gray-200 p-[10px] rounded-2xl w-[200px] h-[50px] mt-[15px]">
+            <img src="./assets/Clothes.png" class="w-[50px] h-[40px]">
+            <p class="mt-[6px] text-[#2E5077] font-bold text-[15px]">ملابــــس</p>
+        </div>
+        <div class="mr-[50px] flex bg-gray-200 p-[10px] rounded-2xl w-[200px] h-[50px] mt-[15px]">
+            <img src="./assets/Confetti.png" class="w-[50px] h-[40px]">
+            <p class="mt-[6px] text-[#2E5077] font-bold text-[15px]">مستلزمات مناسبــات</p>
+        </div>
+        <div class="mr-[50px] flex bg-gray-200 p-[10px] rounded-2xl w-[200px] h-[50px] mt-[15px]">
+            <img src="./assets/Electronic.png" class="w-[50px] h-[40px]">
+            <p class="mt-[6px] text-[#2E5077] font-bold text-[15px]">الكترونيــــات</p>
+        </div>
+        <img src="./assets/left arrow.png" class="w-[30px] h-[30px] mt-[25px] mr-[20px]">
+    </div>
+<!----------------------------------------Hero section---------------------------------------------->
+    <main class="w-full h-[76vh]" style="background-image: linear-gradient(to right, #2E5077, #4DA1A9);">
+        <img src="./assets/hero.png" class="absolute left-0 mt-[50px]">
+        <p class="text-white text-5xl pt-[150px] mr-[80px]">استأجر اي شئ، في أي وقت</p>
+        <p class="text-white text-[15px] mr-[150px] mt-[40px] w-[400px]">من الأدوات إلى معدات الحفلات، والملابس إلى الإلكترونيات. <span class="mr-[50px]">احصل على ما تحتاجه دون الالتزام بالشراء.</span></p>
+    </main>
+<script src="./js/index.js"></script>
 </body>
 </html>
