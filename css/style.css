@@ -43,7 +43,8 @@ header .container {
 
 header .search {
   flex: 0.6;
-  margin: 0 20px;
+  margin: 0px 20px;
+  margin-top: 20px;
   position: relative;
   
 }
@@ -54,21 +55,16 @@ header .search input {
   border-radius: 20px;
   border: 1px solid #ccc;
 }
-#errorMsg {
-  color: #dc2626;
-  font-size: 14px;
-  margin-top: 5px;
-  display: none;
-  font-weight: 500;
-  transition: opacity 0.3s ease-in-out;
-  opacity: 0;
+header .search p{
+  color: red;
+  visibility:hidden;
+  font-size: 12px;
 }
-
 
 header .search i {
   position: absolute;
   right: 12px;
-  top: 50%;
+  top: 30%;
   transform: translateY(-50%);
   color: #3e90aa;
 }

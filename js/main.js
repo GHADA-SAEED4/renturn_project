@@ -15,15 +15,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 })
-const errorMsg = document.getElementById("errorMsg");
+
 function validateSearch() {
-  let input = document.getElementById("search").value.trim();
-  switch(input.toLowerCase()){
-    case '':
-      alert("⚠️ Please enter a product name before searching!");
-      break;
+  let input = document.getElementById("search").value.trim().toLowerCase();
+  if (input===""){
+    let error = document.getElementById("error");
+      error.style.visibility='visible';
+  }
+  else{
+  switch(input){
+    // case '':
+    //   let error = document.getElementById("error");
+    //   error.style.visibility='visible';
+    //   break;
     case 'electronics':
-      window.location.href="./pages/electronics.html"
+      window.location.href="./electronics.html"
       break;
       
     case 'tools':
@@ -44,6 +50,7 @@ function validateSearch() {
       
     }
     }
+  }
 // -----------------------------------------------------Scroller--------------------------------------
 const scrollContainer = document.getElementById("latestPro");
 const leftArrow = document.getElementById("leftArrow");
