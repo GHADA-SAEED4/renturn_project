@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about renturn</title>
+</head>
+<body>
+    <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div class="logo"><img src="photos/renturn logo.png" alt="logo"></div>
+      <div class="search">
+        <input  type="text" id="search" placeholder="Search for a product" />
+        <p class="errorMsg" id="errorMsg">⚠️ Please enter a product name</p>
+        <i class="fa-solid fa-search" onclick="validateSearch()"></i>
+      </div>
+      <nav>
+        <div class="nav-v">
+        <a href="#">Home</a>
+        <a href="about.html">About Us</a>
+         <!-- Dropdown Categories -->
+        <div class="dropdown">
+          <button class="dropbtn">Categories ▾</button>
+          <div class="dropdown-content">
+            <a href="category1.html">Electronics</a>
+            <a href="category2.html">Tools</a>
+            <a href="category3.html">Clothes</a>
+             <a href="category3.html">Event Supplies</a>
+              <a href="category3.html">Musical instruments</a>
+          </div>
+        </div>
+        </div>
+
+      <button class="nav-btn" onclick="window.location='cart.html'">
+  <i class="fa-solid fa-cart-shopping"></i>
+</button>
+
+<button class="nav-btn" onclick="window.location='login.html'">
+  <i class="fa-solid fa-user"></i>
+</button>
+
+      </nav>
+    </div>
+  </header>
+</body>
+</html>
