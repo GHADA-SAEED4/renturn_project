@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about renturn</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Renturn</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="icon" href="../photos/R logo.png" type="image.png">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+  
 </head>
 <body>
-    <!-- Header -->
+  <!-- Header -->
   <header id="header">
     <div class="container">
-      <div class="logo"><img src="photos/renturn logo.png" alt="logo"></div>
+      <div class="logo"><img src="../photos/renturn logo.png" alt="logo"></div>
       <div class="search">
         <input  type="text" id="search" placeholder="Search for a product" />
-        <p class="errorMsg" id="errorMsg">⚠️ Please enter a product name</p>
+        <p id="error">⚠️ Please enter a category name</p>
         <i class="fa-solid fa-search" onclick="validateSearch()"></i>
       </div>
       <nav>
         <div class="nav-v">
-        <a href="#">Home</a>
-        <a href="about.html">About Us</a>
-         <!-- Dropdown Categories -->
+        <a href="../index.html">Home</a>
+        <a href="./pages/about.html">About Us</a>
+        <!-- Dropdown Categories -->
         <div class="dropdown">
           <button class="dropbtn">Categories ▾</button>
           <div class="dropdown-content">
-            <a href="category1.html">Electronics</a>
-            <a href="category2.html">Tools</a>
-            <a href="category3.html">Clothes</a>
-             <a href="category3.html">Event Supplies</a>
-              <a href="category3.html">Musical instruments</a>
+            <a href="./pages/electronics.html">Electronics</a>
+            <a href="./pages/tools.html">Tools</a>
+            <a href="./pages/clothes.html">Clothes</a>
+            <a href="./pages/event .html">Event Supplies</a>
+            <a href="./pages/music.html">Musical instruments</a>
           </div>
         </div>
         </div>
 
-      <button class="nav-btn" onclick="window.location='cart.html'">
+      <button class="nav-btn" onclick="window.location.href='./pages/cart.html'">
   <i class="fa-solid fa-cart-shopping"></i>
 </button>
 
-<button class="nav-btn" onclick="window.location='login.html'">
+<button class="nav-btn" onclick="window.location.href='./pages/login.html'">
   <i class="fa-solid fa-user"></i>
 </button>
 
       </nav>
     </div>
   </header>
+  <br><br><br><br>
+
+<script src="../js/innerSearch.js"></script>
 </body>
 </html>

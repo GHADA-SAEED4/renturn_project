@@ -24,12 +24,8 @@ function validateSearch() {
   }
   else{
   switch(input){
-    // case '':
-    //   let error = document.getElementById("error");
-    //   error.style.visibility='visible';
-    //   break;
     case 'electronics':
-      window.location.href="./electronics.html"
+      window.location.href="./pages/electronics.html"
       break;
       
     case 'tools':
