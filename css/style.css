@@ -27,6 +27,7 @@ header .logo {
   font-size: 28px;
   font-weight: bold;
   color: #0c688d;
+  margin-left: 100px;
 }
 
 .logo img {
@@ -37,14 +38,13 @@ header .logo {
 
 header .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 header .search {
-  flex: 0.6;
-  margin: 0px 20px;
+  width: 600px;
   margin-top: 20px;
+  margin-left: 100px;
   position: relative;
   
 }
@@ -79,6 +79,7 @@ header nav i {
 
 nav {
     display: flex;
+    margin-left: 100px;
 }
 .nav-v {
   display: flex;
@@ -110,7 +111,7 @@ nav {
 
 .nav-v a:hover::after {
   width: 100%;
-}
+} 
 
 @keyframes navFade {
   0% { opacity: 0; transform: translateY(-8px);}
@@ -130,8 +131,6 @@ nav {
   margin-left:15px;
   transition:0.25s;
   transform: scale(1);
-  gap:15px;
-
 }
 
 .nav-btn:hover{
