@@ -15,7 +15,7 @@
 header {
   background: #fff;
   padding: 15px 0;
-  position: fixed;
+  position:fixed;
   width: 100%;
   top: 0;
   z-index: 999;
@@ -79,11 +79,9 @@ header nav i {
 
 nav {
     display: flex;
-  align-items: center;
 }
 .nav-v {
   display: flex;
-  align-items: center;
 }
 
 .nav-v a {
@@ -92,7 +90,6 @@ nav {
   transition: color 0.3s;
   font-weight: 500;
   text-decoration: none;
-  padding: 4px 10px;
 }
 
 .nav-v a::after {
@@ -122,7 +119,6 @@ nav {
 
 .nav-btn{
   background:#acd7e8;
-  color:#050505;
   border:none;
   border-radius:50%;
   width:30px;
@@ -141,7 +137,7 @@ nav {
 .nav-btn:hover{
   background:#4da1a9;
   transform:translateY(-3px) scale(1.05);   
-    box-shadow:0 6px 15px rgba(0,0,0,0.2);  
+  box-shadow:0 6px 15px rgba(0,0,0,0.2);  
 }
 .nav-btn:active{
   transform: scale(0.9);   

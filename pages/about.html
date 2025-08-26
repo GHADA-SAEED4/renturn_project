@@ -3,24 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Renturn</title>
+  <title>AboutUs</title>
   <link rel="stylesheet" href="../css/style.css"/>
   <link rel="icon" href="../photos/R logo.png" type="image.png">
+  <script src="https://cdn.tailwindcss.com"></script>
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   />
   
 </head>
-<body>
+<body style="font-family: Arial, sans-serif; ">
   <!-- Header -->
   <header id="header">
     <div class="container">
-      <div class="logo"><img src="../photos/renturn logo.png" alt="logo"></div>
+      <div><img src="../photos/renturn logo.png" alt="logo" class="h-[55px] ml-[50px]"></div>
       <div class="search">
-        <input  type="text" id="search" placeholder="Search for a product" />
+        <input class="h-[35px]"  type="text" id="search" placeholder="Search for a product" />
         <p id="error">⚠️ Please enter a category name</p>
-        <i class="fa-solid fa-search" onclick="validateSearch()"></i>
+        <i class="fa-solid fa-search"  onclick="validateSearch()"></i>
       </div>
       <nav>
         <div class="nav-v">
@@ -43,7 +44,7 @@
   <i class="fa-solid fa-cart-shopping"></i>
 </button>
 
-<button class="nav-btn" onclick="window.location.href='./pages/login.html'">
+<button class="nav-btn" onclick="window.location.href='./pages/login.html'" >
   <i class="fa-solid fa-user"></i>
 </button>
 
@@ -51,6 +52,224 @@
     </div>
   </header>
   <br><br><br><br>
+
+<!------------------------------------------------------Section one ------------------------------------------------------------>
+<div class="w-full h-[90vh] bg-[#2E5077]">
+  <img src="../photos/about photos/done2.png" class="w-[1300px] h-[70vh] pt-[150px] ml-[100px]">
+  <div class="animate-bounce">
+    <h1 class="text-white font-extrabold text-[40px] flex justify-center mt-[-250px]">About Renturn</h1>
+    <p class=" text-white flex justify-center opacity-[.8] tracking-widest">Connecting communities through smart sharing solutions</p>
+  </div>
+</div>
+<!------------------------------------------------------Section two ------------------------------------------------------------>
+<div class="flex">
+  <img src="../photos/about photos/left.png" class="w-[400px] h-[70vh] ml-[200px] mt-[100px]">
+  <div class="mt-[280px] ml-[250px]">
+    <h1 class="font-extrabold mb-[10px] text-2xl">Our Story</h1>
+    <p class="w-[400px]"> It all started with a simple question: <span class="font-bold">why buy expensive items that we use once or twice a year, only to store them away?</span>
+      From ladders to carpet machines to party equipment, we realized that sharing and renting can save money, space, and resources. That’s how <span class="text-[#4B9FA6] font-bold">"Renturn"</span> was born a platform where you can rent from us or from others around you.</p>
+    </div>
+  </div>
+<!------------------------------------------------------Section three ------------------------------------------------------------>
+<div class="bg-[#F6F4F0] w-full h-[80vh] flex">
+  <div class="pt-[200px] ml-[250px]">
+    <h1 class="font-extrabold mb-[10px] text-2xl">Our Purpose</h1>
+    <p class="w-[400px]"> We exist to make life easier and more affordable. By connecting people who own items with those who need them, and by offering our own stock of useful items, we create a smarter, more sustainable way to access things without the burden of ownership.</p>
+  </div>
+  <img src="../photos/about photos/right.png" class="ml-[150px] mt-[100px]">
+</div>
+<!------------------------------------------------------Section four ------------------------------------------------------------>
+<div class="mb-[100px]">
+  <div class="ml-[670px]">
+    <h1 class="font-extrabold mb-[10px] text-2xl mt-[50px]">What We Offer</h1>
+    <p class="ml-[-190px] mb-[80px]">Our comprehensive platform connects people and businesses, making tool and equipment<br> <span class="ml-[160px]">rental simple, secure, and sustainable.</span></p>
+  </div>
+  <div class="grid grid-cols-3 grid-rows-2 ml-[100px] gap-[20px]">
+    <div class=" bg-[#F6F4F0] w-[400px] h-[300px] rounded-xl">
+      <img src="../photos/about photos/secFour1.png" class="w-[50px] h-[60px] pt-[15px] ml-[15px]">
+      <h1 class="font-bold m-[15px]">Wide Variety of Items</h1>
+      <p class="m-[15px]">We provide everything from party and event equipment to household tools and camping gear. Whatever you need for a short time, you can easily find it here.</p>
+    </div>
+    <div class=" bg-[#F6F4F0] w-[400px] h-[300px] rounded-xl">
+      <img src="../photos/about photos/secFour2.png" class="w-[50px] h-[60px] pt-[15px] ml-[15px]">
+      <h1 class="font-bold m-[15px]">Two Sources of Renting</h1>
+      <p class="m-[15px]">You can rent items directly from us or from people in the community who list their belongings on the platform. This gives users more options and more flexibility.</p>
+    </div>
+    <div class=" bg-[#F6F4F0] w-[400px] h-[300px] rounded-xl">
+      <img src="../photos/about photos/secFour3.png" class="w-[50px] h-[60px] pt-[15px] ml-[15px]">
+      <h1 class="font-bold m-[15px]">Safe & Verified Listings</h1>
+      <p class="m-[15px]">We make sure that every product listed is real, safe, and in good condition. This ensures trust between renters and owners.</p>
+    </div>
+    <div class=" bg-[#F6F4F0] w-[400px] h-[300px] rounded-xl">
+      <img src="../photos/about photos/secFour4.png" class="w-[50px] h-[60px] pt-[15px] ml-[15px]">
+      <h1 class="font-bold m-[15px]">Smart Booking & Scheduling</h1>
+      <p class="m-[15px]">You can easily check the availability of items, book them for the exact dates you need, and avoid any overlap. This makes the process smooth and stress-free.</p>
+    </div>
+    <div class=" bg-[#F6F4F0] w-[400px] h-[300px] rounded-xl">
+      <img src="../photos/about photos/secFour5.png" class="w-[50px] h-[60px] pt-[15px] ml-[15px]">
+      <h1 class="font-bold m-[15px]">Easy-to-Use Platform</h1>
+      <p class="m-[15px]">Our website is simple, fast, and user-friendly. You can browse items, book them, and manage your rentals in just a few clicks.</p>
+    </div>
+    <div class=" bg-[#F6F4F0] w-[400px] h-[300px] rounded-xl">
+      <img src="../photos/about photos/secFour6.png" class="w-[50px] h-[60px] pt-[15px] ml-[15px]">
+      <h1 class="font-bold m-[15px]">Affordable Access</h1>
+      <p class="m-[15px]">Instead of paying a large amount to buy something you’ll barely use, you can rent it for a fraction of the price. This way, everyone can access what they need.</p>
+    </div>
+  </div>
+</div>
+<!------------------------------------------------------Section five ------------------------------------------------------------>
+<div class="bg-[#4B9FA6] pb-[50px]">
+  <div class="ml-[650px]">
+    <h1 class="font-extrabold mb-[10px] text-2xl pt-[50px] text-white">What Sets Us Apart</h1>
+    <p class="ml-[-190px] mb-[80px] text-white">Our unique approach to tool and equipment rental creates an experience that stands out from<br> <span class="ml-[250px]">traditional options.</span></p>
+  </div>
+  <div class="grid grid-cols-2 grid-rows-3 gap-[50px] ml-[120px] gap-x-[0px]">
+    <div class="w-[600px] h-[150px] bg-white bg-opacity-30 rounded-lg flex"> 
+      <img src="../photos/about photos/secfive1.png" class="w-[60px] h-[60px] ml-[20px] mt-[40px]">
+      <div class="ml-[20px] mt-[20px]">
+        <h1 class="font-extrabold text-white mb-[7px]">Focus on Rarely Used Items</h1>
+        <p class="text-white">We don’t rent out everyday things; we focus on items that people usually buy once and hardly use. This makes us stand out and fill a real gap.</p>
+      </div>
+    </div>
+    <div class="w-[600px] h-[150px] bg-white bg-opacity-30 rounded-lg flex"> 
+      <img src="../photos/about photos/secfive2.png" class="w-[60px] h-[60px] ml-[20px] mt-[40px]">
+      <div class="ml-[20px] mt-[20px]">
+        <h1 class="font-extrabold text-white mb-[7px]">Hybrid Model</h1>
+      <p class="text-white">Our model combines two worlds: items we own and items listed by other users. This creates a bigger marketplace and makes the platform richer.</p>
+    </div>
+    </div>
+    <div class="w-[600px] h-[150px] bg-white bg-opacity-30 rounded-lg flex"> 
+      <img src="../photos/about photos/secfive3.png" class="w-[60px] h-[60px] ml-[20px] mt-[40px]">
+      <div class="ml-[20px] mt-[20px]">
+        <h1 class="font-extrabold text-white mb-[7px]">Community Driven</h1>
+        <p class="text-white">People are at the center of our platform. By letting everyone share their items, we build trust, cooperation, and a culture of sharing.</p>
+      </div>
+    </div>
+    <div class="w-[600px] h-[150px] bg-white bg-opacity-30 rounded-lg flex"> 
+      <img src="../photos/about photos/secfive4.png" class="w-[60px] h-[60px] ml-[20px] mt-[40px]">
+      <div class="ml-[20px] mt-[20px]">
+        <h1 class="font-extrabold text-white mb-[7px]">Eco-Friendly Approach</h1>
+        <p class="text-white">By encouraging sharing instead of buying new things, we reduce waste and support sustainability.</p>
+      </div>
+    </div>
+    <div class="w-[600px] h-[150px] bg-white bg-opacity-30 rounded-lg flex"> 
+      <img src="../photos/about photos/secfive5.png" class="w-[60px] h-[60px] ml-[20px] mt-[40px]">
+      <div class="ml-[20px] mt-[20px]">
+        <h1 class="font-extrabold text-white mb-[7px]">Anything, Anytime</h1>
+      <p class="text-white">Our platform lets you access a wide range of items whenever you need them, no limits, no hassle.</p>
+      </div>
+    </div>
+    <div class="w-[600px] h-[150px] bg-white bg-opacity-30 rounded-lg flex"> 
+      <img src="../photos/about photos/secfive6.png" class="w-[60px] h-[60px] ml-[20px] mt-[40px]">
+      <div class="ml-[20px] mt-[20px]">
+        <h1 class="font-extrabold text-white mb-[7px]">Seamless Delivery & Pickup</h1>
+        <p class="text-white">We handle delivery and pickup efficiently, so users don’t have to worry about bringing items back or picking them up.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!------------------------------------------------------Section sex ------------------------------------------------------------>
+<div class="flex mb-[50px]">
+  <img src="../photos/about photos/left2.png" class="w-[800px] h-[70vh] mt-[100px]">
+  <div class="mt-[280px] ml-[100px]">
+    <h1 class="font-extrabold mb-[10px] text-2xl">Our Vision</h1>
+    <p class="w-[400px]"> To grow from a local solution into a nationwide platform that changes how Egyptians think about ownership and access. We aim to expand across all governorates , add more categories, and strengthen our hybrid model combining our own stock with community listings  to build a culture of sharing that benefits everyone.</p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Logo + icons -->
+      <div class="footer-section">
+        <img src="../photos/Rectangle 17.png" alt="Renturn Logo" class="logo">
+       
+        <p>Your trusted partner for quality tool<br>and equipment rentals.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="privacypolicy.html">Privacy Policy</a></li>
+          <li><a href="terms&conditions.html">Terms and Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Account -->
+      <div class="footer-section">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="cart.html">Shopping Cart</a></li>
+          <li><a href="account.html">My Account</a></li>
+          <li><a href="myorders.html">My Orders</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Safety Guidelines</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="footer-contact">
+      <div>
+         
+    <p>
+      <img src="../photos/Rectangle 14.png" alt="phone" class="phone"> <strong>Didn’t find what you were looking for?</strong>
+    </p>
+        <a href="#"> Contact us</a>
+      </div>
+      <div>
+        <p> <img src="../photos/Rectangle 13.png" alt="call center" class="callcenter"> <strong> How can we help you today?</strong>
+        </p>
+        <a href="#">Help Center</a>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <div class="payment-icons">
+        <a href="#" aria-label="PayPal"><i class="fab fa-cc-paypal"></i></a>
+        <a href="#" aria-label="Apple Pay"><i class="fab fa-cc-apple-pay"></i></a>
+        <a href="#" aria-label="Visa"><i class="fab fa-cc-visa"></i></a>
+      </div>
+      <p>© 2025 Renturn. All rights reserved.</p>
+    </div>
+  </footer>
 
 <script src="../js/innerSearch.js"></script>
 </body>
