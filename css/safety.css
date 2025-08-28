@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.cen h1
+{
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    animation: antH1 2s forwards;
+}
+.cen p
+{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    animation: antP 2s forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+@keyframes antH1 {
+    0%{
+        opacity: 0;
+        transform:translateY(-8px) ;
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes antP {
+    0%{
+        opacity: 0;
+        transform:translateY(-8px) ;
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+main
+{
+    background-color: white;
+    width: 85%;
+    height: 360vh;
+    box-shadow: 0px 0px 50px rgb(179, 179, 179);
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    /* border: 1px solid #0c688d; */
+}
+main .sec1
+{
+    padding-top: 50px;
+    margin-left: 20px;
+}
+main .sec1 h1 ,.sec2 h1 , .sec3 h1 ,.sec4 h1 , .sec5 h1
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+.sec1 h2 , .sec2 h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.sec1P
+{
+    margin-left: 40px;
+}
+.sec1 .sec1Div p , .sec2 .sec2Div p
+{
+    margin-top: 5px;
+}
+.sec1 .images1
+{
+    display: flex;
+    gap: 40px;
+}
+.images1 div 
+{
+    width: 350px;
+    height: 200px;
+    background-color: white;
+    box-shadow: 0px 0px 50px rgb(179, 179, 179);
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    /* border: 1px solid #79D7BE; */
+}
+.images1 div img
+{
+    width: 60px;
+    height: 60px;
+}
+main .sec2
+{
+    margin-top: 50px;
+    margin-left: 20px;
+    
+}
+.sec2 .images2
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 30px;
+}
+.sec2 .images2 div
+{
+    width: 350px;
+    height: 200px;
+    background-color: white;
+    box-shadow: 0px 0px 50px rgb(179, 179, 179);
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 25px;
+    margin-top: 20px;
+    /* border: 1px solid #79D7BE; */
+}
+.sec3
+{
+    margin-top: 50px;
+}
+.sec3 .images3
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.sec3 .images3 .sec3Div{
+    width: 600px;
+    height: 270px;
+    background-color: white;
+    box-shadow: 0px 0px 50px rgb(179, 179, 179);
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+    padding: 20px;
+    /* border: 1px solid #79D7BE; */
+}
+.images3 .sec3Div1
+{
+    display: flex;
+    width: 400px ;
+    margin-left: 10px;
+}
+.images3 .sec3Div1 img
+{
+    width: 40px;
+    height: 40px;
+}
+.images3 .sec3Div1 h1
+{
+    margin-top: 3px;
+    margin-left: 10px;
+}
+.images3 .sec3Icon1
+{
+    display: flex;
+    margin-top: 20px;
+}
+.images3 .sec3Icon1 p
+{
+    margin-left: 10px;
+}
+.sec4{
+    margin-top: 50px;
+}
+
+.sec4 .images4
+{
+    display: flex;
+}
+.sec4 .images4 .sec4Div
+{
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0px 0px 50px rgb(179, 179, 179);
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+    padding: 20px;
+    /* border: 1px solid #79D7BE; */
+}
+.images4 .sec4Div1
+{
+    display: flex;
+    width: 400px ;
+    margin-left: 10px;
+}
+.sec4Div .sec4Div1 h1
+{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.sec4Icon1 p
+{
+    margin-left: 35px;
+}
+
+.sec4Icon1 .sec4Div1
+{
+    margin-top: 20px;
+}
+.sec4Icon1 .sec4Div1 img
+{
+    width: 15px;
+    height: 15px;
+    margin-top: 20px;
+}
+.sec4Icon1 .sec4Div1 h1
+{
+    color: #1F2937;
+    margin-left: 10px;
+}
+.sec5
+{
+    margin-top: 50px;
+}
+.sec5 .images5
+{
+    display: flex;
+    justify-content: space-around;
+}
+.images5 div
+{
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    box-shadow: 0px 0px 50px rgb(179, 179, 179);
+    margin-top: 30px;
+    border-radius: 20px;
+    padding: 20px;
+    /* border: 1px solid #79D7BE; */
+}
+.sec5 .secDiv h1
+{
+    margin-top: 10px;
+    margin-left: 0px;
+}

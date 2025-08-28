@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../photos/R logo.png" type="image.png">
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/help.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Help Center</title>
+</head>
+<body>
+    <header id="header">
+    <div class="container">
+        <div><img src="../photos/renturn logo.png" alt="logo" class="h-[55px] ml-[100px]"></div>
+        <div class="search">
+            <input class="h-[35px]"  type="text" id="search" placeholder="Search for a product" />
+            <p id="error">⚠️ Please enter a category name</p>
+            <i class="fa-solid fa-search"  onclick="validateSearch()"></i>
+        </div>
+        <nav>
+            <div class="nav-v">
+            <a href="../index.html" class="ml-[50px]">Home</a>
+            <a href="./about.html">About Us</a>
+            <!-- Dropdown Categories -->
+            <div class="dropdown">
+            <button class="dropbtn">Categories ▾</button>
+            <div class="dropdown-content">
+                <a href="./pages/electronics.html">Electronics</a>
+                <a href="./pages/tools.html">Tools</a>
+                <a href="./pages/clothes.html">Clothes</a>
+                <a href="./pages/event .html">Event Supplies</a>
+                <a href="./pages/music.html">Musical instruments</a>
+            </div>
+            </div>
+            </div>
+
+        <button class="nav-btn" onclick="window.location.href='./pages/cart.html'">
+    <i class="fa-solid fa-cart-shopping"></i>
+    </button>
+    
+    <button class="nav-btn" onclick="window.location.href='./pages/login.html'" >
+        <i class="fa-solid fa-user"></i>
+    </button>
+
+        </nav>
+    </div>
+</header>
+<br><br><br><br>
+<div class="cen">
+    <h1>Help Center</h1>
+    <p class="cenP">Find answers to all your questions about our rental platform</p>
+    <div class="search">
+        <i class="fa-solid fa-search"></i>
+        <input  type="text" id="search" placeholder="Search for answer..." />
+    </div>
+</div>
+<main>
+<section class="sec1">
+    <div class="speech">
+        <img src="../photos/safety/secOne.png">
+        <h1>Getting Started</h1>
+    </div>
+    <div class="sec1Div">
+        <h2>How do I create a new account?</h2>
+        <p>Click "Sign Up", fill in your details, and verify your email to activate the account.</p>
+    </div>
+    <div class="sec1Div">
+        <h2>How do I log in?</h2>
+        <p>Click "Log In" and enter your email, national ID and password.</p>
+    </div>
+</section>
+<section class="sec2">
+    <div class="speech">
+        <img src="../photos/safety/sec2.png">
+        <h1>Using the Platform</h1>
+    </div>
+    <div class="sec1Div">
+        <h2>Using the Platform</h2>
+        <p>Search for the product, check availability, and place a rental request.</p>
+    </div>
+    <div class="sec1Div">
+        <h2>How do I list my product for rent?</h2>
+        <p>Go to "Add Product", fill in product details, set the price, and submit for approval.</p>
+    </div>
+    <div class="sec1Div">
+        <h2>How do I search and filter products?</h2>
+        <p>Use the search bar and filters such as category, price, and location.</p>
+    </div>
+</section>
+<section class="sec3">
+    <div class="speech">
+        <img src="../photos/safety/sec3.png">
+        <h1>Payments & Pricing</h1>
+    </div>
+    <div class="sec1Div">
+        <h2>What payment methods are accepted?</h2>
+        <p>Credit/debit cards and other supported online payments.</p>
+    </div>
+    <div class="sec1Div">
+        <h2>How is rental cost calculated?</h2>
+        <p>Cost depends on rental duration, product price, and any additional fees.</p>
+    </div>
+    <div class="sec1Div">
+        <h2>Is there a security deposit?</h2>
+        <p>Some products require a deposit to cover potential damages.</p>
+    </div>
+</section>
+<section class="sec4">
+    <div class="speech">
+        <img src="../photos/safety/sec4.png">
+        <h1>Orders & Bookings</h1>
+    </div>
+    <div class="sec1Div">
+        <h2>How do I know if my booking is confirmed?</h2>
+        <p>You will receive a notification once your request is approved.</p>
+    </div>
+    <div class="sec1Div">
+        <h2>What do order statuses mean?</h2>
+        <p>Pending = under review, Confirmed = approved, Completed = rental finished.</p>
+    </div>
+</section>
+<section class="sec5">
+    <div class="speech">
+        <img src="../photos/safety/sec5.png">
+        <h1>Returns & Pickups</h1>
+    </div>
+    <div class="sec1Div">
+        <h2>How is the product picked up?</h2>
+        <p>The  delivery service picks it up at the agreed time and place.</p>
+    </div>
+    <div class="sec1Div">
+        <h2>What should I do when returning a product?</h2>
+        <p>Follow return instructions and ensure the product is in the same condition.</p>
+    </div>
+</section>
+<section class="sec6">
+    <div class="speech">
+        <img src="../photos/safety/sec6.png">
+        <h1>Trust & Safety</h1>
+    </div>
+    <div class="sec1Div">
+        <h2>How do you verify accounts?</h2>
+        <p>Accounts are verified via identity and payment checks.</p>
+    </div>
+    <div class="sec1Div">
+        <h2>How can I rent safely?</h2>
+        <p>Check reviews, communicate through the platform, and follow rental guidelines.</p>
+    </div>
+    <div class="sec1Div">
+        <h2>What happens if a product is damaged?</h2>
+        <p>Security deposits or insurance cover damages according to our policy.</p>
+    </div>
+</section>
+<section class="sec7">
+    <div class="speech">
+        <img src="../photos/safety/sec7.png">
+        <h1>Contact Support</h1>
+    </div>
+    <div class="sec1Div">
+        <h2>How can I contact support?</h2>
+        <p>Use the support link / email provided on the last section "Contact Us"</p>
+    </div>
+</section>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Logo + icons -->
+        <div class="footer-section">
+            <img src="../photos/Rectangle 17.png" alt="Renturn Logo" class="logo">
+        
+            <p>Your trusted partner for quality tool<br>and equipment rentals.</p>
+            <div class="social-icons">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="privacypolicy.html">Privacy Policy</a></li>
+            <li><a href="terms&conditions.html">Terms and Conditions</a></li>
+            </ul>
+        </div>
+
+        <!-- Account -->
+        <div class="footer-section">
+            <h4>Account</h4>
+            <ul>
+            <li><a href="cart.html">Shopping Cart</a></li>
+            <li><a href="account.html">My Account</a></li>
+            <li><a href="myorders.html">My Orders</a></li>
+            </ul>
+        </div>
+
+        <!-- Support -->
+        <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Safety Guidelines</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="footer-contact">
+        <div>
+            
+        <p>
+        <img src="../photos/Rectangle 14.png" alt="phone" class="phone"> <strong>Didn’t find what you were looking for?</strong>
+        </p>
+            <a href="#"> Contact us</a>
+        </div>
+        <div>
+            <p> <img src="../photos/Rectangle 13.png" alt="call center" class="callcenter"> <strong> How can we help you today?</strong>
+            </p>
+            <a href="#">Help Center</a>
+        </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="footer-bottom">
+        <div class="payment-icons">
+            <a href="#" aria-label="PayPal"><i class="fab fa-cc-paypal"></i></a>
+            <a href="#" aria-label="Apple Pay"><i class="fab fa-cc-apple-pay"></i></a>
+            <a href="#" aria-label="Visa"><i class="fab fa-cc-visa"></i></a>
+        </div>
+        <p>© 2025 Renturn. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
