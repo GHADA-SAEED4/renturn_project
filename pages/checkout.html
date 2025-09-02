@@ -4,20 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Renturn - Your Cart</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <link rel="stylesheet" href="../css/cart.css">
+    <title>Renturn - Checkout</title>
+    <link rel="stylesheet" href="../css/checkout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
 
-   <header id="header">
+    <header id="header">
     <div class="container">
       <div class="logo"><img src="../photos/R logo.png " alt="logo"></div>
       <div class="search">
@@ -26,7 +21,7 @@
       </div>
       <nav>
         <div class="nav-v">
-        <a href="index.html">Home</a>
+        <a href="../index.html">Home</a>
         <a href="../pages/about.html">About Us</a>
          <!-- Dropdown Categories -->
         <div class="dropdown">
@@ -42,24 +37,24 @@
 
       <button class="nav-btn" onclick="window.location='../pages/cart.html'">
   <i class="fa-solid fa-cart-shopping"></i>
-  <span class="cart-count">0</span>
 </button>
 
-<button class="nav-btn" onclick="window.location='login.html'">
+<button class="nav-btn" onclick="window.location='../pages/login.html'">
   <i class="fa-solid fa-user"></i>
 </button>
 
       </nav>
     </div>
   </header>
+
     <main class="container">
         <section class="checkout-progress">
             <ol class="progress-steps">
-                <li class="active">
+                <li>
                     <div class="step-number">1</div>
                     <span>Cart</span>
                 </li>
-                <li>
+                <li class="active">
                     <div class="step-number">2</div>
                     <span>Checkout</span>
                 </li>
@@ -75,47 +70,55 @@
         </section>
 
         <section class="cart-section">
-            <div class="cart-items">
-                <h2>Your Cart</h2>
-
-                <article class="cart-item">
-                    <img src="../photos/drill.png" alt="Electric Drill">
-                    <div class="item-details">
-                        <h3>Professional Electric Drill</h3>
-                        <p class="item-meta"><i class="fas fa-calendar-days"></i> Jan 16 - Jan 22</p>
-                        <div class="item-actions">
-                            <a href="#" class="edit">Edit</a>
-                            <a href="#" class="remove">Remove</a>
+            <div class="checkout-details">
+                <h2>Checkout Details</h2>
+                <div class="delivery-address-header">Delivery Address</div>
+                <form class="checkout-form">
+                    <div class="form-group two-columns">
+                        <div class="input-container">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName">
+                        </div>
+                        <div class="input-container">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName">
                         </div>
                     </div>
-                    <div class="item-price">
-                        <p class="price">$45.00</p>
-                        <p class="duration">per week</p>
-                    </div>
-                </article>
-
-                <article class="cart-item">
-                    <img src="../photos/circular saw.jpeg" alt="Circular Saw">
-                    <div class="item-details">
-                        <h3>Circular Saw</h3>
-                        <p class="item-meta"><i class="fas fa-calendar-days"></i> Jan 16 - Jan 21</p>
-                        <div class="item-actions">
-                            <a href="#" class="edit">Edit</a>
-                            <a href="#" class="remove">Remove</a>
+                    <div class="form-group two-columns">
+                        <div class="input-container">
+                            <label for="email">Email</label>
+                            <input type="email" id="email">
+                        </div>
+                        <div class="input-container">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone">
                         </div>
                     </div>
-                    <div class="item-price">
-                        <p class="price">$35.00</p>
-                        <p class="duration">for x days</p>
+                    <div class="form-group">
+                        <label for="streetAddress">Street Address</label>
+                        <input type="text" id="streetAddress">
                     </div>
-                </article>
+                    <div class="form-group two-columns">
+                        <div class="input-container">
+                            <label for="city">City</label>
+                            <input type="text" id="city">
+                        </div>
+                        <div class="input-container">
+                            <label for="state">State</label>
+                            <input type="text" id="state">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="specialInstructions">Special Instructions</label>
+                        <textarea id="specialInstructions"
+                            placeholder="Any special delivery or pickup instructions."></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <a href="../pages/cart.html" class="btn-back">Back to Cart</a>
+                        <a href="../pages/payment.html" class="btn-continue">Continue to Payment &rarr;</a>
 
-                <div class="cart-footer">
-                    <div class="subtotal">
-                        Subtotal: <span>$80.00</span>
                     </div>
-                    <a href="../pages/checkout.html" class="checkout-btn">Proceed to Checkout &rarr;</a>
-                </div>
+                </form>
             </div>
 
             <aside class="order-summary">
@@ -131,7 +134,7 @@
                     <div class="summary-item">
                         <div class="item-info">
                             <img src="../photos/circular saw.jpeg" alt="Circular Saw">
-                            <span class="summary-item-name">Circular Saw</span>
+                            <span class="summary-item-name">Circular Saw Set</span>
                         </div>
                         <span class="summary-item-price">35.00 EGP</span>
                     </div>
@@ -143,7 +146,11 @@
                     </div>
                     <div class="summary-line">
                         <span>Delivery Fee</span>
-                        <span>17.20 EGP</span>
+                        <span>10.00 EGP</span>
+                    </div>
+                    <div class="summary-line">
+                        <span>Tax</span>
+                        <span>7.20 EGP</span>
                     </div>
                     <div class="summary-line total">
                         <span>Total</span>
@@ -157,6 +164,7 @@
         </section>
     </main>
 
+   
    <!-- ===== Footer ===== -->
   <footer class="footer">
     <div class="footer-container">
@@ -203,7 +211,7 @@
    <div class="footer-section">
         <h4>Contact Us</h4>
         <ul>
-          <li><img src="../photos/Rectangle 14.png" alt="Phone Icon" class="phone-icon"> +201 123 4567 </li>
+          <li><img src="../photos/Rectangle 14.png " alt="Phone Icon" class="phone-icon"> +201 123 4567 </li>
           <li><img src="../photos/mail.png" alt="Email Icon" class="email-icon"> renturner@gmail.com</li>
           <br><p>follow us on social media</p><br>
            <div class="social-icons">
@@ -227,7 +235,7 @@
       <p>© 2025 Renturn. All rights reserved.</p>
     </div>
   </footer>
+
 </body>
+
 </html>
-
-
