@@ -699,7 +699,7 @@ main{
   width: 100%;
   clear: both;
   position: relative;
-  display: block;
+  display: inline-block;
   margin-top: auto;
 }
 
@@ -717,6 +717,11 @@ main{
   flex: 1 1 200px;
   margin-bottom: 20px;
   font-size: 16px;
+  display: inline-block;
+}
+.footer-section p {
+ font-size: 15px;
+  color: white;
 }
 
 .footer-section h4 {
@@ -742,15 +747,21 @@ main{
   text-decoration: underline;
 }
 
+.footer-section ul p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #A5E3D6;
+}
+
 /* Logo in footer */
 .footer .logo {
-  width: 130px;
+  width: 250px;
   margin-bottom: 6px;
 }
 
 /* Social Icons */
 .social-icons a {
-  color: #ffffff9c;
+  color: #A5E3D6;
   font-size: 20px;
   margin-right: 10px;
   transition: color 0.3s ease, transform 0.3s ease;
@@ -817,6 +828,35 @@ main{
 .payment-icons a:hover {
   color: #8ab4f8;
   transform: scale(1.2);
+}
+
+.phone-icon {
+  width: 30px;
+}
+
+.email-icon {
+  width: 30px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-contact {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
 }
 
 /* ===== Responsive ===== */
