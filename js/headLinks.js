@@ -13,9 +13,6 @@ function tools(){
 function clothes(){
     window.location.href="../pages/clothes.html"
 }
-function event(){
-    window.location.href="../pages/event.html"
-}
 function music(){
     window.location.href="../pages/music.html"
 }
