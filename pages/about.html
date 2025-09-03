@@ -17,7 +17,7 @@
   <!-- Header -->
   <header id="header">
     <div class="container">
-      <div><img src="../photos/renturn logo.png" alt="logo" class="h-[55px] ml-[100px]"></div>
+      <div onclick="Home()"><img src="../photos/renturn logo.png" alt="logo" class="h-[55px] ml-[100px]"></div>
       <div class="search">
         <input class="h-[35px]"  type="text" id="search" placeholder="Search for a product" />
         <p id="error">⚠️ Please enter a category name</p>
@@ -25,26 +25,26 @@
       </div>
       <nav>
         <div class="nav-v">
-        <a href="../index.html" class="ml-[50px]">Home</a>
-        <a href="./about.html">About Us</a>
+        <a onclick="Home()" class="ml-[50px]">Home</a>
+        <a onclick="About()">About Us</a>
         <!-- Dropdown Categories -->
         <div class="dropdown">
           <button class="dropbtn">Categories ▾</button>
           <div class="dropdown-content">
-            <a href="./pages/electronics.html">Electronics</a>
-            <a href="./pages/tools.html">Tools</a>
-            <a href="./pages/clothes.html">Clothes</a>
-            <a href="./pages/event .html">Event Supplies</a>
-            <a href="./pages/music.html">Musical instruments</a>
+            <a onclick="elec()">Electronics</a>
+            <a onclick="tools()">Tools</a>
+            <a onclick="clothes()">Clothes</a>
+            <a onclick="event()">Event Supplies</a>
+            <a onclick="music()">Musical instruments</a>
           </div>
         </div>
         </div>
 
-      <button class="nav-btn" onclick="window.location.href='./pages/cart.html'">
+      <button onclick="Cart()" class="nav-btn">
   <i class="fa-solid fa-cart-shopping"></i>
 </button>
 
-<button class="nav-btn" onclick="window.location.href='./pages/signin.html'">
+<button onclick="user()" class="nav-btn">
   <i class="fa-solid fa-user"></i>
 </button>
 
@@ -250,5 +250,6 @@
   </footer>
 
 <script src="../js/innerSearch.js"></script>
+<script src="../js/headLinks.js"></script>
 </body>
 </html>
