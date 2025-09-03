@@ -25,3 +25,16 @@ function Cart(){
 function user(){
     window.location.href="../pages/signin.html"
 }
+function privacy(){
+    window.location.href='../pages/privacypolicy.html'
+}
+function terms(){
+    window.location.href='../pages/terms&conditions.html'
+}
+function help(){
+    window.location.href='../pages/help.html'
+}
+function safety(){
+    window.location.href='../pages/safety.html'
+}
+
