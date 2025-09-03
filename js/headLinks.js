@@ -23,5 +23,5 @@ function Cart(){
     window.location.href="../pages/cart.html"
 }
 function user(){
-    window.location.href="../pages/signin"
+    window.location.href="../pages/signin.html"
 }
