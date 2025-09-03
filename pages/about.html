@@ -11,7 +11,30 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   />
-  
+  <style>
+    @keyframes antH1 {
+    0%{
+        opacity: 0;
+        transform:translateY(-8px) ;
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes antP {
+    0%{
+        opacity: 0;
+        transform:translateY(-8px) ;
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+  </style>
 </head>
 <body style="font-family: Arial, sans-serif; ">
   <!-- Header -->
@@ -55,9 +78,9 @@
 <!------------------------------------------------------Section one ------------------------------------------------------------>
 <div class="w-full h-[90vh] bg-[#2E5077]">
   <img src="../photos/about photos/done2.png" class="w-[1300px] h-[70vh] pt-[150px] ml-[100px]">
-  <div class="animate-bounce">
-    <h1 class="text-white font-extrabold text-[40px] flex justify-center mt-[-250px]">About Renturn</h1>
-    <p class=" text-white flex justify-center opacity-[.8] tracking-widest">Connecting communities through smart sharing solutions</p>
+  <div>
+    <h1 style="animation: antH1 2s forwards;" class="text-white font-extrabold text-[40px] flex justify-center mt-[-250px]">About Renturn</h1>
+    <p style="animation: antP 2s forwards; animation-delay: 1s; opacity: 0;" class=" text-white flex justify-center opacity-[.8] tracking-widest">Connecting communities through smart sharing solutions</p>
   </div>
 </div>
 <!------------------------------------------------------Section two ------------------------------------------------------------>
