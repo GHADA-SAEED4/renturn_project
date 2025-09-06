@@ -251,7 +251,19 @@ ul {
     align-items: center;
     margin-right: 8px;
     font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer; 
 }
+
+
+.step-number:hover {
+    background-color: var(--teal);   
+    color: var(--white);
+    border-color: var(--teal);
+    transform: scale(1.1);         
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
 
 .progress-steps li.active .step-number {
     background-color: var(--dark-blue);
@@ -352,6 +364,15 @@ ul {
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+
+.btn-back:hover {
+    background-color: var(--teal);
+    color: var(--white);
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
 .btn-continue {
@@ -366,6 +387,26 @@ ul {
     display: flex;
     align-items: center;
     gap: 5px;
+    transition: all 0.3s ease;
+}
+
+
+.btn-continue:hover {
+    background-color: #244160; 
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+
+@keyframes pulse-btn {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
+}
+
+
+.btn-continue {
+    animation: pulse-btn 3s infinite;
 }
 
 /* Order Summary */

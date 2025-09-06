@@ -13,63 +13,67 @@
 
 /* General Reset & Body Styling */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--off-white);
-    color: var(--text-primary);
-    line-height: 1.6;
+.container {
+  width: 90%;
+  margin: auto;
 }
+
 header {
   background: #fff;
   padding: 15px 0;
-  position: sticky;
+  position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1000;
+  z-index: 999;
   transition: top 0.4s;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 
+
 .logo img {
-  height: 45px; 
+  height: 70px; 
   margin-left: -40px;
 }
 
 
 header .container {
-  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
 }
 
 header .search {
   flex: 0.6;
-  margin: 0 20px;
+  margin: 0px 20px;
+  margin-top: 20px;
   position: relative;
-  display: flex;
-  align-items: center;
   
 }
 
 header .search input {
   width: 100%;
-  padding: 8px 35px 8px 10px;
+  padding: 8px 35px 8px 15px;
   border-radius: 20px;
   border: 1px solid #ccc;
+}
+header .search p{
+  color: red;
+  visibility:hidden;
+  font-size: 12px;
 }
 
 header .search i {
   position: absolute;
   right: 12px;
-  top: 50%;
+  top: 30%;
   transform: translateY(-50%);
   color: #3e90aa;
 }
@@ -136,7 +140,7 @@ nav {
   align-items:center;
   justify-content:center;
   cursor:pointer;
- margin-left: 15px;
+  margin-left:15px;
   transition:0.25s;
   transform: scale(1);
   gap:15px;
@@ -317,7 +321,19 @@ a {
     align-items: center;
     margin-right: 8px;
     font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer; 
 }
+
+
+.step-number:hover {
+    background-color: var(--teal);  
+    color: var(--white);
+    border-color: var(--teal);
+    transform: scale(1.1);           
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
 
 .progress-steps li.active .step-number {
     background-color: var(--dark-blue);
@@ -459,12 +475,26 @@ a {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
 .checkout-btn:hover {
-    background-color: #244160;
+    background-color: #244160;  
+    transform: scale(1.05);     
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2); 
 }
+
+@keyframes pulse {
+    0% { background-color: var(--dark-blue); }
+    50% { background-color: #2f5a85; } 
+    100% { background-color: var(--dark-blue); }
+}
+
+.checkout-btn {
+    animation: pulse 3s infinite; 
+}
+
 
 /* Order Summary */
 .order-summary {

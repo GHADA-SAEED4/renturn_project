@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Renturn - Login</title>
-  <link rel="stylesheet" href="signin.css" />
+  <link rel="stylesheet" href="../CSS/signin.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
     <main class="main-container">
     <div class="logo-bg">
-      <img src="photos/Image.png" alt="big-logo">
+      <img src="../photos/Image.png" alt="big-logo">
     </div>
     <div class="form-container">
         <h2>Welcome Back</h2>
@@ -42,7 +42,7 @@
                 <label class="remember">
                     <input type="checkbox" id="remember"> Remember me
                 </label>
-                <a href="forgetpass.html" class="forgot-link">Forgot Password?</a>
+                <a href="./forgetpass.html" class="forgot-link">Forgot Password?</a>
             </div>
             <div id="forgotModal" class="modal">
                 <div class="modal-content">
@@ -60,12 +60,32 @@
                         <button class="btn-secondary" id="cancelBtn">Cancel</button>
                     </div>
                 </div>
+                <!-- OTP Modal -->
+<div id="otpModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>OTP</h2>
+    <p class="modal-subtitle">Please check your email and enter the OTP code</p>
+    <div class="input-group">
+      <label>Enter OTP</label>
+      <div class="input-box">
+        <i class="fa-solid fa-key"></i>
+        <input type="text" placeholder="Enter OTP" maxlength="6" required>
+      </div>
+    </div>
+    <div class="modal-buttons">
+      <button class="btn-primary" id="verifyOtpBtn">Verify</button>
+      <button class="btn-secondary" id="cancelOtpBtn">Cancel</button>
+    </div>
+  </div>
+</div>
             </div>
-            <button type="submit" class="btn">Sign In</button>
-            <p class="signup">Don’t have an account? <a href="signup.html">Sign up</a></p>
+            <button type="submit" class="btn" onclick="window.location.href='../index.html'">Sign In</button>
+            <p class="signup">Don’t have an account? <a href="./signup.html">Sign up</a></p>
         </form>
     </div>
 </main>
-  <script src="errors.js"></script>
+  <script src="../js/errors.js"></script>
 </body>
 </html>
+

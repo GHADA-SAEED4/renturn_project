@@ -204,24 +204,40 @@ nav {
   text-align: center;
 }
  
-.rentals h2{
+.rentals h2 {
   color: #105b79;
   font-size: 29px;
   margin-bottom: 10px;
   font-weight: 600;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease-out forwards;
 }
+
+/* Animation Keyframes */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .rentals p{
-  color:  #4da1a9;
+  color:  #2d2f2f;
   font-size: 15px;
 }
- 
-/* ===== Music Button ===== */
+
+/* ===== music Button ===== */
 .music-btn {
   position: absolute;
   left: 0;
   transform: translateX(70%);
   background:#57cfcf5f;  
-  color:  #0f455a;
+  color: #1c6e76;
   border: none;
   padding: 8px 20px;
   border-radius: 15px;
@@ -230,30 +246,12 @@ nav {
   cursor: pointer;
   font-weight: 500;
   transition: 0.3s;
- 
+  
 }
- 
+
 .music-btn:hover {
   background: #256674;
 }
-  /* responsive for small screens */
- 
-@media (max-width: 900px) {
-  .rental-top {
-    flex-direction: column;
-    gap: 10px;
-  }
- 
-  .rental-top h2 {
-    font-size: 20px; 
-  }
- 
-  .music-btn{
-    font-size: 12px;
-    padding: 6px 15px;
-  }
-}
- 
 /* products section */
 .products {
   display: grid;

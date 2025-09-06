@@ -1,57 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Renturn - Your Cart</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <link rel="stylesheet" href="../css/cart.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Renturn</title>
+  <link rel="stylesheet" href="../CSS/cart.css"/>
+  <link rel="icon" href="./photos/renturn logo.png" type="image.png">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+  
 </head>
-
 <body>
-
-   <header id="header">
+  <!-- Header -->
+  <header id="header">
     <div class="container">
-      <div class="logo"><img src="../photos/R logo.png " alt="logo"></div>
+      <div class="logo"><img src="../photos/renturn logo.png" alt="logo"></div>
       <div class="search">
-        <input type="text" placeholder="Search for a product" />
-        <i class="fa-solid fa-search"></i>
+        <input  type="text" id="search" placeholder="Search for a product" />
+        <p id="error">⚠️ Please enter a category name</p>
+        <i class="fa-solid fa-search" onclick="validateSearch()"></i>
       </div>
       <nav>
         <div class="nav-v">
-        <a href="index.html">Home</a>
-        <a href="../pages/about.html">About Us</a>
-         <!-- Dropdown Categories -->
+        <a href="../index.html">Home</a>
+        <a href="./about.html">About Us</a>
+        <!-- Dropdown Categories -->
         <div class="dropdown">
           <button class="dropbtn">Categories ▾</button>
           <div class="dropdown-content">
-            <a href="../pages/electronics.html">Electronics</a>
-            <a href="../pages/tools.html">Tools</a>
-            <a href="../pages/clothes.html">Clothes</a>
-              <a href="../pages/music.html">Musical instruments</a>
+            <a href="./electronics.html">Electronics</a>
+            <a href="./tools.html">Tools</a>
+            <a href="./clothes.html">Clothes</a>
+            <a href="./music.html">Musical instruments</a>
           </div>
         </div>
         </div>
 
-      <button class="nav-btn" onclick="window.location='../pages/cart.html'">
+      <button class="nav-btn" onclick="window.location.href='./cart.html'">
   <i class="fa-solid fa-cart-shopping"></i>
-  <span class="cart-count">0</span>
 </button>
 
-<button class="nav-btn" onclick="window.location='login.html'">
+<button class="nav-btn" onclick="window.location.href='./signin.html'">
   <i class="fa-solid fa-user"></i>
 </button>
 
       </nav>
     </div>
   </header>
+  <br><br><br><br><br><br><br>
+
     <main class="container">
         <section class="checkout-progress">
             <ol class="progress-steps">
@@ -95,9 +94,9 @@
                 </article>
 
                 <article class="cart-item">
-                    <img src="../photos/circular saw.jpeg" alt="Circular Saw">
+                    <img src="../photos/Camera.jpeg" alt="Camera">
                     <div class="item-details">
-                        <h3>Circular Saw</h3>
+                        <h3>Camera</h3>
                         <p class="item-meta"><i class="fas fa-calendar-days"></i> Jan 16 - Jan 21</p>
                         <div class="item-actions">
                             <a href="#" class="edit">Edit</a>
@@ -130,8 +129,8 @@
                     </div>
                     <div class="summary-item">
                         <div class="item-info">
-                            <img src="../photos/circular saw.jpeg" alt="Circular Saw">
-                            <span class="summary-item-name">Circular Saw</span>
+                            <img src="../photos/Camera.jpeg" alt="Camera">
+                            <span class="summary-item-name">Camera</span>
                         </div>
                         <span class="summary-item-price">35.00 EGP</span>
                     </div>
@@ -172,10 +171,10 @@
       <div class="footer-section">
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="privacypolicy.html">Privacy Policy</a></li>
-          <li><a href="terms&conditions.html">Terms and Conditions</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./privacypolicy.html">Privacy Policy</a></li>
+          <li><a href="./termsandconditions.html">Terms and Conditions</a></li>
         </ul>
       </div>
 
@@ -183,9 +182,9 @@
       <div class="footer-section">
         <h4>Account</h4>
         <ul>
-          <li><a href="cart.html">Shopping Cart</a></li>
-          <li><a href="account.html">My Account</a></li>
-          <li><a href="myorders.html">My Orders</a></li>
+          <li><a href="../pages/cart.html">Shopping Cart</a></li>
+          <li><a href="../pages/signin.html">My Account</a></li>
+        
         </ul>
       </div>
 
@@ -193,9 +192,9 @@
       <div class="footer-section">
         <h4>Support</h4>
         <ul>
-          <li><a href="#">Help Center</a></li>
-          <li><a href="#">Safety Guidelines</a></li>
-          <li><a href="#">Terms of Service</a></li>
+          <li><a href="./help.html.html">Help Center</a></li>
+          <li><a href="./safety.html.html">Safety Guidelines</a></li>
+          
         </ul>
       </div>
     
@@ -227,7 +226,7 @@
       <p>© 2025 Renturn. All rights reserved.</p>
     </div>
   </footer>
+  
+  <script src="../js/cart.js"></script>
 </body>
 </html>
-
-

@@ -261,7 +261,7 @@ background: linear-gradient(135deg, #4da1a966,
 }
 
 .modal-content h2 {
-  color: #ddd; 
+  color: #2E5077; 
   margin-bottom: 10px;
 }
 
@@ -269,7 +269,7 @@ form label {
   font-size: 14px;
   display: block;
   margin: 10px 0 5px;
-  color: #ddd;
+  color: #2E5077;
 }
 
 
@@ -353,4 +353,25 @@ form label {
   font-size: 12px;
   margin-top: 4px;
   display: none;
+}
+ 
+#otpModal .modal-content h2 {
+  text-align: center;
+  font-size: 22px;
+  color: #2E5077;
+}
+
+#otpModal .modal-subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center;
+  font-style: italic;
+}
+
+#otpModal .input-box input {
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 4px; /* يخلي OTP متباعد */
+  font-weight: bold;
 }

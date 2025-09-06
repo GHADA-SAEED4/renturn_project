@@ -74,3 +74,31 @@ window.addEventListener("click", function(e) {
     modal.style.display = "none";
   }
 });
+
+
+// OTP Modal
+const otpModal = document.getElementById("otpModal");
+const cancelOtpBtn = document.getElementById("cancelOtpBtn");
+const closeBtns = document.querySelectorAll(".close");
+
+// افتح المودال بعد ما يتبعت reset (مثال)
+document.querySelector("#forgotModal .btn-primary").addEventListener("click", function(e) {
+  e.preventDefault();
+  otpModal.style.display = "flex";
+});
+
+// اقفال المودال
+cancelOtpBtn.onclick = function () {
+  otpModal.style.display = "none";
+};
+closeBtns.forEach(btn => {
+  btn.onclick = function () {
+    btn.parentElement.parentElement.style.display = "none";
+  };
+});
+
+document.getElementById("verifyOtpBtn").addEventListener("click", function () {
+  window.location.href ="./forgetpass.html"; 
+});
+
+

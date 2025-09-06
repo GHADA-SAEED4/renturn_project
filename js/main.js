@@ -71,5 +71,56 @@ let currentSlide = 0;
 const slides = document.querySelectorAll(".hero .slide");
 const dotsContainer = document.querySelector(".hero .dots");
 
+  
+// ---------------- عرض الكاتيجوريز في الجدول ----------------
+document.addEventListener("DOMContentLoaded", async () => {
+  try {
+    const categories = await API.getCategories();
+    console.log("Categories from API:", categories);
 
-                    
+    // نجيب tbody بتاع الجدول
+    const tableBody = document.querySelector("#userTable");
+    tableBody.innerHTML = ""; // نمسح أي داتا قديمة
+
+    categories.forEach((cat) => {
+      const row = document.createElement("tr");
+
+      row.innerHTML = `
+        <td>#${cat.id}</td>
+        <td>${cat.name}</td>
+        <td>${cat.productsCount || 0}</td>
+        <td class="status">
+          <button class="${cat.active ? "active-button" : "inactive-button"}">
+            ${cat.active ? "Active" : "Inactive"}
+          </button>
+        </td>
+        <td class="actions">
+          <button class="edit-btn"><img src="../photos/edit.png" alt="Edit" /></button>
+          <button class="delete-btn" data-id="${cat.id}"><img src="../photos/trash.png" alt="Delete" /></button>
+        </td>
+      `;
+
+      tableBody.appendChild(row);
+    });
+
+  } catch (err) {
+    console.error("Error loading categories:", err);
+    alert("في مشكلة في تحميل الكاتيجوريز 🚨");
+  }
+});
+
+// نربط زرار الـ delete بالـ API
+row.querySelector(".delete-btn").addEventListener("click", async (e) => {
+  const id = e.currentTarget.dataset.id;
+
+  if (confirm("هل أنت متأكد أنك عايز تمسح الكاتيجوري دي؟")) {
+    try {
+      await API.deleteCategory(id); // ننده على الـ API
+      row.remove(); // نشيل الصف من الجدول مباشرة
+      alert("تم مسح الكاتيجوري ✅");
+    } catch (err) {
+      console.error("Error deleting category:", err);
+      alert("حصل خطأ أثناء مسح الكاتيجوري 🚨");
+    }
+  }
+});
