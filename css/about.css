@@ -26,21 +26,22 @@ header {
 
 .logo img {
   height: 70px; 
+  width: 150px;
   margin-left: -40px;
 }
 
 
 header .container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-left: 150px;
 }
 
 header .search {
-  flex: 0.6;
   margin: 0px 20px;
   margin-top: 20px;
+  margin-right: 100px;
   position: relative;
+  width: 600px;
   
 }
 
@@ -260,32 +261,27 @@ body {
   animation: bounce 2s infinite;
 }
 
-.header-banner h1 {
-  font-size: 45px;
-  font-weight: 800;
-  color: #fff;
-  margin-bottom: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.title h1
+{
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    animation: antH1 2s forwards;
+    color: white;
+}
+.title p
+{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    animation: antP 2s forwards;
+    animation-delay: 1s;
+    opacity: 0;
+    color: white;
 }
 
-.header-banner p {
-  color: #fff;
-  opacity: 0.8;
-  letter-spacing: 3px;
-    font-size: 18px;
-    font-family: initial;
-  
-}
-
-/* Bounce animation */
-@keyframes bounce {
-  0%, 100% {
-    transform: translate(-50%, 0);
-  }
-  50% {
-    transform: translate(-50%, -15px);
-  }
-}
 
 /* ========== Section Two (Our Story) ========== */
 .section-story {
@@ -667,7 +663,28 @@ main{
 .email-icon {
   width: 30px;
 }
- 
+@keyframes antH1 {
+    0%{
+        opacity: 0;
+        transform:translateY(-8px) ;
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes antP {
+    0%{
+        opacity: 0;
+        transform:translateY(-8px) ;
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
   .cards {

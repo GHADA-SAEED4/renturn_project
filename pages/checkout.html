@@ -17,8 +17,9 @@
     <div class="container">
       <div class="logo"><img onclick="Home()" src="../photos/renturn logo.png" alt="logo"></div>
       <div class="search">
-        <input type="text" placeholder="Search for a product" />
-        <i class="fa-solid fa-search"></i>
+        <input  type="text" id="search" placeholder="Search for a product" />
+        <p id="error">⚠️ Please enter a category name</p>
+        <i class="fa-solid fa-search" onclick="validateSearch()"></i>
       </div>
       <nav>
         <div class="nav-v">
@@ -238,6 +239,7 @@
   </footer>
   
 <script src="../js/headLinks.js"></script>
+<script src="../js/innerSearch.js"></script>
 </body>
 
 </html>

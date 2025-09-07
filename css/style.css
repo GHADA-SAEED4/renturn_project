@@ -26,21 +26,22 @@ header {
 
 .logo img {
   height: 70px; 
+  width: 150px;
   margin-left: -40px;
 }
 
 
 header .container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-left: 150px;
 }
 
 header .search {
-  flex: 0.6;
   margin: 0px 20px;
   margin-top: 20px;
+  margin-right: 100px;
   position: relative;
+  width: 600px;
   
 }
 
