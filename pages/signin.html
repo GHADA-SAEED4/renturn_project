@@ -20,20 +20,20 @@
         <form id="loginForm" novalidate>
             <div class="input-group">
                 <label>Email Address</label>
-                <input type="text" id="email" placeholder="Enter your email">
+                <input type="text" name="email" id="email" placeholder="Enter your email">
                 <i class="fa-solid fa-envelope"></i>
                 <small class="error-message"></small>
             </div>
             
             <div class="input-group">
                 <label>National ID</label>
-                <input type="text" id="nationalID" placeholder="Enter your National ID">
+                <input type="text" name="national ID " id="nationalId" placeholder="Enter your National ID">
                 <i class="fa-solid fa-id-card"></i>
                 <small class="error-message"></small>
             </div>
             <div class="input-group">
                 <label>Password</label>
-                <input type="password" id="password" placeholder="Enter your Password">
+                <input type="text" name="password"  id="password" placeholder="Enter your Password">
                 <i class="fa-solid fa-lock"></i>
                 <i class="fa fa-eye"></i>
                 <small class="error-message"></small>
@@ -81,12 +81,13 @@
   </div>
 </div>
             </div>
-            <button id="signin" type="submit" class="btn" onclick="window.location.href='../index.html'">Sign In</button>
+            <button id="signin" type="submit" class="btn">Sign In</button>
             <p class="signup">Don’t have an account? <a href="./signup.html">Sign up</a></p>
         </form>
     </div>
 </main>
-  <script src="../js/errors.js"></script>
+<p id="result"></p>
+  <!-- <script src="../js/errors.js"></script> -->
   <script src="../js/signin.js"></script>
 </body>
 </html>
