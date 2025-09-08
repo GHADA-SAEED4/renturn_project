@@ -325,7 +325,7 @@ background: rgba(255,255,255,0.2);
     color: #fff;
     border: none;
     padding: 8px 12px;
-    margin: 14px;
+    margin: 5px;
     margin-right: 50px;
     border-radius: 5px;
     cursor: pointer;
@@ -550,4 +550,161 @@ th {
   border-radius: 3px;
 }
 
-  
+/* --------------------------form add user--------------------------------------- */
+.user{
+  display: none;
+  position: absolute;
+  background-color:#EBEBEB;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgb(150, 150, 150);
+  width: 500px;
+  height: 680px;
+  top:30%;
+  left: 37%;
+  padding-left: 50px;
+}
+.user .xSign
+{
+  width: 20px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 410px;
+}
+.user .first
+{
+  display: flex;
+}
+.user .label 
+{
+  color: #1D3D63;
+  font-size: 20px;
+  font-weight: bold;
+}
+.user h6
+{
+  color: #1D3D63;
+  font-size: 20px;
+  font-weight: bold;
+}
+.user .input1
+{
+  width: 200px;
+  height: 35px;
+  border: solid 1px rgb(170, 170, 170);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 15px;
+}
+.user .input , .inputP 
+{
+  width: 400px;
+  height: 35px;
+  border: solid 1px rgb(170, 170, 170);
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-left: 40px;
+  margin-top: 15px;
+}
+.user .input ::placeholder
+{
+  margin-left: 20px;
+}
+.user div
+{
+  margin-top: 10px;
+}
+.first .fDiv2
+{
+  margin-left: 10px;
+}
+.user div
+{
+  position: relative;
+}
+.user div i
+{
+  color: gray;
+  position: absolute;
+  top:50px;
+  left: 10px;
+}
+.pass i:not(.fa-lock) {
+  display: none;
+  margin-left: 350px ;
+  right: 20px;
+  cursor: pointer;
+}
+
+.pass .inputP:focus ~ p {
+  display: block;
+}
+
+.pass p
+{
+  font-size: 12px;
+  color: gray;
+  display: none;
+}
+.role
+{
+  margin-left: 10px;
+}
+.role h6 , .status h6
+{
+  letter-spacing: 1px;
+}
+.role input , .status input
+{
+  margin-left: 40px;
+  margin-top: 10px;
+}
+.status
+{
+  margin-left: 80px;
+}
+.user .button
+{
+  margin-top: 40px;
+  margin-left: 80px;
+  background-color: #0a3757;
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+}
+.user .button:hover
+{
+  cursor: pointer;
+  background-color: #0a3757e2;
+  transform: translateY(-3px);
+  transition: .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.user .radio
+{
+  display: flex;
+}
