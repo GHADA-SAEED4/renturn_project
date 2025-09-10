@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إدارة المستخدمين</title>
+    <link rel="stylesheet" href="../css/adminpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../photos/R logo.png"> 
+    <style>
+      body {
+        direction: rtl;
+        text-align: right;
+      }
+    </style>
+</head>
+<body>
+      <header id="header">
+        <div class="container">
+          <div class="logo"><img src="../photos/renturn logo.png" alt="logo"></div>
+          <div class="search">
+            <input type="text" placeholder="ابحث عن منتج" />
+            <i class="fa-solid fa-search"></i>
+          </div>
+          <nav>
+            <div class="nav-v">         
+              <a href="../index.html">الرئيسية</a>
+              <a href="../pages/about.html"> من نحن؟</a>
+              <!-- Dropdown Categories -->
+              <div class="dropdown">
+                <button class="dropbtn">الفئات ▾</button>
+                <div class="dropdown-content">
+                  <a href="../pages/electronics.html">إلكترونيات</a>
+                  <a href="../pages/tools.html">أدوات</a>
+                  <a href="../pages/clothes.html">ملابس</a>
+                  <a href="../pages/music.html">آلات موسيقية</a>
+                </div>
+              </div>
+            </div>
+            <button class="nav-btn" onclick="window.location='../pages/cart.html'">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <button class="nav-btn" onclick="window.location='../pages/login.html'">
+              <i class="fa-solid fa-user"></i>
+            </button>
+
+            <button class="nav-btn" id="langToggle">
+              <i class="fa-solid fa-globe"></i>
+            </button>
+          </nav>
+        </div>
+      </header>
+
+    <!-- Sidebar -->
+  <div class="sidebar">
+<div class="profile-container">
+    <img src="../photos/adminprofile.png" alt="Admin Profile" class="admin-profile">
+<h3>الملف الشخصي للمسؤول</h3>
+<p>الاسم الكامل :</p>
+<b>سارة عمرو</b> 
+<p>البريد الإلكتروني :</p>
+<b>📧 sara@email.com</b>
+<p>رقم الهاتف :</p>
+<b>📞 +20 100 715 519</b>
+
+<button class="edit"><img src="../photos/svg.png" alt="Edit Profile" /> تعديل الملف</button>
+<button class="logout"><img src="../photos/Vector.png" alt="Logout" /> تسجيل الخروج</button>
+
+</div>
+<div class="menu">
+<a href="#" class="active"><img src="../photos/users-icon.png" alt="users-icon"> المستخدمين</a>
+<a href="../pages/catemanagement.html"><img src="../photos/categories-icon.png" alt="categories-icon"> التصنيفات</a>
+<a href="../pages/userproductsman.html"><img src="../photos/products-icon.png" alt="products-icon"> المنتجات</a>
+<a href="../pages/paymentman.html"><img src="../photos/payment-icon.png" alt="payment-icon"> طرق الدفع</a>
+<a href="../pages/activerentals.html"><img src="../photos/activerentals.png" alt="active-rentals-icon"> الإيجارات النشطة</a>
+</div>
+</div>
+
+<!-- Main Content -->
+  <div class="main">
+    <div class="topbar">
+      <h2>إدارة المستخدمين</h2>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <div style="display: flex; flex-direction: column;">
+          <p>المسؤولين</p>
+          <h3>5</h3>
+        </div>
+        <img src="../photos/admins.png" alt="">
+      </div>
+      <div class="stat">
+        <div style="display: flex; flex-direction: column;">
+          <p>إجمالي المستخدمين</p>
+          <h3>30</h3>
+        </div>
+        <img src="../photos/total-users.png" alt="users-icon">
+      </div>
+      <div class="stat">
+        <div style="display: flex; flex-direction: column;">
+          <p>المستخدمين النشطين</p>
+          <h3>17</h3>
+        </div>
+        <img src="../photos/activeusers.png" alt="">
+      </div>
+      <div class="stat">
+        <div style="display: flex; flex-direction: column;">
+          <p>المستخدمين غير النشطين</p>
+          <h3>13</h3>
+        </div>
+        <img src="../photos/inactive.png" alt="">
+      </div>
+    </div>
+
+    <button class="add-user-btn"><img src="../photos/plus.png" alt="Add User Icon" /> إضافة مستخدم</button>
+  <!-- users-toolbar -->
+  <div class="users-toolbar">
+    <h3>المستخدمين</h3>
+    <div class="search-box">
+         <input type="text" placeholder="ابحث عن مستخدم" />
+        <i class="fa-solid fa-search"></i>
+      </div>
+              <div class="dropdown-filter">
+         <button class="filterbtn"><img src="../photos/filter.png" alt="">تصفية</button>
+          <div class="dropdown-content-filter">
+            <a>مسؤول</a>
+            <a>مستخدم</a>
+            <a>نشط</a>
+            <a>غير نشط</a>
+            </div>
+    </div>
+  </div>
+  <!-- users-table -->
+   <table>
+      <thead>
+        <tr>
+          <th>رقم المستخدم</th>
+          <th>الاسم</th>
+          <th>البريد الإلكتروني</th>
+          <th>الهاتف</th>
+          <th>الدور</th>
+          <th>الحالة</th>
+          <th>إجراءات</th>
+        </tr>
+      </thead>
+       <tbody id="userTable">
+        <tr>
+          <td>#001</td>
+          <td>Jane Doe</td>
+          <td>jane.doe@gmail.com</td>
+          <td>01745736895</td>
+          <td>مسؤول</td>
+          <td class="status active"><button class="active-button">نشط</button></td>
+          <td class="actions">
+            <button class="edit-btn">تعديل</button>
+            <button class="delete-btn">حذف</button>
+            <button class="view">عرض</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>#002</td>
+          <td>William Smith</td>
+          <td>William.smith@gmail.com</td>
+          <td>01748736825</td>
+          <td>مسؤول</td>
+          <td class="status active"><button class="inactive-button">غير نشط</button></td>
+          <td class="actions">
+            <button class="edit-btn">تعديل</button>
+            <button class="delete-btn">حذف</button>
+            <button class="view">عرض</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>#003</td>
+          <td>David Brown</td>
+          <td>David@gmail.com</td>
+          <td>01745736895</td>
+          <td>مستخدم</td>
+          <td class="status active"><button class="active-button">نشط</button></td>
+          <td class="actions">
+            <button class="edit-btn">تعديل</button>
+            <button class="delete-btn">حذف</button>
+            <button class="view">عرض</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>#004</td>
+          <td>Tom Holland</td>
+          <td>tom.holland@gmail.com</td>
+          <td>01745736895</td>
+          <td>مسؤول</td>
+          <td class="status active"><button class="active-button">نشط</button></td>
+          <td class="actions">
+            <button class="edit-btn">تعديل</button>
+            <button class="delete-btn">حذف</button>
+            <button class="view">عرض</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>#005</td>
+          <td>Sarah Wilson</td>
+          <td>Sarah.wilson@gmail.com</td>
+          <td>01745736895</td>
+          <td>مسؤول</td>
+          <td class="status active"><button class="inactive-button">غير نشط</button></td>
+          <td class="actions">
+            <button class="edit-btn">تعديل</button>
+            <button class="delete-btn">حذف</button>
+            <button class="view">عرض</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>#006</td>
+          <td>Laila Ahmed</td>
+          <td>laila@gmail.com</td>
+          <td>01745736895</td>
+          <td>مسؤول</td>
+          <td class="status active"><button class="active-button">نشط</button></td>
+          <td class="actions">
+            <button class="edit-btn">تعديل</button>
+            <button class="delete-btn">حذف</button>
+            <button class="view">عرض</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>#007</td>
+          <td>Mike Johnson</td>
+          <td>sami@gmail.com</td>
+          <td>01745736895</td>
+          <td>مسؤول</td>
+          <td class="status active"><button class="inactive-button">غير نشط</button></td>
+          <td class="actions">
+            <button class="edit-btn">تعديل</button>
+            <button class="delete-btn">حذف</button>
+            <button class="view">عرض</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>#008</td>
+          <td>Youmna Yasser</td>
+          <td>youmna@gmail.com</td>
+          <td>01745736895</td>
+          <td>مستخدم</td>
+          <td class="status active"><button class="active-button">نشط</button></td>
+          <td class="actions">
+            <button class="edit-btn">تعديل</button>
+            <button class="delete-btn">حذف</button>
+            <button class="view">عرض</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>#009</td>
+          <td>Jana Ahmed</td>
+          <td>jana@gmail.com</td>
+          <td>01745736895</td>
+          <td>مسؤول</td>
+          <td class="status active"><button class="active-button">نشط</button></td>
+          <td class="actions">
+            <button class="edit-btn">تعديل</button>
+            <button class="delete-btn">حذف</button>
+            <button class="view">عرض</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>#010</td>
+          <td>Ziad Omar</td>
+          <td>ziad.omar@gmail.com</td>
+          <td>01745736895</td>
+          <td>مستخدم</td>
+          <td class="status active"><button class="active-button">نشط</button></td>
+          <td class="actions">
+            <button class="edit-btn">تعديل</button>
+            <button class="delete-btn">حذف</button>
+            <button class="view">عرض</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>#011</td>
+          <td>Abdelrahman Ahmed</td>
+          <td>Abdelrahman@gmail.com</td>
+          <td>01745736895</td>
+          <td>مسؤول</td>
+          <td class="status active"><button class="active-button">نشط</button></td>
+          <td class="actions">
+            <button class="edit-btn">تعديل</button>
+            <button class="delete-btn">حذف</button>
+            <button class="view">عرض</button>
+          </td>
+        </tr>
+
+      </tbody>
+  </table>
+     <!-- pagination -->
+  <div class="pagination">
+      <button class="prev">السابق</button>
+      <button class="active">1</button>
+      <button>2</button>
+      <button>3</button>
+      <button class="prev">التالي</button>
+    </div>
+   </div>
+
+
+  <script>
+    //  delete action
+    document.querySelectorAll('.delete-btn').forEach(btn => {
+      btn.addEventListener('click', function(){
+        this.closest('tr').remove();
+      });
+    });
+  </script>
+<script src="../../lang.js"></script> 
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ادوات</title>
+    <link rel="stylesheet" href="../CSS/tools.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<body dir="rtl">
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div class="logo"><img src="../photos/renturn logo.png" alt="logo"></div>
+      <div class="search">
+        <input type="text" id="search" placeholder="ابحث عن منتج" />
+        <p id="error">⚠️ من فضلك أدخل اسم الفئة</p>
+        <i class="fa-solid fa-search" onclick="validateSearch()"></i>
+      </div>
+      <nav>
+        <div class="nav-v">
+          <a href="../index.html">الرئيسية</a>
+          <a href="./pages/about.html">من نحن؟</a>
+          <!-- Dropdown Categories -->
+          <div class="dropdown">
+            <button class="dropbtn">الفئات ▾</button>
+            <div class="dropdown-content">
+              <a href="./electronics.html">الإلكترونيات</a>
+              <a href="./tools.html">الأدوات</a>
+              <a href="./clothes.html">الملابس</a>
+              <a href="./music.html">الآلات الموسيقية</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="nav-btn" onclick="window.location.href='./cart.html'">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+
+        <button class="nav-btn" onclick="window.location.href='./signin.html'">
+          <i class="fa-solid fa-user"></i>
+        </button>
+
+        <button class="nav-btn" id="langToggle" >
+          <i class="fa-solid fa-globe"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <br><br><br><br><br>
+
+    <section class="rentals">
+        <div class="rental-top">
+            <button class="tools-btn">أدوات</button>
+            <h2>استكشف مجموعتنا للإيجار</h2>
+        </div>
+        <p>اكتشف مجموعة واسعة من الأدوات المتاحة للإيجار بأسعار مناسبة.</p>
+    </section>
+
+    <!-- قسم المنتجات -->
+    <section class="products">
+        <div class="product-card" data-url="../pages/products/tools/ladder/ladder.html">
+            <img src="../photos/ladder.jpeg" alt="سلم">
+            <h3>سلم</h3>
+            <p>مثالي للوصول إلى الأماكن العالية.</p>
+            <span class="price">100جنيه/اليوم</span>
+            <button class="rent-btn">أضف إلى السلة</button>
+        </div>
+
+        <div class="product-card" data-url="../pages/products/tools/drill/drill.html">
+            <img src="../photos/drill.png" alt="مثقاب">
+            <h3>مثقاب احترافي</h3>
+            <p>مثقاب سهل الاستخدام مع عدة رؤوس متعددة.</p>
+            <span class="price">200جنيه/اليوم</span>
+            <button class="rent-btn">أضف إلى السلة</button>
+        </div>
+
+        <div class="product-card" data-url="../pages/products/tools/drill/drill.html">
+            <img src="../photos/wall painting.avif" alt="لوحات حائطية">
+            <h3>لوحات حائطية</h3>
+            <p>لوحات مثالية لتزيين المنزل.</p>
+            <span class="price">50جنيه/اليوم</span>
+            <button class="rent-btn">أضف إلى السلة</button>
+        </div>
+
+        <div class="product-card" data-url="../pages/products/tools/bike/bike.html">
+            <img src="../photos/bike.png" alt="دراجة">
+            <h3>دراجة</h3>
+            <p>دراجة محمولة بأداء ممتاز.</p>
+            <span class="price">70جنيه/اليوم</span>
+            <button class="rent-btn">أضف إلى السلة</button>
+        </div>
+
+        <div class="product-card" data-url="../pages/products/tools/tent/tent.html">
+            <img src="../photos/tent.png" alt="خيمة">
+            <h3>خيمة للتخييم</h3>
+            <p>خيمة واسعة للمغامرات الخارجية.</p>
+            <span class="price">100جنيه/اليوم</span>
+            <button class="rent-btn">أضف إلى السلة</button>
+        </div>
+
+        <div class="product-card" data-url="../pages/products/tools/geometry-instruments/geometry-instruments.html">
+            <img src="../photos/screwdriver.jpg" alt="أدوات قياس">
+            <h3>أدوات قياس</h3>
+            <p>أدوات أساسية للقياسات الدقيقة.</p>
+            <span class="price">50جنيه/اليوم</span>
+            <button class="rent-btn">أضف إلى السلة</button>
+        </div>
+
+        <div class="product-card" data-url="../pages/products/tools/painting-tools/painting-tools.html">
+            <img src="../photos/Painting tools.jpg" alt="أدوات طلاء">
+            <h3>أدوات الطلاء</h3>
+            <p>أدوات عالية الجودة لجميع احتياجات الطلاء الخاصة بك.</p>
+            <span class="price">150جنيه/اليوم</span>
+            <button class="rent-btn">أضف إلى السلة</button>
+        </div>
+
+        <div class="product-card" data-url="../pages/products/tools/woodworking-tools/woodworking-tools.html">
+            <img src="../photos/Woodworking tools.jpg" alt="أدوات نجارة">
+            <h3>أدوات نجارة</h3>
+            <p>مثالية لجميع مشاريع النجارة الخاصة بك.</p>
+            <span class="price">150جنيه/اليوم</span>
+            <button class="rent-btn">أضف إلى السلة</button>
+        </div>
+    </section>
+
+    <!-- الصفحات -->
+    <ul class="pagination">
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">...</a></li>
+    </ul>
+
+ <!-- Footer  -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Logo + icons -->
+      <div class="footer-section">
+        <img src="../photos/Rectangle 17.png" alt="Renturn" class="logo">
+        <p>شريكك الموثوق لتأجير الأدوات <br> والمعدات بجودة عالية.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="./index.html">الرئيسية</a></li>
+          <li><a href="./pages/about.html">من نحن؟</a></li>
+          <li><a href="./pages/privacypolicy.html">سياسة الخصوصية</a></li>
+          <li><a href="./pages/termsandconditions.html">الشروط والأحكام</a></li>
+        </ul>
+      </div>
+
+      <!-- Account -->
+      <div class="footer-section">
+        <h4>الحساب</h4>
+        <ul>
+          <li><a href="./pages/cart.html">سلة التسوق</a></li>
+          <li><a href="./pages/signin.html">حسابي</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-section">
+        <h4>الدعم</h4>
+        <ul>
+          <li><a href="./pages/help.html.html">مركز المساعدة</a></li>
+          <li><a href="./pages/safety.html.html">إرشادات السلامة</a></li>
+        </ul>
+      </div>
+    
+      <!-- Contact Section -->
+      <div class="footer-section">
+        <h4>تواصل معنا</h4>
+        <ul>
+          <li><img src="../photos/Rectangle 14.png" alt="أيقونة الهاتف" class="phone-icon"> +201 123 4567 </li>
+          <li><img src="../photos/mail.png" alt="أيقونة البريد" class="email-icon"> renturner@gmail.com</li>
+          <br><p>تابعنا على وسائل التواصل الاجتماعي</p><br>
+          <div class="social-icons">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <div class="payment-icons">
+        <a href="#" aria-label="PayPal"><i class="fab fa-cc-paypal"></i></a>
+        <a href="#" aria-label="Apple Pay"><i class="fab fa-cc-apple-pay"></i></a>
+        <a href="#" aria-label="Visa"><i class="fab fa-cc-visa"></i></a>
+      </div>
+      <p>© 2025 Renturn. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+  </main>
+   <script src="../../lang.js"></script>
+    <script src="../js/categories.js"></script>
+</body>
+</html>

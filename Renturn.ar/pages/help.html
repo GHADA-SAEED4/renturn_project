@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مركز المساعدة</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../CSS/help.css"/>
+  <link rel="icon" href="./photos/R logo.png" type="image.png">
+</head>
+<body>
+    <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div class="logo"><img src="../photos/renturn logo.png" alt="logo"></div>
+      <div class="search">
+        <input  type="text" id="search" placeholder="ابحث عن منتج" />
+        <p id="error">⚠️ يرجى ادخال اسم الفئة</p>
+        <i class="fa-solid fa-search" onclick="validateSearch()"></i>
+      </div>
+      <nav>
+        <div class="nav-v">
+        <a href="../index.html">الرئيسية</a>
+        <a href="./about.html" >من نحن </a>
+        <!-- Dropdown Categories -->
+        <div class="dropdown">
+          <button class="dropbtn">الفئات ▾</button>
+          <div class="dropdown-content">
+            <a href="./electronics.html">الإلكترونيات</a>
+            <a href="./tools.html">الأدوات</a>
+            <a href="./clothes.html">الملابس</a>
+            <a href="./music.html">الآلات الموسيقية</a>
+          </div>
+        </div>
+        </div>
+
+      <button class="nav-btn" onclick="window.location.href='./cart.html'">
+  <i class="fa-solid fa-cart-shopping"></i>
+</button>
+
+<button class="nav-btn" onclick="window.location.href='./signin.html'">
+  <i class="fa-solid fa-user"></i>
+</button>
+
+      <button class="nav-btn" id="langToggle" >
+        <i class="fa-solid fa-globe"></i> 
+      </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Help Center -->
+<section class="help-center">
+  <h1>مركز المساعدة</h1>
+  <p>ابحث عن إجابات لجميع أسئلتك حول منصة الإيجار الخاصة بنا.</p>
+  <div class="search-box">
+    <input type="text" placeholder="ابحث عن مقالات المساعدة...">
+  </div>
+
+  <div class="faq-container">
+     <!-- Getting Started -->
+    <section class="faq-section">
+      <h2>البدء</h2>
+      <div class="faq-box">
+        <strong>كيف يمكنني إنشاء حساب جديد؟</strong>
+        <p>انقر على "تسجيل" ، املأ تفاصيلك ، وتحقق من بريدك الإلكتروني لتنشيط الحساب.</p>
+      </div>
+      <div class="faq-box">
+        <strong>كيف يمكنني تسجيل الدخول؟</strong>
+        <p>انقر على "تسجيل الدخول" وأدخل بريدك الإلكتروني ورقم الهوية الوطنية وكلمة المرور.</p>
+      </div>
+    </section>
+
+    <!-- Using the Platform -->
+    <section class="faq-section">
+      <h2>استخدام المنصة</h2>
+      <div class="faq-box">
+        <strong>كيف أقوم بتأجير منتج؟</strong>
+        <p>ابحث عن المنتج، تحقق من توفره، وقدم طلبًا.</p>
+      </div>
+      <div class="faq-box">
+        <strong>كيف يمكنني إدراج منتج للإيجار؟</strong>
+        <p>انتقل إلى "إضافة منتج"، املأ تفاصيل المنتج، حدد السعر، وقدم الطلب للموافقة.</p>
+      </div>
+      <div class="faq-box">
+        <strong>كيف يمكنني البحث عن المنتجات وتصفية النتائج؟</strong>
+        <p>استخدم شريط البحث والفلاتر مثل الفئة والسعر والموقع.</p>
+      </div>
+    </section>
+
+    <!-- Payments & Pricing -->
+    <section class="faq-section">
+      <h2>الدفع والتسعير</h2>
+      <div class="faq-box">
+        <strong>ما هي طرق الدفع المقبولة؟</strong>
+        <p>بطاقات الائتمان / الخصم وغيرها من طرق الدفع عبر الإنترنت المدعومة.</p>
+      </div>
+      <div class="faq-box">
+        <strong>كيف يتم حساب تكلفة الإيجار؟</strong>
+        <p>تعتمد التكلفة على مدة الإيجار وسعر المنتج وأي رسوم إضافية.</p>
+      </div>
+      <div class="faq-box">
+        <strong>هل هناك وديعة تأمينية؟</strong>
+        <p>بعض المنتجات تتطلب وديعة لتغطية الأضرار المحتملة.</p>
+      </div>
+    </section>
+
+    <!-- Orders & Bookings -->
+    <section class="faq-section">
+      <h2>الطلبات والحجوزات</h2>
+      <div class="faq-box">
+        <strong>كيف يمكنني معرفة ما إذا كانت حجزي مؤكدة؟</strong>
+        <p>ستتلقى إشعارًا بمجرد الموافقة على طلبك.</p>
+      </div>
+      <div class="faq-box">
+        <strong>ماذا تعني حالات الطلب؟</strong>
+        <p>معلق = قيد المراجعة، مؤكد = تمت الموافقة، مكتمل = انتهت فترة الإيجار.</p>
+      </div>
+    </section>
+
+    <!-- Returns & Pickups -->
+    <section class="faq-section">
+      <h2>المرتجعات والاستلام</h2>
+      <div class="faq-box">
+        <strong>كيف يتم استلام المنتج؟</strong>
+        <p>تقوم خدمة التوصيل باستلامه في الوقت والمكان المتفق عليهما.</p>
+      </div>
+      <div class="faq-box">
+        <strong>ماذا يجب أن أفعل عند إرجاع منتج؟</strong>
+        <p>اتبع تعليمات الإرجاع وتأكد من أن المنتج في نفس الحالة.</p>
+      </div>
+    </section>
+
+    <!-- Trust & Safety -->
+    <section class="faq-section">
+      <h2>الثقة والأمان</h2>
+      <div class="faq-box">
+        <strong>كيف يتم التحقق من الحسابات؟</strong>
+        <p>يتم التحقق من الحسابات من خلال فحوصات الهوية والدفع.</p>
+      </div>
+      <div class="faq-box">
+        <strong>كيف يمكنني الإيجار بأمان؟</strong>
+        <p>تحقق من المراجعات، وتواصل من خلال المنصة، واتبع إرشادات الإيجار.</p>
+      </div>
+      <div class="faq-box">
+        <strong>ماذا يحدث إذا تم تلف منتج؟</strong>
+        <p>تغطي الودائع الأمنية أو التأمين الأضرار وفقًا لسياساتنا.</p>
+      </div>
+    </section>
+
+    <!-- Contact Support -->
+    <section class="faq-section">
+      <h2>الاتصال بالدعم</h2>
+      <div class="faq-box">
+        <strong>كيف يمكنني الاتصال بالدعم؟</strong>
+        <p>استخدم رابط الدعم / البريد الإلكتروني المقدم في القسم الأخير "اتصل بنا".</p>
+      </div>
+    </section>
+  </div>
+</section>
+
+
+       <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Logo + icons -->
+      <div class="footer-section">
+        <img src="../photos/Rectangle 17.png" alt="Renturn Logo" class="logo">
+
+        <p>شريكك الموثوق لتأجير <br>الأدوات والمعدات بجوده عاليه .</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="../index.html">الرئيسية</a></li>
+          <li><a href="./about.html">من نحن</a></li>
+          <li><a href="./privacypolicy.html">سياسة الخصوصية</a></li>
+          <li><a href="./termsandconditions.html">الشروط والأحكام</a></li>
+        </ul>
+      </div>
+
+      <!-- Account -->
+      <div class="footer-section">
+        <h4>الحساب</h4>
+        <ul>
+          <li><a href="../pages/cart.html">عربة التسوق</a></li>
+          <li><a href="../pages/signin.html">حسابي</a></li>
+
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-section">
+        <h4>الدعم</h4>
+        <ul>
+          <li><a href="./help.html">مركز المساعدة</a></li>
+          <li><a href="../pages/safety.html">إرشادات السلامة</a></li>
+
+        </ul>
+      </div>
+    
+    <!-- Contact Section -->
+   <div class="footer-section">
+        <h4>تواصل معنا</h4>
+        <ul>
+          <li><img src="../photos/Rectangle 14.png" alt="Phone Icon" class="phone-icon"> +201 123 4567 </li>
+          <li><img src="../photos/mail.png" alt="Email Icon" class="email-icon"> renturner@gmail.com</li>
+          <br><p>تابعنا على وسائل التواصل الاجتماعي</p><br>
+           <div class="social-icons">
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        </ul>
+      </div>
+      </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <div class="payment-icons">
+        <a href="#" aria-label="PayPal"><i class="fab fa-cc-paypal"></i></a>
+        <a href="#" aria-label="Apple Pay"><i class="fab fa-cc-apple-pay"></i></a>
+        <a href="#" aria-label="Visa"><i class="fab fa-cc-visa"></i></a>
+      </div>
+      <p>© 2025 Renturn. All rights reserved.</p>
+    </div>
+  </footer>
+
+<script src="../../lang.js"></script>
+</body>
+</html>

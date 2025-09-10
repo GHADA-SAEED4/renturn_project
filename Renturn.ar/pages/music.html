@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الآلات الموسيقية</title>
+    <link rel="stylesheet" href="../CSS/music.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../photos/R logo.png">
+    <body style="padding-top: 100px;">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo"><img src="../photos/renturn logo.png" alt="شعار الموقع"></div>
+            <div class="search">
+                <input type="text" placeholder="ابحث عن منتج">
+                <i class="fa-solid fa-search"></i>
+            </div>
+            <nav>
+                <div class="nav-v">
+                    <a href="../index.html">الرئيسية</a>
+                    <a href="./about.html">من نحن</a>
+                    
+                    <!-- Dropdown Categories -->
+                    <div class="dropdown">
+                        <button class="dropbtn">الفئات ▾</button>
+                        <div class="dropdown-content">
+                            <a href="./electronics.html">إلكترونيات</a>
+                            <a href="./tools.html">أدوات</a>
+                            <a href="./clothes.html">ملابس</a>
+                            <a href="./music.html">آلات موسيقية</a>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="nav-btn" onclick="window.location='./cart.html'">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+                <button class="nav-btn" onclick="window.location='./signin.html'">
+                    <i class="fa-solid fa-user"></i>
+                </button>
+                <button class="nav-btn" id="langToggle" >
+                    <i class="fa-solid fa-globe"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="rentals">
+        <div class="rental-top">
+            <button class="music-btn">الآلات الموسيقية</button>
+            <h2>اكتشف مجموعتنا للإيجار</h2>
+        </div>
+        <p>استكشف مجموعة واسعة من الآلات الموسيقية المتاحة للإيجار بأسعار مناسبة.</p>
+    </section>
+
+    <!-- products section -->
+    <section class="products">
+        <div class="product-card" data-url="../pages/products/music/guitar/guitar.html">
+            <img src="../photos/guitar.jpeg" alt="قيثار">
+            <h3>قيثار</h3>
+            <p>يشمل قيثار P-240 Memoir و DS-240 Memoir الصوتي.</p>
+            <span class="price">2000 جنيه/اليوم</span>
+            <button class="rent-btn" onclick="window.location='./cart.html'">أضف إلى السلة</button>
+        </div>
+
+        <div class="product-card" data-url="../pages/products/music/drum-set/drum-set.html">
+            <img src="../photos/drum-set.jpeg" alt="طقم طبول">
+            <h3>طقم طبول بلاك بيرل</h3>
+            <p>اجعل صوتك المميز في الطبول مسموعًا مع مجموعة بيرل للأدوات الموسيقية المتميزة.</p>
+            <span class="price">3000 جنيه/اليوم</span>
+            <button class="rent-btn" onclick="window.location='./cart.html'">أضف إلى السلة</button>
+        </div>
+
+        <div class="product-card" data-url="../pages/products/music/trumpet/trumpet.html">
+            <img src="../photos/trumpet.jpeg" alt="ترومبون">
+            <h3>ترومبون</h3>
+            <p>آلة نحاسية تستخدم عادة في الفرق الكلاسيكية وجاز.</p>
+            <span class="price">1000 جنيه/اليوم</span>
+            <button class="rent-btn" onclick="window.location='./cart.html'">أضف إلى السلة</button>
+        </div>
+
+        <div class="product-card" data-url="../pages/products/music/electric-guitar/electric-guitar.html">
+            <img src="../photos/electric-guitar.jpeg" alt="قيثار كهربائي">
+            <h3>قيثار كهربائي</h3>
+            <p>قيثار كهربائي باللون الأحمر المعدني.</p>
+            <span class="price">1200 جنيه/اليوم</span>
+            <button class="rent-btn" onclick="window.location='./cart.html'">أضف إلى السلة</button>
+        </div>
+
+        <div class="product-card" data-url="../pages/products/music/grand-piano/grand-piano.html">
+            <img src="../photos/piano.jpeg" alt="بيانو كبير">
+            <h3>بيانو كبير</h3>
+            <p>اشعل شغفك الموسيقي مع بيانو Lyra.</p>
+            <span class="price">5000 جنيه/اليوم</span>
+            <button class="rent-btn" onclick="window.location='./cart.html'">أضف إلى السلة</button>
+        </div>
+
+        <div class="product-card" data-url="../pages/products/music/television-mic/television-mic.html">
+            <img src="../photos/Wireless Microphone Television Show United States Radio PNG.jpeg" alt="ميكروفون تلفزيوني">
+            <h3>ميكروفون تلفزيوني</h3>
+            <p>ميكروفون MAYOGA 192kHz/24bit للبودكاست والبث مع حامل وفلتر صوتي.</p>
+            <span class="price">200 جنيه/اليوم</span>
+            <button class="rent-btn" onclick="window.location='./cart.html'">أضف إلى السلة</button>
+        </div>
+
+        <div class="product-card" data-url="../pages/products/music/usb-mic-kit/usb-mic-kit.html">
+            <img src="../photos/USB Microphone Kit 192kHz_24bit MAYOGA Condenser Podcast Streaming Cardioid Mic Kit with Sound Card.jpeg" alt="ميكروفون USB">
+            <h3>ميكروفون USB</h3>
+            <p>ميكروفون MAYOGA 192kHz/24bit مع حامل وفلتر صوتي.</p>
+            <span class="price">150 جنيه/اليوم</span>
+            <button class="rent-btn" onclick="window.location='./cart.html'">أضف إلى السلة</button>
+        </div>
+
+        <div class="product-card" data-url="../pages/products/music/piano-aesthetic/piano-aesthetic.html">
+            <img src="../photos/piano-aesthetic.jpeg" alt="بيانو جمالي">
+            <h3>بيانو جمالي</h3>
+            <p>بيانو بتصميم جمالي.</p>
+            <span class="price">150 جنيه/اليوم</span>
+            <button class="rent-btn" onclick="window.location='./cart.html'">أضف إلى السلة</button>
+        </div>
+    </section>
+
+    <!-- pagination -->
+    <ul class="pagination">
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">...</a></li>
+    </ul>
+
+    <!-- ===== Footer ===== -->
+<!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Logo + icons -->
+      <div class="footer-section">
+        <img src="../photos/Rectangle 17.png" alt="شعار Renturn" class="logo">
+        <p>شريكك الموثوق لتأجير الأدوات <br> والمعدات بجودة عالية.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="./index.html">الرئيسية</a></li>
+          <li><a href="./pages/about.html">من نحن؟</a></li>
+          <li><a href="./pages/privacypolicy.html">سياسة الخصوصية</a></li>
+          <li><a href="./pages/termsandconditions.html">الشروط والأحكام</a></li>
+        </ul>
+      </div>
+
+      <!-- Account -->
+      <div class="footer-section">
+        <h4>الحساب</h4>
+        <ul>
+          <li><a href="./cart.html">سلة التسوق</a></li>
+          <li><a href="./signin.html">حسابي</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-section">
+        <h4>الدعم</h4>
+        <ul>
+          <li><a href="./help.html">مركز المساعدة</a></li>
+          <li><a href="./safety.html">إرشادات السلامة</a></li>
+        </ul>
+      </div>
+    
+      <!-- Contact Section -->
+      <div class="footer-section">
+        <h4>تواصل معنا</h4>
+        <ul>
+          <li><img src="../photos/Rectangle 14.png" alt="أيقونة الهاتف" class="phone-icon"> +201 123 4567 </li>
+          <li><img src="../photos/mail.png" alt="أيقونة البريد" class="email-icon"> renturner@gmail.com</li>
+          <br><p>تابعنا على وسائل التواصل الاجتماعي</p><br>
+          <div class="social-icons">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <div class="payment-icons">
+        <a href="#" aria-label="PayPal"><i class="fab fa-cc-paypal"></i></a>
+        <a href="#" aria-label="Apple Pay"><i class="fab fa-cc-apple-pay"></i></a>
+        <a href="#" aria-label="Visa"><i class="fab fa-cc-visa"></i></a>
+      </div>
+      <p>© 2025 Renturn. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <script src="../../lang.js"></script>
+    <script src="../js/categories.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Renturn</title>
+  <link rel="stylesheet" href="../CSS/electronics.css"/>
+  <link rel="icon" href="./photos/renturn logo.png" type="image.png">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+  <style>
+    body {
+      direction: rtl;
+      text-align: right;
+      padding-top: 120px; /* يضيف مسافة تحت الهيدر الثابت */
+    }
+    .products .product-card {
+      text-align: right;
+    }
+    .search input {
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div class="logo"><img src="../photos/renturn logo.png" alt="logo"></div>
+      <div class="search">
+        <input type="text" id="search" placeholder="ابحث عن منتج" />
+        <p id="error">⚠️ الرجاء إدخال اسم الفئة</p>
+        <i class="fa-solid fa-search" onclick="validateSearch()"></i>
+      </div>
+      <nav>
+        <div class="nav-v">
+          <a href="../index.html">الرئيسية</a>
+          <a href="./about.html">من نحن</a>
+          <div class="dropdown">
+            <button class="dropbtn">الفئات ▾</button>
+            <div class="dropdown-content">
+              <a href="./electronics.html">إلكترونيات</a>
+              <a href="./tools.html">أدوات</a>
+              <a href="./clothes.html">ملابس</a>
+              <a href="./music.html">آلات موسيقية</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="nav-btn" onclick="window.location.href='./cart.html'">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+
+        <button class="nav-btn" onclick="window.location.href='./signin.html'">
+          <i class="fa-solid fa-user"></i>
+        </button>
+
+        <button class="nav-btn" id="langToggle" >
+          <i class="fa-solid fa-globe"></i>
+        </button>                             
+      </nav>
+    </div>
+  </header>
+
+ <section class="rentals">
+  <div class="rental-top">
+   <button class="electronics-btn"> الإلكترونيات </button>
+  <h2>استكشف مجموعتنا للإيجار</h2>
+  </div>
+  <p>اكتشف مجموعة واسعة من الإلكترونيات المتاحة للإيجار بأسعار مناسبة.</p>
+ </section>
+  <!-- Section Rentals -->
+
+<section class="products">
+    <div class="product-card" data-url="../pages/products/electronics/canon-ef-50mm/canon-ef-50mm.html">
+      <img src="../photos/Camera.jpeg" alt="camera">
+      <h3>كانون EF 50mm f/1.8 STM</h3>
+      <p>مثالي لتصوير البورتريه.</p>
+      <span class="price">150ج.م/اليوم</span>
+      <button class="rent-btn">أضف إلى السلة</button>
+    </div>
+
+    <div class="product-card" data-url="../pages/products/electronics/professional-drone/professional-drone.html">
+      <img src="../photos/drone.jpg" alt="drone">
+      <h3>درون احترافي</h3>
+      <p>درون سهل الطيران بدقة 4K</p>
+      <span class="price">200ج.م/اليوم</span>
+      <button class="rent-btn">أضف إلى السلة</button>
+    </div>
+
+    <div class="product-card" data-url="../pages/products/electronics/projector/projector.html">
+      <img src="../photos/projector.jpg" alt="Projector">
+      <h3>جهاز عرض</h3>
+      <p>مثالي للعروض التقديمية وليالي الأفلام.</p>
+      <span class="price">100ج.م/اليوم</span>
+      <button class="rent-btn">أضف إلى السلة</button>
+    </div>
+
+    <div class="product-card" data-url="../pages/products/electronics/speaker/speaker.html">
+      <img src="../photos/speaker.jpg" alt="Speaker">
+      <h3>مكبر صوت</h3>
+      <p>مكبر صوت محمول بجودة صوت ممتازة.</p>
+      <span class="price">70ج.م/اليوم</span>
+      <button class="rent-btn">أضف إلى السلة</button>
+    </div>
+    
+    <div class="product-card" data-url="../pages/products/electronics/lenovo-laptop/lenovo-laptop.html">
+      <img src="../photos/laptop.jpeg" alt="Laptop">
+      <h3>لاب توب لينوفو</h3>
+      <p>حاسوب عالي الأداء لجميع احتياجاتك.</p>
+      <span class="price">300ج.م/اليوم</span>
+      <button class="rent-btn">أضف إلى السلة</button>
+    </div>
+
+    <div class="product-card" data-url="../pages/products/electronics/playstation5/playstation5.html">
+      <img src="../photos/playstation.jpg" alt="playstation">
+      <h3>بلايستيشن 5</h3>
+      <p>أفضل جهاز ألعاب لتجربة غامرة.</p>
+      <span class="price">200ج.م/اليوم</span>
+      <button class="rent-btn">أضف إلى السلة</button>
+    </div>
+
+    <div class="product-card" data-url="../pages/products/electronics/hp-printer/hp-printer.html">
+      <img src="../photos/hp printer.jpg" alt="hp printer">
+      <h3>طابعة HP</h3>
+      <p>طابعة عالية الجودة لجميع مستنداتك.</p>
+      <span class="price">150ج.م/اليوم</span>
+      <button class="rent-btn">أضف إلى السلة</button>
+    </div>
+
+    <div class="product-card" data-url="../pages/products/electronics/ipad/ipad.html">
+      <img src="../photos/IPAD.jpg" alt="IPAD">
+      <h3>آيباد - Apple(EG)</h3>
+      <p>مثالي للترفيه والإنتاجية.</p>
+      <span class="price">150ج.م/اليوم</span>
+      <button class="rent-btn">أضف إلى السلة</button>
+    </div>
+
+    <div class="product-card" data-url="../pages/products/electronics/dslr-camera/dslr-camera.html">
+      <img src="../photos/DSLR camera.png" alt="DSLR Camera">
+      <h3>عدة كاميرا DSLR</h3>
+      <p>تشمل 3 عدسات وإكسسوارات.</p>
+      <span class="price">150ج.م/اليوم</span>
+      <button class="rent-btn">أضف إلى السلة</button>
+    </div>
+
+    <div class="product-card" data-url="../pages/products/electronics/macbook-pro/macbook-pro.html">
+      <img src="../photos/macbook.jpg" alt="MacBook">
+      <h3>ماك بوك برو</h3>
+      <p>حاسوب قوي للمحترفين.</p>
+      <span class="price">500ج.م/اليوم</span>
+      <button class="rent-btn">أضف إلى السلة</button>
+    </div>
+
+    <div class="product-card" data-url="../pages/products/electronics/microphone/microphone.html">
+      <img src="../photos/microphone..jpg" alt="Microphone">
+      <h3>ميكروفون</h3>
+      <p>ميكروفون عالي الجودة لتسجيل صوت واضح.</p>
+      <span class="price">150ج.م/اليوم</span>
+      <button class="rent-btn">أضف إلى السلة</button>
+    </div>
+</section>
+
+
+  <!-- pagination -->
+  <ul class="pagination">
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">...</a></li>
+  </ul>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Logo + icons -->
+      <div class="footer-section">
+        <img src="../photos/Rectangle 17.png" alt="Renturn Logo" class="logo">
+        <p>شريكك الموثوق لتأجير الأدوات<br> والمعدات عالية الجودة.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="../index.html">الرئيسية</a></li>
+          <li><a href="./about.html">من نحن</a></li>
+          <li><a href="./privacypolicy.html">سياسة الخصوصية</a></li>
+          <li><a href="./termsandconditions.html">الشروط والأحكام</a></li>
+        </ul>
+      </div>
+
+      <!-- Account -->
+      <div class="footer-section">
+        <h4>الحساب</h4>
+        <ul>
+          <li><a href="./cart.html">سلة التسوق</a></li>
+          <li><a href="./account.html">حسابي</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-section">
+        <h4>الدعم</h4>
+        <ul>
+          <li><a href="./help.html.html">مركز المساعدة</a></li>
+          <li><a href="./safety.html.html">إرشادات السلامة</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="footer-section">
+        <h4>تواصل معنا</h4>
+        <ul>
+          <li><img src="../photos/Rectangle 14.png" alt="Phone Icon" class="phone-icon"> +201 123 4567 </li>
+          <li><img src="../photos/mail.png" alt="Email Icon" class="email-icon"> renturner@gmail.com</li>
+          <br><p>تابعنا على وسائل التواصل</p><br>
+          <div class="social-icons">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <div class="payment-icons">
+        <a href="#" aria-label="PayPal"><i class="fab fa-cc-paypal"></i></a>
+        <a href="#" aria-label="Apple Pay"><i class="fab fa-cc-apple-pay"></i></a>
+        <a href="#" aria-label="Visa"><i class="fab fa-cc-visa"></i></a>
+      </div>
+      <p>© 2025 Renturn. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+  <script src="../../lang.js"></script>
+  <script src="../js/categories.js"></script>
+</body>
+</html>

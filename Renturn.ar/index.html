@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Renturn</title>
+  <link rel="stylesheet" href="./css/style.css"/>
+  <link
+     rel="icon"
+       href="../../../../photos/R logo.png"
+       type="image.png"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body dir="rtl">
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div class="logo"><img src="./photos/renturn logo.png" alt="الشعار"></div>
+      <div class="search">
+        <input type="text" id="search" placeholder="ابحث عن منتج" />
+        <p id="error">⚠️ من فضلك أدخل اسم الفئة</p>
+        <i class="fa-solid fa-search" onclick="validateSearch()"></i>
+      </div>
+      <nav>
+        <div class="nav-v">
+          <a href="./index.html">الرئيسية</a>
+          <a href="./pages/about.html">من نحن؟</a>
+          <!-- Dropdown Categories -->
+          <div class="dropdown">
+            <button class="dropbtn">الفئات ▾</button>
+            <div class="dropdown-content">
+              <a href="./pages/electronics.html">الإلكترونيات</a>
+              <a href="./pages/tools.html">الأدوات</a>
+              <a href="./pages/clothes.html">الملابس</a>
+              <a href="./pages/music.html">الآلات الموسيقية</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="nav-btn" onclick="window.location.href='./pages/cart.html'">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+
+        <button class="nav-btn" onclick="window.location.href='./pages/signin.html'">
+          <i class="fa-solid fa-user"></i>
+        </button>
+        
+        <button class="nav-btn" id="langToggle" >
+          <i class="fa-solid fa-globe"></i>
+        </button>
+
+      </nav>
+    </div>
+  </header>
+  <br><br><br><br>
+
+<section class="banner" dir="ltr">
+  <div class="banner-content">
+    <h1 class="banner-title">
+      <span class="first">Why buy</span>
+      <span class="second">When you can try</span>
+    </h1>
+  </div>
+</section>
+  <!-- Why Choose Us -->
+  <section class="why">
+    <h2 class="animate-title">
+      لماذا تختار Renturn؟
+    </h2>
+    <br>
+    <p class="why-text">
+      نحن نجعل تأجير الأدوات سهلاً وبأسعار معقولة وموثوقاً لجميع احتياجات مشاريعك.
+    </p>
+    <div class="cards">
+      <div class="card">
+        <i class="fa-solid fa-dollar-sign"></i>
+        <h3>أسعار مناسبة</h3>
+        <br>
+        <p>أسعار يومية وأسبوعية منافسة <br><br> توفر لك المال مقارنة بشراء أدوات باهظة الثمن.</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-user"></i>
+        <h3>جودة مضمونة</h3>
+        <br>
+        <p>جميع أدواتنا يتم صيانتها وفحصها <br><br> بشكل احترافي قبل كل عملية تأجير.</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-bolt"></i>
+        <h3>سريع وسهل</h3>
+        <br>
+        <p>احجز عبر الإنترنت واستلم في نفس اليوم.<br><br> عملية حجز بسيطة بشروط مرنة.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Items Section -->
+  <section class="latest" id="latestPro">
+    <h2>أحدث العناصر المتاحة</h2>
+    <p>اطلع على أحدث إضافاتنا وأكثر العناصر المستأجرة شيوعاً</p>
+
+    <div class="container">
+      <button class="btn" id="prevBtn">&#8249;</button>
+      
+      <div class="wrapper">
+        <div class="items" id="latestItems">
+        
+          <div class="item">
+            <img src="./photos/ladder.jpeg" alt="سلم">
+            <div class="item-content">
+              <div class="item-title">سلم تمديد</div>
+              <div class="item-desc">سلم تمديد من الألومنيوم بطول 20 قدماً</div>
+              <div class="item-footer">
+                <div class="price">20 جنيه</div>
+                <button class="rent-btn">استأجر الآن</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="./photos/Camera.jpeg" alt="كاميرا">
+            <div class="item-content">
+              <div class="item-title">عدة كاميرا DSLR</div>
+              <div class="item-desc">تشمل العدسات والإكسسوارات</div>
+              <div class="item-footer">
+                <div class="price">60 جنيه</div>
+                <button class="rent-btn">استأجر الآن</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="./photos/guitar.jpeg" alt="جيتار">
+            <div class="item-content">
+              <div class="item-title">جيتار صوتي</div>
+              <div class="item-desc">مثالي لعشاق الموسيقى والحفلات</div>
+              <div class="item-footer">
+                <div class="price">35 جنيه</div>
+                <button class="rent-btn">استأجر الآن</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="./photos/laptop.jpeg" alt="لاب توب">
+            <div class="item-content">
+              <div class="item-title">حاسوب محمول</div>
+              <div class="item-desc">مثالي للدراسة والعمل والعروض التقديمية</div>
+              <div class="item-footer">
+                <div class="price">100 جنيه</div>
+                <button class="rent-btn">استأجر الآن</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <button class="btn" id="nextBtn">&#8250;</button>
+    </div>
+  </section>
+
+  <!-- Our working Process -->
+  <main class="wrap">
+    <section class="card">
+      <div class="tiny-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="28" height="28">
+          <path d="M5 5h2M11 4h2M17 6h2M6 12h2M12 11h2M18 13h2M7 19h2M13 18h2M19 20h2" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+        </svg>
+      </div>
+      <h1 class="title">تعرف أكثر على العملية</h1>
+      <p class="subtitle">
+        احصل على ما تحتاجه بدون عناء. عمليتنا المبسطة مصممة لراحتك.
+      </p>
+      <div class="steps">
+        <span class="arc arc-left" aria-hidden="true"></span>
+        <span class="arc arc-right" aria-hidden="true"></span>
+        <!-- Step 1 -->
+        <article class="step">
+          <span class="num">1</span>
+          <div class="icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+              <path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5Z" fill="currentColor"/>
+              <path d="M4 20a8 8 0 1 1 16 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>سجل خلال ثوانٍ</h3>
+          <p>انضم لمجتمعنا بتسجيل سريع. أنشئ حسابك وابدأ الاستكشاف.</p>
+        </article>
+        <!-- Step 2 -->
+        <article class="step">
+          <span class="num">2</span>
+          <div class="icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+              <path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="2" rx="2" ry="2"/>
+              <path d="M7 3v6M17 3v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M7 14l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>احجز بثقة</h3>
+          <p>اكتشف العنصر المناسب لك. اقرأ التقييمات، تحقق من التوفر، وأكد حجزك فوراً.</p>
+        </article>
+        <!-- Step 3 -->
+        <article class="step">
+          <span class="num">3</span>
+          <div class="icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+              <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>استخدم واستمتع</h3>
+          <p>الأمر بهذه البساطة. استلم تأجيرك وتمتع بحرية الوصول لما تحتاجه، وقتما تحتاجه.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Logo + icons -->
+      <div class="footer-section">
+        <img src="./photos/Rectangle 17.png" alt="شعار Renturn" class="logo">
+        <p>شريكك الموثوق لتأجير الأدوات <br> والمعدات بجودة عالية.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="./index.html">الرئيسية</a></li>
+          <li><a href="./pages/about.html">من نحن؟</a></li>
+          <li><a href="./pages/privacypolicy.html">سياسة الخصوصية</a></li>
+          <li><a href="./pages/termsandconditions.html">الشروط والأحكام</a></li>
+        </ul>
+      </div>
+
+      <!-- Account -->
+      <div class="footer-section">
+        <h4>الحساب</h4>
+        <ul>
+          <li><a href="./pages/cart.html">سلة التسوق</a></li>
+          <li><a href="./pages/signin.html">حسابي</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-section">
+        <h4>الدعم</h4>
+        <ul>
+          <li><a href="./pages/help.html">مركز المساعدة</a></li>
+          <li><a href="./pages/safety.html">إرشادات السلامة</a></li>
+        </ul>
+      </div>
+    
+      <!-- Contact Section -->
+      <div class="footer-section">
+        <h4>تواصل معنا</h4>
+        <ul>
+          <li><img src="photos/Rectangle 14.png" alt="أيقونة الهاتف" class="phone-icon"> +201 123 4567 </li>
+          <li><img src="photos/mail.png" alt="أيقونة البريد" class="email-icon"> renturner@gmail.com</li>
+          <br><p>تابعنا على وسائل التواصل الاجتماعي</p><br>
+          <div class="social-icons">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <div class="payment-icons">
+        <a href="#" aria-label="PayPal"><i class="fab fa-cc-paypal"></i></a>
+        <a href="#" aria-label="Apple Pay"><i class="fab fa-cc-apple-pay"></i></a>
+        <a href="#" aria-label="Visa"><i class="fab fa-cc-visa"></i></a>
+      </div>
+      <p>© 2025 Renturn. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+  <script src="../headlinks.js"></script>
+ <script src="../lang.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

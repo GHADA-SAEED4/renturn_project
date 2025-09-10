@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Renturn</title>
+        <link rel="stylesheet" href="../../../../css/style.css" />
+        <link
+            rel="icon"
+            href="../../../../photos/R logo.png"
+            type="image.png"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+        <link rel="stylesheet" href="../../products-styling.css" />
+    </head>
+<body>
+    <!-- رأس الصفحة -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <img src="../../../../photos/renturn logo.png" alt="شعار رينترن" />
+            </div>
+            <div class="search">
+                <input type="text" id="search" placeholder="ابحث عن منتج" />
+                <p id="error">⚠️ يرجى إدخال اسم الفئة</p>
+                <i class="fa-solid fa-search" onclick="validateSearch()"></i>
+            </div>
+            <nav>
+                <div class="nav-v">
+                    <a href="../../../../index.html">الرئيسية</a>
+                    <a href="../../../about.html">من نحن</a>
+                    <!-- قائمة الفئات -->
+                    <div class="dropdown">
+                        <button class="dropbtn">الفئات ▾</button>
+                        <div class="dropdown-content">
+                            <a href="../../../electronics.html">إلكترونيات</a>
+                            <a href="../../../tools.html">أدوات</a>
+                            <a href="../../../clothes.html">ملابس</a>
+                            <a href="../../../music.html">آلات موسيقية</a>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="nav-btn" onclick="window.location.href='../../../cart.html'">
+                    <div class="cart-box">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div id="count">0</div>
+                    </div>
+                </button>
+
+                <button class="nav-btn" onclick="window.location.href='../../../login.html'">
+                    <i class="fa-solid fa-user"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <br /><br /><br /><br />
+
+    <!-- المحتوى الرئيسي -->
+    <main>
+        <div class="details-main">
+            <div class="product-details">
+                <a href="../../../music.html">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <p>تفاصيل المنتج</p>
+            </div>
+
+            <div>
+                <div class="product-box">
+                    <div>
+                        <div class="condition">
+                            <p>آلات موسيقية</p>
+                            <p>متوفر</p>
+                            <p>حالة جيدة جداً</p>
+                        </div>
+
+                        <div>
+                            <p class="product-name">جيتار كهربائي</p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span>(24 تقييم)</span>
+                            </div>
+                        </div>
+
+                        <div class="price-box">
+                            <p>1200 جنيه</p>
+                            <span>لليوم الواحد</span>
+                        </div>
+
+                        <div class="availability">
+                            <p class="h">التوافر</p>
+                            <div class="date">
+                                <div>
+                                    <p>من</p>
+                                    <p class="date-box">15 يناير 2025</p>
+                                </div>
+                                <div>
+                                    <p>إلى</p>
+                                    <p class="date-box">30 مارس 2025</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-location">
+                            <p>الموقع</p>
+                            <div>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>وسط القاهرة</span>
+                                <p>26 شارع طلعت حرب، وسط القاهرة، مصر</p>
+                            </div>
+                            <div class="location-map">
+                                <i class="fa-solid fa-map"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="porduct-img">
+                            <img src="imgs/0.png" alt="جيتار كهربائي" />
+                        </div>
+                        <div class="sm-imgs">
+                            <img src="imgs/1.png" alt="حقيبة حماية" class="sm-img modal-trigger" />
+                            <img src="imgs/2.png" alt="حزام الجيتار" class="sm-img modal-trigger" />
+                            <img src="imgs/3.png" alt="كابل الأداة" class="sm-img modal-trigger" />
+
+                            <!-- مودال الصور -->
+                            <div class="modal" id="modal">
+                                <div class="inner-modal">
+                                    <img id="modalImage" src="" alt="" />
+                                    <div>
+                                        <i class="fa-solid fa-xmark close-icon" id="closeModal"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-div">
+                    <button type="submit" class="add-to-cart">أضف إلى السلة</button>
+                </div>
+
+                <div class="description-div">
+                    <div class="description-box">
+                        <p class="description-h">الوصف</p>
+                        <div class="description-p">
+                            <p>
+                                هذا الجيتار الكهربائي مصمم للاعبين الذين يبحثون عن القوة والتنوع والأناقة. 
+                                بفضل جسمه الصلب والبيك آب عالي الجودة، يمكنه إنتاج نغمات دافئة نظيفة وصولاً إلى التشويش العدواني، 
+                                مما يجعله مثالياً لموسيقى الروك، البلوز، الجاز والميتال. 
+                                التصميم الأنيق ولوحة الأصابع السلسة يضمنان سهولة العزف سواء كنت تتدرب في المنزل أو تقدم عروضاً على المسرح. 
+                                متين وموثوق وأنيق، هذا الجيتار ضروري لكل موسيقي يبحث عن الأداء والحضور معاً.
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="included">المحتويات المرفقة مع الإيجار:</p>
+                            <p class="included-p"><i class="fa-solid fa-check check-icon"></i> حقيبة حماية</p>
+                            <p class="included-p"><i class="fa-solid fa-check check-icon"></i> حزام الجيتار</p>
+                            <p class="included-p"><i class="fa-solid fa-check check-icon"></i> كابل الأداة</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Logo + icons -->
+      <div class="footer-section">
+        <img src="../../../../photos/Rectangle 17.png" alt="Renturn Logo" class="logo">
+
+        <p>شريكك الموثوق لتأجير <br>الأدوات والمعدات بجوده عاليه .</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>روابط سريعة</h4>
+        <ul>
+         <li><a href="../../../../index.html">الرئيسية</a></li>
+                <li><a href="../../../about.html">من نحن</a></li>
+                <li><a href="../../../privacypolicy.html">سياسة الخصوصية</a></li>
+                <li><a href="../../../termsandconditions.html">الشروط والأحكام</a></li>
+        </ul>
+      </div>
+
+      <!-- Account -->
+      <div class="footer-section">
+        <h4>الحساب</h4>
+        <ul>
+           <li><a href="../../../cart.html">سلة التسوق</a></li>
+                <li><a href="../../../signin.html">حسابي</a></li>
+
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-section">
+        <h4>الدعم</h4>
+        <ul>
+          <li><a href="../../../help.html.html">مركز المساعدة</a></li>
+                <li><a href="../../../safety.html.html">إرشادات السلامة</a></li>
+         
+        </ul>
+      </div>
+    
+    <!-- Contact Section -->
+   <div class="footer-section">
+        <h4>تواصل معنا</h4>
+        <ul>
+          <li><img src="../../../../photos/Rectangle 14.png" alt="Phone Icon" class="phone-icon"> +201 123 4567 </li>
+          <li><img src="../../../../photos/mail.png" alt="Email Icon" class="email-icon"> renturner@gmail.com</li>
+          <br><p>تابعنا على وسائل التواصل الاجتماعي</p><br>
+           <div class="social-icons">
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        </ul>
+      </div>
+      </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <div class="payment-icons">
+        <a href="#" aria-label="PayPal"><i class="fab fa-cc-paypal"></i></a>
+        <a href="#" aria-label="Apple Pay"><i class="fab fa-cc-apple-pay"></i></a>
+        <a href="#" aria-label="Visa"><i class="fab fa-cc-visa"></i></a>
+      </div>
+      <p>© 2025 Renturn. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+    <script src="../../../../js/main.js"></script>
+    <script src="../../products.js"></script>
+</body>
+</html>

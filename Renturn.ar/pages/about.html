@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من نحن</title>
+    <link rel="stylesheet" href="../CSS/about-ar.css">
+            <link
+            rel="icon"
+            href="../../../../photos/R logo.png"
+            type="image.png"
+        />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+     <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div class="logo"><img src="../photos/renturn logo.png" alt="logo"></div>
+      <div class="search">
+        <input type="text" id="search" placeholder="ابحث عن منتج" />
+        <p id="error">⚠️ من فضلك أدخل اسم الفئة</p>
+        <i class="fa-solid fa-search" onclick="validateSearch()"></i>
+      </div>
+      <nav>
+        <div class="nav-v">
+        <a href="../index.html">الرئيسية</a>
+        <a href="./pages/about.html">من نحن</a>
+        <!-- Dropdown Categories -->
+        <div class="dropdown">
+          <button class="dropbtn">الفئات ▾</button>
+          <div class="dropdown-content">
+            <a href="./electronics.html">إلكترونيات</a>
+            <a href="./tools.html">أدوات</a>
+            <a href="./clothes.html">ملابس</a>
+            <a href="./music.html">آلات موسيقية</a>
+          </div>
+        </div>
+        </div>
+
+      <button class="nav-btn" onclick="window.location.href='./cart.html'">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+
+      <button class="nav-btn" onclick="window.location.href='./signin.html'">
+        <i class="fa-solid fa-user"></i>
+      </button>
+
+      <button class="nav-btn" id="langToggle" >
+        <i class="fa-solid fa-globe"></i>
+      </button>
+
+      </nav>
+    </div>
+  </header>
+  <br><br><br>
+
+  <!-- ========== Section One (Header Banner) ========== -->
+  <div class="header-banner">
+    <img src="../photos/done2.png" alt="بانر من نحن">
+    <div class="title">
+      <h1>عن Renturn</h1>
+      <p>نربط المجتمعات من خلال حلول المشاركة الذكية</p>
+    </div>
+  </div>
+
+  <!-- ========== Section Two (Our Story) ========== -->
+  <div class="section-story">
+    <img src="../photos/left.png" alt="قصتنا">
+    <div class="text">
+      <h1>قصتنا</h1>
+      <p>بدأ الأمر بسؤال بسيط: 
+        <span>لماذا نشتري أشياء باهظة الثمن نستخدمها مرة أو مرتين في السنة فقط ثم نخزنها؟</span>
+        من السلالم إلى ماكينات السجاد إلى معدات الحفلات، أدركنا أن المشاركة والتأجير يوفران المال والمساحة والموارد. 
+        وهكذا وُلدت <span>"Renturn"</span> — منصة يمكنك من خلالها الاستئجار منا أو من الآخرين من حولك.
+      </p>
+    </div>
+  </div>
+
+  <!-- ========== Section Three (Our Purpose) ========== -->
+  <div class="section-purpose">
+    <div class="text">
+      <h1>هدفنا</h1>
+      <p>وجدنا لنجعل الحياة أسهل وأكثر توفيرًا. من خلال ربط الأشخاص الذين يمتلكون أشياء بمن يحتاجونها، وتقديم مخزوننا الخاص من الأدوات المفيدة، نخلق طريقة أذكى وأكثر استدامة للوصول إلى الأشياء دون عبء الملكية.</p>
+    </div>
+    <img src="../photos/right.png" alt="هدفنا">
+  </div>
+
+  <!-- ========== Section Four (What We Offer) ========== -->
+  <div class="section-offer">
+    <h1>ماذا نقدم</h1>
+    <p>منصتنا الشاملة تربط بين الأفراد والشركات، لتجعل تأجير الأدوات والمعدات<br>
+       <span>سهلاً وآمنًا ومستدامًا.</span>
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <img src="../photos/secFour1.png" alt="ماذا نقدم">
+        <h1>تشكيلة واسعة من العناصر</h1>
+        <p>نوفر كل شيء من معدات الحفلات والفعاليات إلى الأدوات المنزلية ومعدات التخييم. أيًا كان ما تحتاجه لفترة قصيرة، ستجده هنا بسهولة.</p>
+      </div>
+
+      <div class="card">
+        <img src="../photos/secFour2.png" alt="">
+        <h1>مصدران للتأجير</h1>
+        <p>يمكنك استئجار الأشياء مباشرة منا أو من أشخاص في المجتمع يعرضون ممتلكاتهم على المنصة، مما يمنح المستخدمين المزيد من الخيارات والمرونة.</p>
+      </div>
+
+      <div class="card">
+        <img src="../photos/secFour3.png" alt="">
+        <h1>قوائم آمنة وموثوقة</h1>
+        <p>نتأكد من أن كل منتج مُدرج حقيقي وآمن وفي حالة جيدة. هذا يضمن الثقة بين المستأجرين والمالكين.</p>
+      </div>
+
+      <div class="card">
+        <img src="../photos/secFour4.png" alt="">
+        <h1>حجز وجدولة ذكية</h1>
+        <p>يمكنك بسهولة التحقق من توفر العناصر، وحجزها للتواريخ الدقيقة التي تحتاجها، وتجنب أي تعارض. هذا يجعل العملية سلسة وخالية من التوتر.</p>
+      </div>
+
+      <div class="card">
+        <img src="../photos/secFour5.png" alt="">
+        <h1>منصة سهلة الاستخدام</h1>
+        <p>موقعنا بسيط وسريع وسهل الاستخدام. يمكنك تصفح العناصر، حجزها، وإدارة إيجاراتك ببضع نقرات فقط.</p>
+      </div>
+
+      <div class="card">
+        <img src="../photos/secFour6.png" alt="">
+        <h1>وصول بأسعار معقولة</h1>
+        <p>بدلاً من دفع مبلغ كبير لشراء شيء بالكاد ستستخدمه، يمكنك استئجاره بجزء بسيط من السعر. بهذه الطريقة، يمكن للجميع الوصول لما يحتاجون إليه.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== Section Five (What Sets Us Apart) ========== -->
+  <div class="section-apart">
+    <h1>ما يميزنا</h1>
+    <p>نهجنا الفريد في تأجير الأدوات والمعدات يخلق تجربة مميزة تختلف عن<br>
+       <span>الخيارات التقليدية.</span>
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <img src="../photos/secFive1.png" alt="">
+        <div>
+          <h1>التركيز على العناصر قليلة الاستخدام</h1>
+          <p>لا نؤجر الأشياء اليومية؛ نحن نركز على العناصر التي يشتريها الناس مرة ونادرًا ما يستخدمونها. هذا يجعلنا مميزين ونغطي فجوة حقيقية.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../photos/secFive2.png" alt="">
+        <div>
+          <h1>نموذج هجين</h1>
+          <p>يجمع نموذجنا بين عالمين: عناصر نمتلكها وعناصر يعرضها مستخدمون آخرون. هذا يخلق سوقًا أكبر ويجعل المنصة أكثر ثراءً.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../photos/secFive3.png" alt="">
+        <div>
+          <h1>مدفوعة بالمجتمع</h1>
+          <p>الناس هم محور منصتنا. من خلال إتاحة مشاركة ممتلكاتهم للجميع، نبني الثقة والتعاون وثقافة المشاركة.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../photos/secFive4.png" alt="">
+        <div>
+          <h1>نهج صديق للبيئة</h1>
+          <p>من خلال تشجيع المشاركة بدلاً من شراء أشياء جديدة، نقلل الهدر وندعم الاستدامة.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../photos/secFive5.png" alt="">
+        <div>
+          <h1>أي شيء، في أي وقت</h1>
+          <p>منصتنا تتيح لك الوصول إلى مجموعة واسعة من العناصر وقتما تحتاج إليها، بلا حدود ولا تعقيد.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../photos/secFive6.png" alt="">
+        <div>
+          <h1>توصيل واستلام سلس</h1>
+          <p>نتولى التوصيل والاستلام بكفاءة، حتى لا يقلق المستخدمون بشأن إعادة الأشياء أو استلامها.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== Section Six (Our Vision) ========== -->
+  <div class="section-vision">
+    <img src="../photos/left2.png" alt="رؤيتنا">
+    <div class="text">
+      <h1>رؤيتنا</h1>
+      <p>رؤيتنا هي إنشاء نظام بيئي مستدام وميسور التكلفة وذكي للمشاركة، حيث يمكن للجميع الوصول بسهولة لما يحتاجونه دون هدر. نهدف إلى بناء مجتمعات أقوى من خلال تعزيز ثقافة التأجير والمشاركة، لجعل الحياة أبسط وأكثر استدامة للجميع.</p>
+    </div>
+  </div>
+
+ <!-- Footer  -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Logo + icons -->
+      <div class="footer-section">
+        <img src="../photos/Rectangle 17.png" alt="شعار Renturn" class="logo">
+        <p>شريكك الموثوق لتأجير الأدوات <br> والمعدات بجودة عالية.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="/Renturn.ar/index.html">الرئيسية</a></li>
+          <li><a href="./about.html">من نحن؟</a></li>
+          <li><a href="./privacypolicy.html">سياسة الخصوصية</a></li>
+          <li><a href="./termsandconditions.html">الشروط والأحكام</a></li>
+        </ul>
+      </div>
+
+      <!-- Account -->
+      <div class="footer-section">
+        <h4>الحساب</h4>
+        <ul>
+          <li><a href="./cart.html">سلة التسوق</a></li>
+          <li><a href="./signin.html">حسابي</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-section">
+        <h4>الدعم</h4>
+        <ul>
+          <li><a href="./help.html">مركز المساعدة</a></li>
+          <li><a href="./safety.html">إرشادات السلامة</a></li>
+        </ul>
+      </div>
+    
+      <!-- Contact Section -->
+      <div class="footer-section">
+        <h4>تواصل معنا</h4>
+        <ul>
+          <li><img src="../photos/Rectangle 14.png" alt="أيقونة الهاتف" class="phone-icon"> +201 123 4567 </li>
+          <li><img src="../photos/mail.png" alt="أيقونة البريد" class="email-icon"> renturner@gmail.com</li>
+          <br><p>تابعنا على وسائل التواصل الاجتماعي</p><br>
+          <div class="social-icons">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <div class="payment-icons">
+        <a href="#" aria-label="PayPal"><i class="fab fa-cc-paypal"></i></a>
+        <a href="#" aria-label="Apple Pay"><i class="fab fa-cc-apple-pay"></i></a>
+        <a href="#" aria-label="Visa"><i class="fab fa-cc-visa"></i></a>
+      </div>
+      <p>© 2025 Renturn. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <script src="../../lang.js"></script>
+<script src="../js/innerSearch.js"></script>
+</body>
+</html>

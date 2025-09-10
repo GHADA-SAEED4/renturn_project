@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الشروط والأحكام</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../CSS/terms.css">
+      <link rel="icon" href="../photos/R logo.png">
+
+</head>
+<body style="padding-top:100px;">
+
+<header id="header">
+  <div class="container">
+    <div class="logo"><img src="../photos/renturn logo.png" alt="الشعار"></div>
+    <div class="search">
+      <input type="text" id="search" placeholder="ابحث عن منتج" />
+      <p id="error">⚠️ يرجى إدخال اسم الفئة</p>
+      <i class="fa-solid fa-search" onclick="validateSearch()"></i>
+    </div>
+    <nav>
+      <div class="nav-v">
+        <a href="../index.html">الرئيسية</a>
+        <a href="about.html">من نحن</a>
+        <!-- Dropdown Categories -->
+        <div class="dropdown">
+          <button class="dropbtn">الفئات ▾</button>
+          <div class="dropdown-content">
+            <a href="./electronics.html">إلكترونيات</a>
+            <a href="./tools.html">أدوات</a>
+            <a href="./clothes.html">ملابس</a>
+            <a href="./music.html">آلات موسيقية</a>
+          </div>
+        </div>
+      </div>
+      <button class="nav-btn" onclick="window.location.href='./cart.html'">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      <button class="nav-btn" onclick="window.location.href='./signin.html'">
+        <i class="fa-solid fa-user"></i>
+      </button>
+      <button class="nav-btn" id="langToggle" >
+        <i class="fa-solid fa-globe"></i> 
+      </button>
+    </nav>
+  </div>
+</header>
+  <br>
+
+<h1>الشروط والأحكام</h1>
+<br>
+<p class="sub-heading">يرجى قراءة هذه الشروط بعناية قبل استخدام خدمات منصة الإيجار الخاصة بنا</p>
+<p class="date">آخر تحديث: يناير 2025</p>
+
+<!-- التعريفات -->
+<div class="card">
+  <h2 class="section-title"><i class="fa-solid fa-book"></i> التعريفات</h2>
+  <div class="definitions">
+    <p><span>"نحن"</span> تشير إلى Renturn وشركاتها التابعة</p>
+    <p><span>"أنت / المستخدم / المستأجر"</span> تشير إلى الشخص الذي يستخدم خدماتنا</p>
+    <p><span>"المعدات"</span> تشمل جميع العناصر المتاحة للإيجار بما في ذلك الملابس، الإلكترونيات، الكاميرات، الطائرات بدون طيار، معدات الصوت، وأجهزة العرض</p>
+    <p><span>"مدة الإيجار"</span> تشير إلى الفترة المتفق عليها لاستخدام المعدات</p>
+    <p><span>"رسوم الإيجار"</span> تشير إلى تكلفة استئجار المعدات</p>
+    <p><span>"التأمين"</span> يشير إلى المبلغ القابل للاسترداد المحتجز كضمان</p>
+  </div>
+</div>
+
+<!-- متطلبات حساب المستخدم -->
+<div class="card">
+  <h2 class="section-title"><i class="fa-solid fa-user"></i> متطلبات حساب المستخدم</h2>
+  <p>
+    لاستخدام خدمات الإيجار، يجب إنشاء حساب وتقديم معلومات دقيقة وكاملة.
+    <br><br>أنت مسؤول عن الحفاظ على أمان بيانات حسابك وجميع الأنشطة التي تتم باستخدام حسابك.
+  </p>
+  <div class="note">
+    <i class="fa-solid fa-shield-halved"></i> 
+    يجب أن يكون عمر صاحب الحساب 18 سنة فأكثر وتقديم هوية صالحة عند الحاجة.
+  </div>
+</div>
+
+<!-- التزامات المستخدم -->
+<div class="card">
+  <h2 class="section-title"><i class="fa-solid fa-users"></i> التزامات المستخدم</h2>
+  <div class="obligations">
+    <div>
+      <h3>للمستأجرين</h3>
+      <ul>
+        <li><i class="fa-solid fa-check"></i> إعادة العناصر بحالتها الأصلية</li>
+        <li><i class="fa-solid fa-check"></i> دفع رسوم الإيجار في الوقت المحدد</li>
+        <li><i class="fa-solid fa-check"></i> الإبلاغ عن أي أضرار فورًا</li>
+        <li><i class="fa-solid fa-check"></i> استخدام العناصر بمسؤولية</li>
+      </ul>
+    </div>
+    <div>
+      <h3>للملاك</h3>
+      <ul>
+        <li><i class="fa-solid fa-check"></i> تقديم وصف دقيق للمنتجات</li>
+        <li><i class="fa-solid fa-check"></i> التأكد من أن العناصر نظيفة وصالحة للاستخدام</li>
+        <li><i class="fa-solid fa-check"></i> تنظيم التسليم والاستلام</li>
+        <li><i class="fa-solid fa-check"></i> وضع شروط إيجار واضحة</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- اتفاقية الإيجار -->
+<div class="card">
+  <h2 class="section-title"><i class="fa-solid fa-file-contract"></i> اتفاقية الإيجار</h2>
+  <p>
+    عند تقديم الطلب، يكون ذلك مجرد عرض لاستئجار المعدات (وليس عقدًا بعد). 
+    يبدأ عقد الإيجار فقط بعد تأكيد الطلب. نحتفظ بالحق في رفض أي طلب لأي سبب:
+    المعدات غير متاحة، الجدارة الائتمانية ضعيفة، انتهاك الشروط.
+  </p>
+  <br>
+  <p class="highlight">
+    "قد نطلب من المستأجر دفع دفعة مسبقة أو تقديم ضمان (مثل بطاقة ائتمان أو تأمين) للتحقق من الجدارة الائتمانية وضمان الالتزام بشروط الدفع."
+  </p>
+</div>
+
+<!-- الشحن والتوصيل -->
+<div class="card">
+  <h2 class="section-title"><i class="fa-solid fa-truck"></i> الشحن والتوصيل</h2>
+  <p>
+    نقدم خيارات شحن متعددة بمواعيد مختلفة. عند التسليم، يجب فحص المعدات فورًا والإبلاغ عن أي أضرار أو نقص خلال 24 ساعة. 
+    عدم الإبلاغ قد يؤدي إلى تحمل رسوم إضافية.
+  </p>
+</div>
+
+<!-- استخدام المعدات -->
+<div class="card">
+  <h2 class="section-title"><i class="fa-solid fa-screwdriver-wrench"></i> استخدام المعدات</h2>
+  <p>يجب استخدام المعدات بمسؤولية وللغرض المقصود فقط. أنت توافق على:</p>
+  <ul>
+    <li>استخدام المعدات وفقًا للقوانين المعمول بها</li>
+    <li>عدم تعديل أو العبث بالمعدات</li>
+    <li>عدم تأجير المعدات أو نقلها لأشخاص غير مصرح لهم</li>
+    <li>التعامل مع المعدات بعناية معقولة</li>
+  </ul>
+</div>
+
+<!-- عملية الإرجاع -->
+<div class="card">
+  <h2 class="section-title"><i class="fa-solid fa-rotate-left"></i> عملية الإرجاع</h2>
+  <p>
+    يجب إعادة المعدات في العبوة الأصلية، بنفس الحالة التي تم استلامها، في التاريخ المتفق عليه. 
+    التأخر قد يترتب عليه رسوم إضافية. يجب إعادة جميع الملحقات والوثائق.
+  </p>
+</div>
+
+<!-- سياسة الإلغاء -->
+<div class="card">
+  <h2 class="section-title"><i class="fa-solid fa-xmark"></i> سياسة الإلغاء</h2>
+  <div class="note" style="flex-direction: column; align-items: flex-start;">
+    <p>• يمكن للمستخدمين إلغاء الطلبات قبل 24 ساعة من موعد الشحن لاسترداد كامل المبلغ</p>
+    <p>• الإلغاءات بعد الشحن غير قابلة للاسترداد</p>
+    <p>• نحتفظ بالحق في إلغاء أي طلب وسيتم استرداد كامل المبلغ إذا قمنا بذلك</p>
+  </div>
+</div>
+
+<!-- حقوق الملكية الفكرية -->
+<div class="card">
+  <h2 class="section-title"><i class="fa-solid fa-copyright"></i> حقوق الملكية الفكرية</h2>
+  <p>
+    جميع محتويات الموقع، العلامات التجارية، التصميم، والتقنيات المملوكة تظل ملكية حصرية لـ Renturn. 
+    الاستخدام غير المصرح به ممنوع تمامًا.
+  </p>
+</div>
+
+<!-- القانون الواجب التطبيق -->
+<div class="card">
+  <h2 class="section-title"><i class="fa-solid fa-scale-balanced"></i> القانون الواجب التطبيق</h2>
+  <p>
+    هذه الشروط والأحكام تخضع لقوانين القاهرة، مصر. 
+    أي نزاعات سيتم حلها في محاكم القاهرة.
+  </p>
+</div>
+
+<!-- التعديلات على الشروط -->
+<div class="card">
+  <h2 class="section-title"><i class="fa-solid fa-pen-to-square"></i> التعديلات على الشروط</h2>
+  <p>
+    نحتفظ بالحق في تعديل هذه الشروط في أي وقت. 
+    تصبح التعديلات سارية فور نشرها على الموقع. 
+    استمرار استخدامك للخدمات يعني قبول الشروط المعدلة.
+  </p>
+</div>
+
+<br><br><br>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Logo + icons -->
+    <div class="footer-section">
+      <img src="../photos/Rectangle 17.png" alt="شعار Renturn" class="logo">
+      <p>شريكك الموثوق لتأجير الأدوات والمعدات عالية الجودة.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section">
+      <h4>روابط سريعة</h4>
+      <ul>
+        <li><a href="../index.html">الرئيسية</a></li>
+        <li><a href="./about.html">من نحن</a></li>
+        <li><a href="./privacypolicy.html">سياسة الخصوصية</a></li>
+        <li><a href="./termsandconditions.html">الشروط والأحكام</a></li>
+      </ul>
+    </div>
+
+    <!-- Account -->
+    <div class="footer-section">
+      <h4>الحساب</h4>
+      <ul>
+        <li><a href="./cart.html">سلة التسوق</a></li>
+        <li><a href="./signin.html">حسابي</a></li>
+      </ul>
+    </div>
+
+    <!-- Support -->
+    <div class="footer-section">
+      <h4>الدعم</h4>
+      <ul>
+        <li><a href="./help.html">مركز المساعدة</a></li>
+        <li><a href="./pages/safety.html">إرشادات السلامة</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="footer-section">
+      <h4>تواصل معنا</h4>
+      <ul>
+        <li><img src="../photos/Rectangle 14.png" alt="الهاتف" class="phone-icon"> +201 123 4567 </li>
+        <li><img src="../photos/mail.png" alt="البريد الإلكتروني" class="email-icon"> renturner@gmail.com</li>
+        <br>
+        <p>تابعنا على وسائل التواصل الاجتماعي</p>
+        <br>
+        <div class="social-icons">
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Bottom Section -->
+  <div class="footer-bottom">
+    <div class="payment-icons">
+      <a href="#" aria-label="PayPal"><i class="fab fa-cc-paypal"></i></a>
+      <a href="#" aria-label="Apple Pay"><i class="fab fa-cc-apple-pay"></i></a>
+      <a href="#" aria-label="Visa"><i class="fab fa-cc-visa"></i></a>
+    </div>
+    <p>© 2025 Renturn. جميع الحقوق محفوظة.</p>
+  </div>
+</footer>
+
+<script src="../../lang.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

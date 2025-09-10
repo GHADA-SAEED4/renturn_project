@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>إرشادات السلامة</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../CSS/safety.css"/>
+  <link rel="icon" href="./photos/R logo.png" type="image.png">
+</head>
+<body>
+    <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div class="logo"><img src="../photos/renturn logo.png" alt="logo"></div>
+      <div class="search">
+        <input  type="text" id="search" placeholder="البحث عن منتج" />
+        <p id="error">⚠️ يرجى ادخال اسم الفئة</p>
+        <i class="fa-solid fa-search" onclick="validateSearch()"></i>
+      </div>
+      <nav>
+        <div class="nav-v">
+        <a href="../index.html">الرئيسية</a>
+        <a href="./about.html" >من نحن </a>
+        <!-- Dropdown Categories -->
+        <div class="dropdown">
+          <button class="dropbtn">الفئات ▾</button>
+          <div class="dropdown-content">
+            <a href="./electronics.html">الإلكترونيات</a>
+            <a href="./tools.html">الأدوات</a>
+            <a href="./clothes.html">الملابس</a>
+            <a href="./music.html">الآلات الموسيقية</a>
+          </div>
+        </div>
+        </div>
+
+      <button class="nav-btn" onclick="window.location.href='./cart.html'">
+  <i class="fa-solid fa-cart-shopping"></i>
+</button>
+
+<button class="nav-btn" onclick="window.location.href='./signin.html'">
+  <i class="fa-solid fa-user"></i>
+</button>
+
+      <button class="nav-btn" id="langToggle" >
+        <i class="fa-solid fa-globe"></i>
+      </button>
+      </nav>
+    </div>
+  </header>
+
+    <!-- ===== Page Content ===== -->
+<main class="page">
+    
+    <section class="hero">
+      <h1>ارشادات السلامة</h1>
+      <p>سلامتك هي أولويتنا. معًا، نخلق مجتمعًا موثوقًا حيث يمكن للجميع التأجير بثقة.</p>
+    </section>
+    
+
+    <!-- Shared Responsibility -->
+     <div class="container-box">
+    <section class="card-wrap">
+      <h2 class="section-title">المسؤولية المشتركة</h2>
+      <p class="section-subtitle">مرحبًا بك في مجتمع Renturn، حيث تأتي الثقة والسلامة أولاً</p>
+      <div class="grid grid-3">
+        <article class="card">
+          <div class="icon"><i class="fa-solid fa-users"></i></div>
+          <h3>المجتمع أولاً</h3>
+          <p>نحن نبني مجتمعًا حيث يعتني الجميع بسلامة ورفاهية بعضهم البعض.</p>
+        </article>
+        <article class="card">
+          <div class="icon"><i class="fa-solid fa-handshake"></i></div>
+          <h3>المسؤولية المشتركة</h3>
+          <p>يلعب كل من الملاك والمستأجرين دورًا أساسيًا في الحفاظ على معايير السلامة عبر جميع عمليات الإيجار</p>
+        </article>
+        <article class="card">
+          <div class="icon"><i class="fa-solid fa-file-signature"></i></div>
+          <h3>الاتفاقية</h3>
+          <p>باستخدامك لـ Renturn، فإنك توافق على إعطاء الأولوية للسلامة في كل عملية إيجار..</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Universal Safety Principles -->
+    <section class="card-wrap">
+      <h2 class="section-title">المبادئ العالمية للسلامة</h2>
+      <div class="grid grid-3">
+        <article class="card"><div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div><h3>التفتيش إلزامي</h3><p>يجب فحص العناصر بدقة قبل وبعد الإيجار. وثق أي ضرر موجود مسبقًا بالصور أو الفيديو.</p></article>
+        <article class="card"><div class="icon"><i class="fa-solid fa-pump-soap"></i></div><h3>النظافة والصحة</h3><p>يجب أن تكون العناصر نظيفة ومعقمة. أعدها بنفس الحالة مع استثناء التآكل العادي.</p></article>
+        <article class="card"><div class="icon"><i class="fa-solid fa-circle-check"></i></div><h3>الاستخدام الصحيح</h3><p>استخدم العناصر فقط للغرض المقصود. اقرأ جميع التعليمات المقدمة بعناية.</p></article>
+        <article class="card"><div class="icon"><i class="fa-solid fa-shield-halved"></i></div><h3>بيئة آمنة</h3><p>استخدم العناصر في بيئات مناسبة وآمنة وجافة تناسب المعدات.</p></article>
+        <article class="card"><div class="icon"><i class="fa-solid fa-eye"></i></div><h3>الإشراف</h3><p>لا تترك العناصر الكهربائية أو الميكانيكية أو الخاصة بالأطفال دون مراقبة أثناء الاستخدام.</p></article>
+        <article class="card"><div class="icon"><i class="fa-solid fa-children"></i></div><h3>الأطفال والحيوانات الأليفة</h3><p>مارس الحذر الشديد. العديد من العناصر ليست ألعابًا ويمكن أن تشكل مخاطر خطيرة.</p></article>
+      </div>
+    </section>
+
+    <!-- Category-Specific -->
+    <section class="card-wrap">
+      <h2 class="section-title">إرشادات السلامة الخاصة بكل فئة</h2>
+      <div class="grid grid-2">
+        <article class="card"><div class="icon"><i class="fa-solid fa-plug"></i></div><h3>الإلكترونيات والأجهزة</h3><ul class="list"><li>أبقيها بعيدًا عن الماء والرطوبة</li><li>تحقق من تلف الأسلاك الكهربائية قبل الاستخدام</li><li>تعامل مع بطاريات الليثيوم أيون بحذر؛ تجنب السخونة الزائدة</li><li>كن على دراية بتوليد الحرارة أثناء التشغيل</li></ul></article>
+        <article class="card"><div class="icon"><i class="fa-solid fa-shirt"></i></div><h3>الملابس والمنسوجات</h3><ul class="list"><li>أبقيها بعيدًا عن اللهب المكشوف ومصادر الحرارة</li><li>تجنب الأجسام الحادة التي قد تسبب تمزقًا</li><li>استخدم حماية ضد البقع عند الاقتضاء</li><li>قم بتخزين الملابس الرسمية على شماعات مبطنة</li></ul></article>
+        <article class="card"><div class="icon"><i class="fa-solid fa-cake-candles"></i></div><h3>إمدادات الأحداث والحفلات</h3><ul class="list"><li>احترم حدود الوزن للطاولات والكراسي</li><li>اتبع تعليمات التجميع للهياكل</li><li>قم بتأمين جميع الزينة بشكل صحيح</li><li>قم بإدارة الكابلات والبياضات لمنع التعثر</li></ul></article>
+        <article class="card"><div class="icon"><i class="fa-solid fa-screwdriver-wrench"></i></div><h3>الأدوات والمعدات</h3><ul class="list"><li>ارتدِ دائمًا معدات الحماية الشخصية المناسبة (القفازات، النظارات، الأقنعة)</li><li>تأكد من التدريب المناسب قبل الاستخدام</li><li>قم بتأمين قطع العمل بشكل صحيح</li><li>اقرأ جميع كتيبات السلامة بعناية</li></ul></article>
+      </div>
+    </section>
+
+    <!-- Responsibilities -->
+    <section class="card-wrap">
+      <h2 class="section-title">المسؤوليات</h2>
+      <div class="grid grid-2">
+        <article class="card"><div class="icon"><i class="fa-solid fa-user-shield"></i></div><h3>مسؤولية المالك</h3><ul class="list"><li><strong>قوائم دقيقة</strong> — تمثيل حالة العنصر والعمر والوظائف بصدق</li><li><strong>الإفصاح الكامل</strong> — الكشف بوضوح عن أي عيوب معروفة أو اعتبارات تتعلق بالسلامة</li><li><strong>توفير التعليمات</strong> — تضمين الكتيبات أو تعليمات التشغيل الآمنة الواضحة</li></ul></article>
+        <article class="card"><div class="icon"><i class="fa-solid fa-user-check"></i></div><h3>مسؤولية المستأجر</h3><ul class="list"><li><strong>طرح الأسئلة</strong> — الاتصال بـ Renturn إذا كانت التعليمات غير واضحة قبل الاستخدام</li><li><strong>استخدام الحس السليم</strong> — التوقف عن الاستخدام على الفور إذا كان هناك شيء يشعر بعدم الأمان</li><li><strong>الإبلاغ عن المشكلات</strong> — الإبلاغ عن الأعطال إلى Renturn على الفور</li></ul></article>
+      </div>
+    </section>
+
+    <!-- Emergency -->
+    <section class="card-wrap">
+      <h2 class="section-title">حالات الطوارئ</h2>
+      <div class="grid grid-3">
+        <article class="card"><div class="icon"><i class="fa-solid fa-kit-medical"></i></div><h3>الإصابة</h3><p>اطلب العناية الطبية أولاً. ثم اتصل بالمالك ودعم Renturn.</p></article>
+        <article class="card"><div class="icon"><i class="fa-solid fa-bolt"></i></div><h3>حريق / كهرباء</h3><p>قم بإيقاف التشغيل بأمان إذا كان ذلك ممكنًا. إخلاء المكان واتصل بخدمات الطوارئ.</p></article>
+        <article class="card"><div class="icon"><i class="fa-solid fa-triangle-exclamation"></i></div><h3>عنصر تالف</h3><p>توقف عن الاستخدام على الفور. اتصل بـ Renturn للإبلاغ عن المشكلة.</p></article>
+      </div>
+    </section>
+  </main>
+   <br><br>
+    <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Logo + icons -->
+      <div class="footer-section">
+        <img src="../photos/Rectangle 17.png" alt="Renturn Logo" class="logo">
+
+        <p>شريكك الموثوق لتأجير <br>الأدوات والمعدات بجوده عاليه .</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="../index.html">الرئيسية</a></li>
+          <li><a href="./about.html">من نحن</a></li>
+          <li><a href="./privacypolicy.html">سياسة الخصوصية</a></li>
+          <li><a href="./termsandconditions.html">الشروط والأحكام</a></li>
+        </ul>
+      </div>
+
+      <!-- Account -->
+      <div class="footer-section">
+        <h4>الحساب</h4>
+        <ul>
+          <li><a href="./cart.html">عربة التسوق</a></li>
+          <li><a href="./account.html">حسابي</a></li>
+
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-section">
+        <h4>الدعم</h4>
+        <ul>
+          <li><a href="./help.html">مركز المساعدة</a></li>
+          <li><a href="./safety.html">إرشادات السلامة</a></li>
+
+        </ul>
+      </div>
+    
+    <!-- Contact Section -->
+   <div class="footer-section">
+        <h4>تواصل معنا</h4>
+        <ul>
+          <li><img src="../photos/Rectangle 14.png" alt="Phone Icon" class="phone-icon"> +201 123 4567 </li>
+          <li><img src="../photos/mail.png" alt="Email Icon" class="email-icon"> renturner@gmail.com</li>
+          <br><p>تابعنا على وسائل التواصل الاجتماعي</p><br>
+           <div class="social-icons">
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        </ul>
+      </div>
+      </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <div class="payment-icons">
+        <a href="#" aria-label="PayPal"><i class="fab fa-cc-paypal"></i></a>
+        <a href="#" aria-label="Apple Pay"><i class="fab fa-cc-apple-pay"></i></a>
+        <a href="#" aria-label="Visa"><i class="fab fa-cc-visa"></i></a>
+      </div>
+      <p>© 2025 Renturn. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="../../lang.js"></script>
+</body>
+</html>

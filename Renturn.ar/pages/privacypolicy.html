@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سياسة الخصوصية</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../CSS/privacy.css"/>
+  <link rel="icon" href="./photos/R logo.png" type="image.png">
+</head>
+<body>
+    <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div class="logo"><img src="../photos/renturn logo.png" alt="logo"></div>
+      <div class="search">
+        <input  type="text" id="search" placeholder="ابحث عن منتج" />
+        <p id="error">⚠️ يرجى ادخال اسم الفئة</p>
+        <i class="fa-solid fa-search" onclick="validateSearch()"></i>
+      </div>
+      <nav>
+        <div class="nav-v">
+        <a href="../index.html">الرئيسية</a>
+        <a href="./about.html" >من نحن </a>
+        <!-- Dropdown Categories -->
+        <div class="dropdown">
+          <button class="dropbtn">الفئات ▾</button>
+          <div class="dropdown-content">
+            <a href="./electronics.html">الإلكترونيات</a>
+            <a href="./tools.html">الأدوات</a>
+            <a href="./clothes.html">الملابس</a>
+            <a href="./music.html">الآلات الموسيقية</a>
+          </div>
+        </div>
+        </div>
+
+      <button class="nav-btn" onclick="window.location.href='./cart.html'">
+  <i class="fa-solid fa-cart-shopping"></i>
+</button>
+
+<button class="nav-btn" onclick="window.location.href='./signin.html'">
+  <i class="fa-solid fa-user"></i>
+</button>
+        <button class="nav-btn" id="langToggle" >
+            <i class="fa-solid fa-globe"></i>
+        </button>
+
+      </nav>
+    </div>
+  </header>
+  <br><br><br><br><br><br>
+
+
+    <div class="containerr">
+        <h1 class="main-heading">السياسة الخصوصية</h1>
+        <br>
+        <p class="sub-heading">خصوصيتك تهمنا. تعرف على كيفية حماية معلوماتك والتعامل معها بشفافية كاملة.</p>
+        <p class="last-updated">آخر تحديث: يناير 2025</p>
+        <br>
+
+        <div class="policy-box">
+            <p class="policy-intro">
+                مرحبًا بك في Renturn. نحن نهتم بخصوصيتك ونريدك أن تشعر بالأمان أثناء استخدامك لخدماتنا. توضح لك سياسة الخصوصية هذه بوضوح المعلومات التي نجمعها، وأسباب جمعها، وكيف نحافظ على سريتها وأمانها. إن استخدامك لـ Renturn يعني موافقتك على هذه السياسة، لذا نرجو منك أن تأخذ لحظة لقراءتها وفهم كيف نحمي معلوماتك.
+            </p>
+
+            <div class="section-header">
+                <i class="fas fa-database icon"></i>
+                <h2>المعلومات التي نجمعها</h2>
+            </div>
+            <p class="section-description">
+                نحن نجمع المعلومات لنقدّم لك أفضل تجربة إيجار ممكنة. إليك ما قد نقوم بجمعه:
+            </p>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-user icon"></i>
+                        <h3>المعلومات الشخصية</h3>
+                    </div>
+                    <ul>
+                        <li class="list-item"><i class="fas fa-check check-icon"></i> اسمك، بريدك الإلكتروني، رقم هاتفك للحجوزات، رقم الهوية الوطنية</li>
+                        <li class="list-item"><i class="fas fa-check check-icon"></i> تفاصيل الحساب إذا قمت بإنشاء حساب على Renturn</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-credit-card icon"></i>
+                        <h3>معلومات الدفع</h3>
+                    </div>
+                    <ul>
+                        <li class="list-item"><i class="fas fa-check check-icon"></i> فاصيل بطاقة الائتمان أو غيرها من بيانات الدفع تتم معالجتها بشكل آمن.</li>
+                        <li class="list-item"><i class="fas fa-check check-icon"></i> تاريخ المعاملات المتعلقة بالإيجارات أو المشتريات</li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-map-marker-alt icon"></i>
+                        <h3>معلومات الموقع</h3>
+                    </div>
+                    <ul>
+                        <li class="list-item"><i class="fas fa-check check-icon"></i> تساعدنا في توصيل أو استلام الإيجارات بكفاءة.</li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-chart-line icon"></i>
+                        <h3>معلومات الاستخدام</h3>
+                    </div>
+                    <ul>
+                        <li class="list-item"><i class="fas fa-check check-icon"></i> الصفحات التي تمت زيارتها، العناصر المحجوزة، الإجراءات على الموقع</li>
+                        <li class="list-item"><i class="fas fa-check check-icon"></i> معلومات الجهاز/المتصفح لتحسين أداء الموقع</li>
+                    </ul>
+                </div>
+                
+                <div class="info-card communication-card">
+                    <div class="card-header">
+                        <i class="fas fa-comment-dots icon"></i>
+                        <h3>معلومات الاتصال</h3>
+                    </div>
+                    <ul>
+                        <li class="list-item"><i class="fas fa-check check-icon"></i> الرسائل، البريد الإلكتروني، أو طلبات الدعم المرسلة إلينا.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section-header">
+                <i class="fas fa-cog icon"></i>
+                <h2>كيفية استخدام معلوماتك</h2>
+            </div>
+            <p class="section-description">
+                نحن نستخدم معلوماتك ل :
+            </p>
+            <ul class="use-list">
+                <li class="list-item"><i class="fas fa-check-circle check-icon"></i>تقديم خدمات Renturn وإدارتها بسلاسة.</li>
+                <li class="list-item"><i class="fas fa-check-circle check-icon"></i> تأكيد الحجوزات، إرسال التذكيرات، والتواصل بشأن التحديثات.</li>
+                <li class="list-item"><i class="fas fa-check-circle check-icon"></i> تحسين الموقع والخدمات بناءً على أنماط الاستخدام.</li>
+                <li class="list-item"><i class="fas fa-check-circle check-icon"></i> إرسال عروض ترويجية فقط إذا كنت قد وافقت على ذلك</li>
+            </ul>
+            
+            <div class="section-header">
+                <i class="fas fa-share-alt icon"></i>
+                <h2>مشاركة معلوماتك</h2>
+            </div>
+            <div class="no-sell-box">
+                نحن لا نبيع بياناتك.
+            </div>
+            <ul class="sharing-info-list">
+                <li class="list-item"><i class="fas fa-handshake icon"></i> قد نشارك المعلومات مع شركاء موثوقين مثل معالجي الدفع أو خدمات التوصيل.</li>
+                <li class="list-item"><i class="fas fa-gavel icon"></i> الكشف عن المعلومات إذا كان ذلك **مطلوبًا قانونيًا** أو لحماية Renturn والمستخدمين</li>
+            </ul>
+            
+            <div class="section-header">
+                <i class="fas fa-shield-alt icon"></i>
+                <h2>حماية بياناتك</h2>
+            </div>
+            <div class="safe-cards-container">
+                <div class="safe-card">
+                    <i class="fas fa-lock icon"></i>
+                    <p>تساعد أنظمة التشفير والأمان في حماية المعلومات الحساسة.</p>
+                </div>
+                <div class="safe-card">
+                    <i class="fas fa-users-cog icon"></i>
+                    <p>يمكن فقط لأعضاء الفريق المصرح لهم الوصول إلى المعلومات الشخصية.</p>
+                </div>
+                <div class="safe-card">
+                    <i class="fas fa-sync-alt icon"></i>
+                    <p>تتم تحديث ممارسات الأمان بانتظام.</p>
+                </div>
+            </div>
+            
+            <div class="section-header">
+                <i class="fas fa-user-shield icon"></i>
+                <h2>حقوقك</h2>
+            </div>
+            <p class="section-description">
+                أنت المتحكم:
+            </p>
+            <ul class="rights-list">
+                <li class="list-item"><i class="fas fa-download icon"></i> طلب نسخة من معلوماتك</li>
+                <li class="list-item"><i class="fas fa-trash-alt icon"></i> حذف البيانات (إذا كان ذلك مسموحًا قانونيًا)</li>
+                <li class="list-item"><i class="fas fa-edit icon"></i> تصحيح/تحديث المعلومات</li>
+              <li class="list-item"><i class="fas fa-envelope-open-text icon"></i> إلغاء الاشتراك في رسائل البريد الإلكتروني التسويقية في أي وقت</li>
+</ul>
+            
+            <div class="section-header">
+                <i class="fas fa-cookie-bite icon"></i>
+                <h2>ملفات تعريف الارتباط (Cookies) والتتبع.</h2>
+            </div>
+            <div class="cookies-grid">
+                <div class="cookie-card">
+                    <div class="cookie-card-header">
+                        <i class="fas fa-star-of-life icon"></i>
+                        <h3>ملفات تعريف الارتباط الأساسية</h3>
+                    </div>
+                    <p>مطلوبة لعمل الموقع بشكل أساسي.</p>
+                </div>
+                <div class="cookie-card">
+                    <div class="cookie-card-header">
+                        <i class="fas fa-cogs icon"></i>
+                        <h3>ملفات تعريف الارتباط التفضيلية</h3>
+                    </div>
+                    <p>تساعد في تحسين تجربة المستخدم من خلال تذكر تفضيلاتك.</p>
+                </div>
+                <div class="cookie-card">
+                    <div class="cookie-card-header">
+                        <i class="fas fa-chart-bar icon"></i>
+                        <h3>ملفات تعريف الارتباط الخاصة بالأداء</h3>
+                    </div>
+                    <p>تساعد في تحليل استخدام الموقع.</p>
+                </div>
+                <div class="cookie-card">
+                    <div class="cookie-card-header">
+                        <i class="fas fa-paper-plane icon"></i>
+                        <h3>ملفات تعريف الارتباط التسويقية</h3>
+                    </div>
+                    <p>فقط إذا تم الاشتراك.</p>
+                </div>
+            </div>
+
+            <div class="section-header">
+                <i class="fas fa-external-link-alt icon"></i>
+                <h2>روابط الطرف الثالث</h2>
+            </div>
+            <p class="section-description">
+                غير مسؤول عن ممارسات الخصوصية لمواقع الويب المرتبطة. تحقق من سياساتهم قبل مشاركة المعلومات.
+            </p>
+
+            <div class="section-header">
+                <i class="fas fa-history icon"></i>
+                <h2>تحديثات السياسة</h2>
+            </div>
+            <p class="section-description">
+                قد يتم تحديث السياسة بين الحين والآخر من أجل **خدمات جديدة أو تحسينات أمنية**. تحقق من العودة بشكل دوري.
+            </p>
+        </div>
+    </div>
+    <br><br><br><br>
+    <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Logo + icons -->
+      <div class="footer-section">
+        <img src="../photos/Rectangle 17.png" alt="Renturn Logo" class="logo">
+
+        <p>شريكك الموثوق لتأجير <br>الأدوات والمعدات بجوده عاليه .</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="../index.html">الرئيسية</a></li>
+          <li><a href="./about.html">من نحن</a></li>
+          <li><a href="./privacypolicy.html">سياسة الخصوصية</a></li>
+          <li><a href="./termsandconditions.html">الشروط والأحكام</a></li>
+        </ul>
+      </div>
+
+      <!-- Account -->
+      <div class="footer-section">
+        <h4>الحساب</h4>
+        <ul>
+          <li><a href="./cart.html">عربة التسوق</a></li>
+          <li><a href="./account.html">حسابي</a></li>
+
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-section">
+        <h4>الدعم</h4>
+        <ul>
+          <li><a href="./help.html">مركز المساعدة</a></li>
+          <li><a href="./safety.html">إرشادات السلامة</a></li>
+
+        </ul>
+      </div>
+    
+    <!-- Contact Section -->
+   <div class="footer-section">
+        <h4>تواصل معنا</h4>
+        <ul>
+          <li><img src="../photos/Rectangle 14.png" alt="Phone Icon" class="phone-icon"> +201 123 4567 </li>
+          <li><img src="../photos/mail.png" alt="Email Icon" class="email-icon"> renturner@gmail.com</li>
+          <br><p>تابعنا على وسائل التواصل الاجتماعي</p><br>
+           <div class="social-icons">
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        </ul>
+      </div>
+      </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <div class="payment-icons">
+        <a href="#" aria-label="PayPal"><i class="fab fa-cc-paypal"></i></a>
+        <a href="#" aria-label="Apple Pay"><i class="fab fa-cc-apple-pay"></i></a>
+        <a href="#" aria-label="Visa"><i class="fab fa-cc-visa"></i></a>
+      </div>
+      <p>© 2025 Renturn. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../../lang.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

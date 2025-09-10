@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renturn - الدفع</title>
+    <link rel="stylesheet" href="../css/checkout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+             <link
+            rel="icon"
+            href="../../../../photos/R logo.png"
+            type="image.png"
+        />
+</head>
+
+<body dir="rtl">
+
+    <!--  الهيدر  -->
+    <header id="header">
+        <div class="container">
+            <div class="logo"><img src="../photos/renturn logo.png" alt="logo"></div>
+            <div class="search">
+                <input type="text" placeholder="ابحث عن منتج" />
+                <i class="fa-solid fa-search"></i>
+            </div>
+            <nav>
+                <div class="nav-v">
+                    <a href="../index.html">الرئيسية</a>
+                    <a href="about.html">من نحن</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">التصنيفات ▾</button>
+                        <div class="dropdown-content">
+                            <a href="../pages/electronics.html">إلكترونيات</a>
+                            <a href="../pages/tools.html">أدوات</a>
+                            <a href="../pages/clothes.html">ملابس</a>
+                            <a href="../pages/music.html">آلات موسيقية</a>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="nav-btn" onclick="window.location='../pages/cart.html'">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+
+                <button class="nav-btn" onclick="window.location='../pages/signin.html'">
+                    <i class="fa-solid fa-user"></i>
+                </button>
+
+                <button class="nav-btn" id="langToggle" >
+                  <i class="fa-solid fa-globe"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- مسافة لتجنب الهيدر الثابت -->
+    <div style="height: 90px;"></div>
+
+    <!-- ===== المحتوى الرئيسي ===== -->
+    <main class="container">
+        <section class="checkout-progress">
+            <ol class="progress-steps">
+                <li>
+                    <div class="step-number">1</div>
+                    <span>السلة</span>
+                </li>
+                <li class="active">
+                    <div class="step-number">2</div>
+                    <span>الدفع</span>
+                </li>
+                <li>
+                    <div class="step-number">3</div>
+                    <span>المدفوعات</span>
+                </li>
+                <li>
+                    <div class="step-number">4</div>
+                    <span>التأكيد</span>
+                </li>
+            </ol>
+        </section>
+
+        <section class="cart-section">
+            <div class="checkout-details">
+                <h2>تفاصيل الدفع</h2>
+                <div class="delivery-address-header">عنوان التسليم</div>
+                <form class="checkout-form">
+                    <div class="form-group two-columns">
+                        <div class="input-container">
+                            <label for="firstName">الاسم الأول</label>
+                            <input type="text" id="firstName">
+                        </div>
+                        <div class="input-container">
+                            <label for="lastName">اسم العائلة</label>
+                            <input type="text" id="lastName">
+                        </div>
+                    </div>
+                    <div class="form-group two-columns">
+                        <div class="input-container">
+                            <label for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email">
+                        </div>
+                        <div class="input-container">
+                            <label for="phone">رقم الهاتف</label>
+                            <input type="tel" id="phone">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="streetAddress">العنوان</label>
+                        <input type="text" id="streetAddress">
+                    </div>
+                    <div class="form-group two-columns">
+                        <div class="input-container">
+                            <label for="city">المدينة</label>
+                            <input type="text" id="city">
+                        </div>
+                        <div class="input-container">
+                            <label for="state">المحافظة</label>
+                            <input type="text" id="state">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="specialInstructions">تعليمات خاصة</label>
+                        <textarea id="specialInstructions"
+                            placeholder="أي تعليمات خاصة بالتوصيل أو الاستلام."></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <a href="../pages/cart.html" class="btn-back">العودة إلى السلة</a>
+                        <a href="../pages/payment.html" class="btn-continue">متابعة الدفع &rarr;</a>
+                    </div>
+                </form>
+            </div>
+
+            <aside class="order-summary">
+                <h2>ملخص الطلب</h2>
+                <div class="summary-items">
+                    <div class="summary-item">
+                        <div class="item-info">
+                            <img src="../photos/drill.png" alt="مثقاب كهربائي">
+                            <span class="summary-item-name">مثقاب كهربائي</span>
+                        </div>
+                        <span class="summary-item-price">45.00 جنيه</span>
+                    </div>
+                    <div class="summary-item">
+                        <div class="item-info">
+                            <img src="../photos/Camera.jpeg" alt="كاميرا">
+                            <span class="summary-item-name">كاميرا</span>
+                        </div>
+                        <span class="summary-item-price">35.00 جنيه</span>
+                    </div>
+                </div>
+                <div class="summary-totals">
+                    <div class="summary-line">
+                        <span>المجموع الفرعي</span>
+                        <span>80.00 جنيه</span>
+                    </div>
+                    <div class="summary-line">
+                        <span>رسوم التوصيل</span>
+                        <span>10.00 جنيه</span>
+                    </div>
+                    <div class="summary-line">
+                        <span>الضرائب</span>
+                        <span>7.20 جنيه</span>
+                    </div>
+                    <div class="summary-line total">
+                        <span>الإجمالي</span>
+                        <span>97.20 جنيه</span>
+                    </div>
+                </div>
+                <p class="estimated-delivery">
+                    <i class="fas fa-truck"></i> موعد التسليم المتوقع: 2-3 أيام عمل
+                </p>
+            </aside>
+        </section>
+    </main>
+
+ <!-- Footer  -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Logo + icons -->
+      <div class="footer-section">
+        <img src="../photos/Rectangle 17.png" alt="شعار Renturn" class="logo">
+        <p>شريكك الموثوق لتأجير الأدوات <br> والمعدات بجودة عالية.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="./index.html">الرئيسية</a></li>
+          <li><a href="./pages/about.html">من نحن؟</a></li>
+          <li><a href="./pages/privacypolicy.html">سياسة الخصوصية</a></li>
+          <li><a href="./pages/termsandconditions.html">الشروط والأحكام</a></li>
+        </ul>
+      </div>
+
+      <!-- Account -->
+      <div class="footer-section">
+        <h4>الحساب</h4>
+        <ul>
+          <li><a href="./pages/cart.html">سلة التسوق</a></li>
+          <li><a href="./pages/signin.html">حسابي</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-section">
+        <h4>الدعم</h4>
+        <ul>
+          <li><a href="../pages/help.html">مركز المساعدة</a></li>
+          <li><a href="../pages/safety.html">إرشادات السلامة</a></li>
+        </ul>
+      </div>
+    
+      <!-- Contact Section -->
+      <div class="footer-section">
+        <h4>تواصل معنا</h4>
+        <ul>
+          <li><img src="../photos/Rectangle 14.png" alt="أيقونة الهاتف" class="phone-icon"> +201 123 4567 </li>
+          <li><img src="../photos/mail.png" alt="أيقونة البريد" class="email-icon"> renturner@gmail.com</li>
+          <br><p>تابعنا على وسائل التواصل الاجتماعي</p><br>
+          <div class="social-icons">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <div class="payment-icons">
+        <a href="#" aria-label="PayPal"><i class="fab fa-cc-paypal"></i></a>
+        <a href="#" aria-label="Apple Pay"><i class="fab fa-cc-apple-pay"></i></a>
+        <a href="#" aria-label="Visa"><i class="fab fa-cc-visa"></i></a>
+      </div>
+      <p>© 2025 Renturn. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+<script src="../../lang.js"></script>
+</body>
+</html>

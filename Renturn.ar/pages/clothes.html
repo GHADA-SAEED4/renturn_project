@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملابس</title>
+    <link rel="stylesheet" href="../css/clothes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../photos/R logo.png">
+    <style>
+        body {
+            padding-top: 100px; /* مساحة أسفل الهيدر */
+            text-align: right;
+        }
+        .products, .rentals, .pagination {
+            direction: rtl;
+        }
+        .rentals p {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<header id="header">
+    <div class="container">
+        <div class="logo"><img src="../photos/renturn logo.png" alt="logo"></div>
+        <div class="search">
+            <input type="text" placeholder="ابحث عن منتج" />
+            <i class="fa-solid fa-search"></i>
+        </div>
+        <nav>
+            <div class="nav-v">
+                <a href="../index.html">الرئيسية</a>
+                <a href="./about.html">من نحن</a>
+                <!-- Dropdown Categories -->
+                <div class="dropdown">
+                    <button class="dropbtn">الفئات ▾</button>
+                    <div class="dropdown-content">
+                        <a href="../pages/electronics.html">إلكترونيات</a>
+                        <a href="../pages/tools.html">أدوات</a>
+                        <a href="../pages/clothes.html">ملابس</a>
+                        <a href="../pages/music.html">آلات موسيقية</a>
+                    </div>
+                </div>
+            </div>
+            <button class="nav-btn" onclick="window.location='../pages/cart.html'">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <button class="nav-btn" onclick="window.location='../pages/signin.html'">
+                <i class="fa-solid fa-user"></i>
+            </button>
+
+            <button class="nav-btn" id="langToggle" >
+                <i class="fa-solid fa-globe"></i>
+            </button>
+        </nav>
+    </div>
+</header>
+
+<section class="rentals">
+    <div class="rental-top">
+        <button class="clothes-btn">ملابس</button>
+        <h2>استكشف مجموعتنا من الملابس للإيجار</h2>
+    </div>
+    <p>اكتشف مجموعة واسعة من الملابس المتاحة للإيجار بأسعار مناسبة.</p>
+</section>
+
+<!-- قسم المنتجات -->
+<section class="products">
+    <div class="product-card" data-url="../pages/products/clothes/black-blazer/black-blazer.html">
+        <img src="../photos/black-blazer.jpeg" alt="Blazer">
+        <h3>بليزر أسود</h3>
+        <p>مثالي للمناسبات الرسمية، مقاس M\L</p>
+        <span class="price">400 جنيه/اليوم</span>
+        <button class="rent-btn" onclick="window.location='./cart.html'">أضف إلى السلة</button>
+    </div>
+
+    <div class="product-card" data-url="../pages/products/clothes/white-dress/white-dress.html">
+        <img src="../photos/download.jpeg" alt="White Dress">
+        <h3>فستان أبيض</h3>
+        <p>للسهرات الليلية، مقاس L</p>
+        <span class="price">500 جنيه/اليوم</span>
+        <button class="rent-btn" onclick="window.location='./cart.html'">أضف إلى السلة</button>
+    </div>
+
+    <div class="product-card" data-url="../pages/products/clothes/pink-dress/pink-dress.html">
+        <img src="../photos/download (1).jpeg" alt="Pink Dress">
+        <h3>فستان وردي</h3>
+        <p>للسهرات الليلية، مقاس M</p>
+        <span class="price">400 جنيه/اليوم</span>
+        <button class="rent-btn" onclick="window.location='./cart.html'">أضف إلى السلة</button>
+    </div>
+
+    <div class="product-card" data-url="../pages/products/clothes/black-dress/black-dress.html">
+        <img src="../photos/black-dress.jpeg" alt="Black dress">
+        <h3>فستان أسود</h3>
+        <p>للسهرات والحفلات، مقاس M</p>
+        <span class="price">700 جنيه/اليوم</span>
+        <button class="rent-btn" onclick="window.location='./cart.html'">أضف إلى السلة</button>
+    </div>
+
+    <div class="product-card" data-url="../pages/products/clothes/offwhite-top/offwhite-top.html">
+        <img src="../photos/d80b177d-ac43-45c1-8aec-a2c79d96950c.jpeg" alt="OFF-White Top">
+        <h3>بلوزة بيضاء</h3>
+        <p>بلوزة عالية الجودة، مقاس M</p>
+        <span class="price">300 جنيه/اليوم</span>
+        <button class="rent-btn" onclick="window.location='./cart.html'">أضف إلى السلة</button>
+    </div>
+
+    <div class="product-card" data-url="../pages/products/clothes/white-chemise/white-chemise.html">
+        <img src="../photos/Women Plain Front Button Long Sleeve Casual Top, Minimalist,Hollowed Costumes,Thanksgiving Women Outfit,Princess Women Costume,Greek Goddess Costume,Cowgirl Women Outfits, Costume.jpeg" alt="White Chemise">
+        <h3>قميص أبيض</h3>
+        <p>للاستخدام اليومي، مقاس M</p>
+        <span class="price">200 جنيه/اليوم</span>
+        <button class="rent-btn" onclick="window.location='./cart.html'">أضف إلى السلة</button>
+    </div>
+
+    <div class="product-card" data-url="../pages/products/clothes/skirt/skirt.html">
+        <img src="../photos/skirt.jpeg" alt="Skirt">
+        <h3>تنورة</h3>
+        <p>للاستخدام اليومي، مقاس M</p>
+        <span class="price">150 جنيه/اليوم</span>
+        <button class="rent-btn" onclick="window.location='./cart.html'">أضف إلى السلة</button>
+    </div>
+
+    <div class="product-card" data-url="../pages/products/clothes/black-pants/black-pants.html">
+        <img src="../photos/black-pants.jpeg" alt="Black pants">
+        <h3>بنطال أسود</h3>
+        <p>للاستخدام اليومي، مقاس M</p>
+        <span class="price">150 جنيه/اليوم</span>
+        <button class="rent-btn" onclick="window.location='./cart.html'">أضف إلى السلة</button>
+    </div>
+</section>
+
+<!-- ترقيم الصفحات -->
+<ul class="pagination">
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">...</a></li>
+</ul>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <img src="../photos/Rectangle 17.png" alt="Renturn Logo" class="logo">
+            <p>شريكك الموثوق في تأجير الأدوات والمعدات عالية الجودة.</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>روابط سريعة</h4>
+            <ul>
+                <li><a href="../index.html">الرئيسية</a></li>
+                <li><a href="./about.html">من نحن</a></li>
+                <li><a href="./privacypolicy.html">سياسة الخصوصية</a></li>
+                <li><a href="./termsandconditions.html">الشروط والأحكام</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>الحساب</h4>
+            <ul>
+                <li><a href="./cart.html">سلة التسوق</a></li>
+                <li><a href="./account.html">حسابي</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>الدعم</h4>
+            <ul>
+                <li><a href="./help.html.html">مركز المساعدة</a></li>
+                <li><a href="./safety.html.html">إرشادات السلامة</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>تواصل معنا</h4>
+            <ul>
+                <li><img src="../photos/Rectangle 14.png" alt="Phone Icon" class="phone-icon"> +201 123 4567 </li>
+                <li><img src="../photos/mail.png" alt="Email Icon" class="email-icon"> renturner@gmail.com</li>
+                <br>
+                <p>تابعنا على وسائل التواصل</p>
+                <br>
+                <div class="social-icons">
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="payment-icons">
+            <a href="#" aria-label="PayPal"><i class="fab fa-cc-paypal"></i></a>
+            <a href="#" aria-label="Apple Pay"><i class="fab fa-cc-apple-pay"></i></a>
+            <a href="#" aria-label="Visa"><i class="fab fa-cc-visa"></i></a>
+        </div>
+        <p>© 2025 Renturn. جميع الحقوق محفوظة.</p>
+    </div>
+</footer>
+
+
+<script src="../../lang.js"></script>
+<script src="../js/categories.js"></script>
+
+</body>
+</html>

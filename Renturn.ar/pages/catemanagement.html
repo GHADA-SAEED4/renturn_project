@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إدارة الفئات</title>
+    <link rel="stylesheet" href="../css/catemanagement.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../photos/R logo.png"> 
+</head>
+<body>
+      <!-- الهيدر -->
+      <header id="header">
+        <div class="container">
+          <div class="logo"><img src="../photos/renturn logo.png" alt="شعار"></div>
+          <div class="search">
+            <input type="text" placeholder="ابحث عن منتج" />
+            <i class="fa-solid fa-search"></i>
+          </div>
+          <nav>
+            <div class="nav-v">         
+              <a href="../index.html">الرئيسية</a>
+              <a href="../pages/about.html">من نحن</a>
+              <!-- Dropdown Categories -->
+              <div class="dropdown">
+                <button class="dropbtn">الفئات ▾</button>
+                <div class="dropdown-content">
+                  <a href="../pages/electronics.html">إلكترونيات</a>
+                  <a href="../pages/tools.html">أدوات</a>
+                  <a href="../pages/clothes.html">ملابس</a>
+                  <a href="../pages/music.html">آلات موسيقية</a>
+                </div>
+              </div>
+            </div>
+            <button class="nav-btn" onclick="window.location='../pages/cart.html'">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <button class="nav-btn" onclick="window.location='../pages/login.html'">
+              <i class="fa-solid fa-user"></i>
+            </button>
+
+            <button class="nav-btn" id="langToggle" >
+              <i class="fa-solid fa-globe"></i>
+            </button>
+          </nav>
+        </div>
+      </header>
+
+    <!-- الشريط الجانبي -->
+  <div class="sidebar">
+    <div class="profile-container">
+        <img src="../photos/adminprofile.png" alt="ملف المدير" class="admin-profile">
+        <h3>الملف الشخصي للمدير</h3>
+        <p>الاسم الكامل :</p>
+        <b>سارة عمرو</b> 
+        <p>البريد الإلكتروني :</p>
+        <b>📧 sara@email.com</b>
+        <p>رقم الهاتف :</p>
+        <b>📞 +20 100 715 519</b>
+
+        <button class="edit"><img src="../photos/svg.png" alt="تعديل" /> تعديل الملف</button>
+        <button class="logout"><img src="../photos/Vector.png" alt="تسجيل الخروج" /> تسجيل الخروج</button>
+    </div>
+
+    <div class="menu">
+      <a href="../pages/adminpage.html"><img src="../photos/users-icon.png" alt="أيقونة المستخدمين"> المستخدمين</a>
+      <a href="#" class="active"><img src="../photos/categories-icon.png" alt="أيقونة الفئات"> الفئات</a>
+      <a href="../pages/userproductsman.html"><img src="../photos/products-icon.png" alt="أيقونة المنتجات"> المنتجات</a>
+      <a href="../pages/paymentman.html"><img src="../photos/payment-icon.png" alt="أيقونة الدفع"> طرق الدفع</a>
+      <a href="#"><img src="../photos/activerentals.png" alt="أيقونة الإيجارات"> الإيجارات النشطة</a>
+    </div>
+  </div>
+
+  <!-- المحتوى الرئيسي -->
+  <div class="main">
+    <div class="topbar">
+      <h2>إدارة الفئات</h2>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <div style="display: flex; flex-direction: column;">
+          <p>إجمالي الفئات</p>
+          <h3>4</h3>
+        </div>
+        <img src="../photos/totalcate.png" alt="">
+      </div>
+      <div class="stat">
+        <div style="display: flex; flex-direction: column;">
+          <p>إجمالي المنتجات</p>
+          <h3>80</h3>
+        </div>
+        <img src="../photos/totalprod.png" alt="أيقونة المنتجات">
+      </div>
+      <div class="stat">
+        <div style="display: flex; flex-direction: column;">
+          <p>الفئات النشطة</p>
+          <h3>5</h3>
+        </div>
+        <img src="../photos/activecate.png" alt="">
+      </div>
+      <div class="stat">
+        <div style="display: flex; flex-direction: column;">
+          <p>الفئات غير النشطة</p>
+          <h3>13</h3>
+        </div>
+        <img src="../photos/inactive.png" alt="">
+      </div>
+    </div>
+
+    <div>
+      <button class="add-category-btn"><img src="../photos/plus.png" alt="إضافة فئة" /> إضافة فئة</button>
+    </div>
+
+    <!-- شريط الأدوات -->
+    <div class="users-toolbar">
+      <h3>فئات المنتجات</h3>
+      <div class="search-box">
+           <input type="text" placeholder="ابحث عن فئة" />
+          <i class="fa-solid fa-search"></i>
+      </div>
+      <div class="dropdown-filter">
+         <button class="filterbtn"><img src="../photos/filter.png" alt="">تصفية</button>
+          <div class="dropdown-content-filter">
+            <a>نشطة</a>
+            <a>غير نشطة</a>
+          </div>
+      </div>
+    </div>
+
+    <!-- الجدول -->
+    <table>
+      <thead>
+        <tr>
+          <th>معرّف الفئة</th>
+          <th>اسم الفئة</th>
+          <th>عدد المنتجات</th>
+          <th>الحالة</th>
+          <th>الإجراءات</th>
+        </tr>
+      </thead>
+      <tbody id="userTable">
+        <tr>
+          <td>#001</td>
+          <td>إلكترونيات</td>
+          <td>23</td>
+          <td class="status active">
+            <button class="active-button">نشطة</button>
+          </td>
+          <td class="actions">
+            <button class="edit-btn"><img src="../photos/edit.png" alt="تعديل" /></button>
+            <button class="delete-btn"><img src="../photos/trash.png" alt="حذف" /></button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>#002</td>
+          <td>ملابس</td>
+          <td>15</td>
+          <td class="status active">
+            <button class="inactive-button">غير نشطة</button>
+          </td>
+          <td class="actions">
+            <button class="edit-btn"><img src="../photos/edit.png" alt="تعديل" /></button>
+            <button class="delete-btn"><img src="../photos/trash.png" alt="حذف" /></button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>#003</td>
+          <td>آلات موسيقية</td>
+          <td>14</td>
+          <td class="status active">
+            <button class="active-button">نشطة</button>
+          </td>
+          <td class="actions">
+            <button class="edit-btn"><img src="../photos/edit.png" alt="تعديل" /></button>
+            <button class="delete-btn"><img src="../photos/trash.png" alt="حذف" /></button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>#004</td>
+          <td>أدوات</td>
+          <td>20</td>
+          <td class="status active">
+            <button class="active-button">نشطة</button>
+          </td>
+          <td class="actions">
+            <button class="edit-btn"><img src="../photos/edit.png" alt="تعديل" /></button>
+            <button class="delete-btn"><img src="../photos/trash.png" alt="حذف" /></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ترقيم الصفحات -->
+    <div class="pagination">
+      <button class="prev">السابق</button>
+      <button class="active">1</button>
+      <button>2</button>
+      <button class="prev">التالي</button>
+    </div>
+  </div>
+
+  <script>
+    // حذف الصف
+    document.querySelectorAll('.delete-btn').forEach(btn => {
+      btn.addEventListener('click', function(){
+        this.closest('tr').remove();
+      });
+    });
+  </script>
+  <script src="../../lang.js"></script>
+</body>
+</html>

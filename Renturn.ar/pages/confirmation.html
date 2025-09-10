@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> تأكيد الطلب</title>
+  <link rel="stylesheet" href="../CSS/conf.css"/>
+  <link rel="icon" href="../photos/R logo.png" type="image.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div class="logo"><img src="../photos/renturn logo.png" alt="شعار "></div>
+      <div class="search">
+        <input type="text" placeholder="ابحث عن منتج" />
+        <i class="fa-solid fa-search"></i>
+      </div>
+      <nav>
+        <div class="nav-v">
+          <a href="../index.html">الرئيسية</a>
+          <a href="../about.html">من نحن</a>
+          <!-- Dropdown Categories -->
+          <div class="dropdown">
+            <button class="dropbtn">الفئات ▾</button>
+            <div class="dropdown-content">
+              <a href="./electronics.html">إلكترونيات</a>
+              <a href="./tools.html">أدوات</a>
+              <a href="./clothes.html">ملابس</a>
+              <a href="./music.html">آلات موسيقية</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="nav-btn" onclick="window.location='./cart.html'">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+
+        <button class="nav-btn" onclick="window.location='./signin.html'">
+          <i class="fa-solid fa-user"></i>
+        </button>
+
+        <button class="nav-btn" id="langToggle" >
+          <i class="fa-solid fa-globe"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <br><br><br><br>
+
+  <main class="container">
+    <section class="checkout-progress">
+      <ol class="progress-steps">
+        <li >
+          <div class="step-number">1</div>
+          <span>السلة</span>
+        </li>
+        <li>
+          <div class="step-number">2</div>
+          <span>الدفع</span>
+        </li>
+        <li>
+          <div class="step-number">3</div>
+          <span>الدفع الإلكتروني</span>
+        </li>
+        <li class="active">
+          <div class="step-number">4</div>
+          <span>التأكيد</span>
+        </li>
+      </ol>
+    </section>
+
+  <!-- Confirmation Section -->
+  <div class="page-container">
+    <div class="confirmation-container">
+      <!-- Success Icon -->
+      <div class="icon-circle"><span class="checkmark">✓</span></div>
+      
+      <h2>تم تأكيد الطلب!</h2>
+      <p class="subtitle">
+        شكرًا لطلبك للإيجار. لقد استلمنا دفعتك ونعمل على تجهيز المنتجات الخاصة بك.
+      </p>
+
+      <!-- Order Info Box -->
+      <div class="order-box">
+        <p><strong>رقم الطلب</strong><br><span>RNT-BDTIZK30</span></p>
+        <p><strong>تاريخ التسليم المتوقع</strong><br><span>الثلاثاء، 26 أغسطس</span></p>
+      </div>
+
+      <!-- Next Steps -->
+      <div class="next-box">
+        <h3>ما الذي سيحدث بعد ذلك؟</h3>
+        <p><strong>البريد الإلكتروني للتأكيد</strong><br>ستتلقى رسالة تحتوي على تفاصيل الطلب ومعلومات التتبع.</p>
+        <p><strong>التجهيز</strong><br>سوف نقوم بتجهيز وفحص المنتجات الخاصة بك للتأكد من جودتها.</p>
+        <p><strong>التسليم / الاستلام</strong><br>سيتم تسليم المنتجات أو تجهيزها للاستلام حسب الجدول.</p>
+      </div>
+
+      <!-- Buttons -->
+      <div class="buttons">
+        <button class="btn-outline">العودة إلى السلة</button>
+        <button class="btn-primary" id="orderSummaryBtn">عرض تفاصيل الطلب</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="orderModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+
+      <div class="modal-header">
+        <h2>ملخص الطلب</h2>
+        <span class="status confirmed">تم التأكيد</span>
+      </div>
+
+      <p class="subtitle">
+        التفاصيل الكاملة للطلب <b>RNT-BDTIZK330</b>، بما في ذلك المنتجات، معلومات التسليم، وطريقة الدفع
+      </p>
+
+      <!-- Order Info Card -->
+      <div class="order-info-card">
+        <h3 class="section-title">معلومات الطلب</h3>
+        <div class="order-row">
+          <div class="order-col">
+            <h4>رقم الطلب</h4>
+            <p class="order-number">RNT-BDTIZK330</p>
+          </div>
+          <div class="order-col">
+            <h4>تاريخ الطلب</h4>
+            <p class="order-date">23 أغسطس 2025</p>
+          </div>
+        </div>
+        <p class="delivery">تاريخ التسليم المتوقع: الثلاثاء، 26 أغسطس</p>
+      </div>
+
+      <!-- Rental Items -->
+      <div class="card">
+        <h4 class="section-title">المنتجات المستأجرة</h4>
+
+        <div class="rental-item">
+          <div class="item-left">
+            <img src="photos/WhatsApp Image 2025-08-19 at 2.15.50 AM.jpeg" alt="مثقاب كهربائي">
+            <div>
+              <div class="item-name">مثقاب كهربائي</div>
+              <div class="item-days">7 أيام</div>
+            </div>
+          </div>
+          <div class="item-price">45.00جنيه</div>
+        </div>
+
+        <div class="rental-item">
+          <div class="item-left">
+            <img src="../photos/Image (6).jpeg " alt="منشار دائري">
+            <div>
+              <div class="item-name">منشار دائري</div>
+              <div class="item-days">3 أيام</div>
+            </div>
+          </div>
+          <div class="item-price">35.00جنيه</div>
+        </div>
+      </div>
+
+      <!-- Info Cards -->
+      <div class="card-grid">
+        <div class="info-card">
+          <div class="info-header">
+            <img src="../photos/van.png" class="info-logo" alt="رمز التسليم">
+            <h4>عنوان التسليم</h4>
+          </div>
+          <p>123 شارع الرئيسي، <br>وسط المدينة</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-header">
+            <img src="../photos/credit-card.png" class="info-logo" alt="رمز الدفع">
+            <h4>طريقة الدفع</h4>
+          </div>
+          <p>بطاقة ائتمان تنتهي بـ 1234</p>
+        </div>
+      </div>
+
+      <!-- Summary -->
+      <div class="summary-card">
+        <div class="summary-row"><span>المجموع الفرعي</span><span>80.00جنيه</span></div>
+        <div class="summary-row"><span>رسوم التسليم</span><span>10.00جنيه</span></div>
+        <div class="summary-row"><span>الضريبة</span><span>7.20جنيه</span></div>
+        <div class="summary-row total"><span>الإجمالي</span><span>97.20جنيه</span></div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="buttons">
+        <button class="btn-close">إغلاق</button>
+        <button class="btn-download">تحميل الإيصال</button>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Footer  -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Logo + icons -->
+      <div class="footer-section">
+        <img src="./photos/Rectangle 17.png" alt="شعار Renturn" class="logo">
+        <p>شريكك الموثوق لتأجير الأدوات <br> والمعدات بجودة عالية.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="./index.html">الرئيسية</a></li>
+          <li><a href="./pages/about.html">من نحن</a></li>
+          <li><a href="./pages/privacypolicy.html">سياسة الخصوصية</a></li>
+          <li><a href="./pages/termsandconditions.html">الشروط والأحكام</a></li>
+        </ul>
+      </div>
+
+      <!-- Account -->
+      <div class="footer-section">
+        <h4>الحساب</h4>
+        <ul>
+          <li><a href="./pages/cart.html">سلة التسوق</a></li>
+          <li><a href="./pages/signin.html">حسابي</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-section">
+        <h4>الدعم</h4>
+        <ul>
+          <li><a href="./pages/help.html.html">مركز المساعدة</a></li>
+          <li><a href="./pages/safety.html.html">إرشادات السلامة</a></li>
+        </ul>
+      </div>
+    
+      <!-- Contact Section -->
+      <div class="footer-section">
+        <h4>تواصل معنا</h4>
+        <ul>
+          <li><img src="photos/Rectangle 14.png" alt="أيقونة الهاتف" class="phone-icon"> +201 123 4567 </li>
+          <li><img src="photos/mail.png" alt="أيقونة البريد" class="email-icon"> renturner@gmail.com</li>
+          <br><p>تابعنا على وسائل التواصل الاجتماعي</p><br>
+          <div class="social-icons">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <div class="payment-icons">
+        <a href="#" aria-label="PayPal"><i class="fab fa-cc-paypal"></i></a>
+        <a href="#" aria-label="Apple Pay"><i class="fab fa-cc-apple-pay"></i></a>
+        <a href="#" aria-label="Visa"><i class="fab fa-cc-visa"></i></a>
+      </div>
+      <p>© 2025 Renturn. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+  </main>
+  <script src="../../lang.js"></script>
+</body>
+</html>

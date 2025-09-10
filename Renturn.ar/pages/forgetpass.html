@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"></html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>إعادة تعيين كلمه المرور - Renturn</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/forgetpass.css"/>
+</head>
+<body>
+
+  <div class="reset-container">
+    
+    <!-- Left Side (Image) -->
+    <div class="reset-left">
+      <img src="../photos/Image.png" alt="Illustration">
+    </div>
+
+    <!-- Right Side (Box) -->
+    <div class="reset-right">
+      <div class="reset-box">
+        <span class="close-btn">&times;</span>
+        <h2>إعادة تعيين كلمه المرور</h2>
+        <p class="subtitle">يرجى إدخال كلمه المرور الجديده</p>
+
+        <form>
+          <label for="newPassword">كلمه المرور الجديده</label>
+          <div class="input-group">
+          
+            <input type="password" id="newPassword" placeholder="أدخل كلمه المرور الجديده">
+            <i class="fa-solid fa-lock icon"></i>
+        </div>
+          <small class="password-note">* يجب أن تتكون كلمة المرور من 8 أحرف على الأقل، وتحتوي على رقم واحد على الأقل، وحرف كبير واحد، ورمز خاص واحد.</small>
+
+          <label for="confirmPassword">تأكيد كلمه المرور</label>
+          <div class="input-group">
+            <i class="fa-solid fa-lock icon"></i>
+            <input type="password" id="confirmPassword" placeholder="تأكيد كلمه المرور">
+            <i class="fa-solid fa-eye toggle"></i>
+          </div>
+
+          <button type="submit" class="reset-btn">إعادة تعيين كلمه المرور</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
